@@ -1,0 +1,307 @@
+{
+  "material_passport": {
+    "id": "M1_M2_reconstruction_20261103_v1",
+    "type": "executable_reconstruction_and_validation",
+    "created": "2026-11-03",
+    "origin": "retained scientific kernels, frozen evidence and new wrapper",
+    "raw_evidence_modified": false
+  },
+  "implementation": "reconstructed-20261103-v1",
+  "integrity": {
+    "status": "PASS",
+    "checked_copied_files": 81,
+    "failures": [],
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.4.3",
+      "pandas": "2.3.3",
+      "scipy": "1.16.3",
+      "numba": "0.65.1",
+      "bsm2-python": "0.0.16"
+    },
+    "scope": "copied frozen evidence and retained scientific sources; no historical release recovery claimed"
+  },
+  "M1_prediction": {
+    "version": "M1",
+    "model": "full",
+    "scientific_integrations": 132,
+    "new_BSM1_integrations": 0,
+    "cases": 132,
+    "max_absolute_differences": {
+      "SNH_mean_eval": 1.4210854715202004e-14,
+      "SNH_max_eval": 1.0658141036401503e-14,
+      "SNO_mean_eval": 3.552713678800501e-15,
+      "DO_mean_eval": 1.7763568394002505e-15
+    },
+    "label_disagreements": 0,
+    "tolerance": 1e-09,
+    "pass": true,
+    "logistic_probability_max_abs_difference": 1.1102230246251565e-15,
+    "logistic_label_disagreements": 0,
+    "logistic_probability_tolerance": 1e-12
+  },
+  "M2_full_prediction": {
+    "version": "M2",
+    "model": "full",
+    "scientific_integrations": 244,
+    "new_BSM1_integrations": 0,
+    "cases": 244,
+    "max_absolute_differences": {
+      "SNH_mean_eval": 0.0,
+      "SNH_max_eval": 0.0,
+      "SNO_mean_eval": 0.0,
+      "DO_mean_eval": 0.0
+    },
+    "label_disagreements": 0,
+    "tolerance": 1e-09,
+    "pass": true
+  },
+  "M2_ablation_prediction": {
+    "version": "M2",
+    "model": "no_oxygen_demand_feedback",
+    "scientific_integrations": 244,
+    "new_BSM1_integrations": 0,
+    "cases": 244,
+    "max_absolute_differences": {
+      "SNH_mean_eval": 0.0,
+      "SNH_max_eval": 0.0,
+      "SNO_mean_eval": 0.0,
+      "DO_mean_eval": 0.0
+    },
+    "label_disagreements": 0,
+    "tolerance": 1e-09,
+    "pass": true
+  },
+  "table_reproduction": {
+    "status": "PASS",
+    "checks": [
+      {
+        "model": "full",
+        "observed": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ],
+        "pass": true
+      },
+      {
+        "model": "no_oxygen_demand_feedback",
+        "observed": [
+          10,
+          1
+        ],
+        "expected": [
+          10,
+          1
+        ],
+        "pass": true
+      },
+      {
+        "model": "logistic_basic",
+        "observed": [
+          0,
+          1
+        ],
+        "expected": [
+          0,
+          1
+        ],
+        "pass": true
+      },
+      {
+        "model": "logistic_shared_closure",
+        "observed": [
+          6,
+          0
+        ],
+        "expected": [
+          6,
+          0
+        ],
+        "pass": true
+      }
+    ],
+    "new_BSM1_integrations": 0,
+    "scope": "tables recomputed from frozen evidence; no new validation labels or historical timing runs"
+  },
+  "gate": {
+    "status": "PASS",
+    "new_BSM1_integrations": 0,
+    "fresh_process_integrations": 228,
+    "checks": [
+      {
+        "study": "M1",
+        "method": "six_state",
+        "buffer_policy": "individual",
+        "cases": 132,
+        "raw_label_disagreements": 0,
+        "route_disagreements": 0,
+        "final_label_disagreements": 0,
+        "reference_answer_uses": 88,
+        "false_acceptances": 0,
+        "false_rejections": 18,
+        "final_false_acceptances": 0,
+        "final_false_rejections": 0,
+        "pass": true
+      },
+      {
+        "study": "M1",
+        "method": "six_state",
+        "buffer_policy": "shared",
+        "cases": 132,
+        "raw_label_disagreements": 0,
+        "route_disagreements": 0,
+        "final_label_disagreements": 0,
+        "reference_answer_uses": 88,
+        "false_acceptances": 0,
+        "false_rejections": 18,
+        "final_false_acceptances": 0,
+        "final_false_rejections": 0,
+        "pass": true
+      },
+      {
+        "study": "M1",
+        "method": "logistic",
+        "buffer_policy": "individual",
+        "cases": 132,
+        "raw_label_disagreements": 0,
+        "route_disagreements": 0,
+        "final_label_disagreements": 0,
+        "reference_answer_uses": 88,
+        "false_acceptances": 0,
+        "false_rejections": 1,
+        "final_false_acceptances": 0,
+        "final_false_rejections": 0,
+        "pass": true
+      },
+      {
+        "study": "M1",
+        "method": "logistic",
+        "buffer_policy": "shared",
+        "cases": 132,
+        "raw_label_disagreements": 0,
+        "route_disagreements": 0,
+        "final_label_disagreements": 0,
+        "reference_answer_uses": 88,
+        "false_acceptances": 0,
+        "false_rejections": 1,
+        "final_false_acceptances": 0,
+        "final_false_rejections": 0,
+        "pass": true
+      },
+      {
+        "study": "prospective_Gate",
+        "method": "six_state",
+        "buffer_policy": "individual",
+        "cases": 96,
+        "raw_label_disagreements": 0,
+        "route_disagreements": 0,
+        "final_label_disagreements": 0,
+        "reference_answer_uses": 80,
+        "false_acceptances": 4,
+        "false_rejections": 2,
+        "final_false_acceptances": 0,
+        "final_false_rejections": 0,
+        "pass": true
+      },
+      {
+        "study": "prospective_Gate",
+        "method": "logistic",
+        "buffer_policy": "individual",
+        "cases": 96,
+        "raw_label_disagreements": 0,
+        "route_disagreements": 0,
+        "final_label_disagreements": 0,
+        "reference_answer_uses": 80,
+        "false_acceptances": 0,
+        "false_rejections": 2,
+        "final_false_acceptances": 0,
+        "final_false_rejections": 0,
+        "pass": true
+      }
+    ],
+    "scope": "fresh predictions and independently reconstructed monotonicity/hull/buffer routes; frozen reference answers are consumed only for routed points; no raw-trajectory re-integration"
+  },
+  "M2_fit": {
+    "scope": "retained original M2 kernel and prespecified 3-start fitting protocol; new execution against frozen parameters",
+    "comparisons": [
+      {
+        "model": "full",
+        "eligible_for_new_predictions": true,
+        "max_abs_parameter_difference": 0.0,
+        "development_classification_differences": 0,
+        "max_abs_development_peak_difference": 0.0
+      },
+      {
+        "model": "no_oxygen_demand_feedback",
+        "eligible_for_new_predictions": true,
+        "max_abs_parameter_difference": 0.0,
+        "development_classification_differences": 0,
+        "max_abs_development_peak_difference": 0.0
+      }
+    ],
+    "pass": true
+  },
+  "M1_reconstructed_fit": {
+    "protocol": "reconstructed_M1_historical_initialization_plus_two_normalized_gaussian_0.1_perturbations_v1",
+    "historical_perturbation_code_recovered": false,
+    "seed": 20261013,
+    "selected_start": 1,
+    "finite_audit": {
+      "max_abs_steady_finite_difference": 7.578982924094646e-05,
+      "label_disagreements": 0,
+      "lower_clips": 0,
+      "upper_clips": 0
+    },
+    "max_abs_development_peak_difference_from_frozen": 0.00012393138634436696,
+    "development_classification_differences_from_frozen": 0,
+    "scope": "new explicitly reconstructed initialization protocol, not an exact historical optimizer replay; frozen publication parameters remain authoritative"
+  },
+  "logistic_reconstructed_fit": {
+    "models": 11,
+    "all_classifications_match_frozen": true,
+    "maximum_absolute_probability_difference": 9.019181844427404e-06,
+    "scope": "M1 documented objective; reconstructed M2 starts (zero plus two uniform [-1,1], seed 20261014) because original logistic source is unavailable; all fits use only 750 development cases, frozen weights never used as starts"
+  },
+  "native_reference_smoke": {
+    "candidate_id": "s_l10_a80_K0040",
+    "new_BSM1_integrations": 1,
+    "SNH_peak_abs_difference": 0.0,
+    "SNH_mean_abs_difference": 0.0,
+    "classification_matches": true,
+    "scope": "one constant-condition native integration; not all historical raw trajectories"
+  },
+  "tests": {
+    "command": "python -m unittest discover -s tests",
+    "passed": 7,
+    "failed": 0,
+    "scope": [
+      "reference labels cannot influence routing",
+      "joint extrapolation routes to references",
+      "injected labels cannot influence process predictions",
+      "ambiguous Boolean evidence rejected",
+      "M1 ablation request rejected before output creation",
+      "M1 prediction fails on corrupted Logistic fixture",
+      "integrity detects corrupted Logistic fixture in temporary package"
+    ]
+  },
+  "new_BSM1_integrations_total": 1,
+  "historical_release_recovered": false,
+  "remaining_missing_executables": [
+    "original portable release",
+    "original dynamic input guard adapter",
+    "original M1 perturbation generator",
+    "original Logistic initialization generator",
+    "coefficient-sensitivity script"
+  ],
+  "frozen_parameter_replacements": 0,
+  "interface_corrections_20261103": [
+    "M1 predict rejects M2 ablation model before output creation",
+    "M1 prediction pass requires process comparison and Logistic probability/label comparisons"
+  ],
+  "interface_corrections_validation_report": "../verification/final_m1_m2_validation/interface_fix/interface_fix_validation.json"
+}

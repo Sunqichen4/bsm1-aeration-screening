@@ -1,0 +1,27 @@
+{
+  "version": "M3B_boundary_figures_v1",
+  "created_at_utc": "2026-10-16T14:22:49.645747+00:00",
+  "script_sha256": "46476830cf540d564b8929f240982e0796e686adaa421772f8ff79ae06c31b01",
+  "freeze_sha256": "4783d6f09a906dbba788eb2d888d49ec25f2c8363b47d71e245751bda27042b5",
+  "boundary_analysis_summary_sha256": "c46295689e479e39274164dc5ea5f3ff488c4d1e0c7d29c5c8563d2a41ef108e",
+  "primary_stratum": "coarse",
+  "peak_units": "mg N/L",
+  "effective_kla_units": "d^-1",
+  "reference_policy": "Raw independent sampled peaks; no smoothing or added response points.",
+  "line_policy": "Straight joins of frozen sampled model predictions as visual guides only.",
+  "response_zoom_policy": "Main axes: effective KLa 136–196 d^-1 and peak 0–12 mg N/L; full-range insets include all frozen samples and all concentration values.",
+  "formats": "PNG 260 dpi; TIFF 600 dpi LZW; editable SVG/PDF text",
+  "files": {
+    "figures/M3B_threshold_response.png": "54bf9c02a4d53ef91e573a703ae20216fa410228fbea265091edf79f2246e365",
+    "figures/M3B_threshold_response.tiff": "03bf4249cac751a621f7117b073cbe2ecbfb6ca5ea866090162da29aed686977",
+    "figures/M3B_threshold_response.svg": "af1c4d770544e33997129537554396a50001765fff3613887c4f1f0d8d30d952",
+    "figures/M3B_threshold_response.pdf": "4e65a09bb101a0fe4bb23041fdcdffd64568d0bbdece11b01dd49252de506427",
+    "figures/M3B_fixed_grid_performance.png": "fb85759e8ebe918e5722ac10a27e900bbce817c5034647e32c535f1c7e7bf6a3",
+    "figures/M3B_fixed_grid_performance.tiff": "4896644c53d823372c0dc03dad1b337bb49245c68968c1ac12ec0f1daa7cdbc3",
+    "figures/M3B_fixed_grid_performance.svg": "8fba203dbc78cce1e66fcd0936efd629e5d641fd646d5ab7293b7b13704b3084",
+    "figures/M3B_fixed_grid_performance.pdf": "00c4dd97c371a5783ed6f4cd59b0f8f143ddedbb957465fa1ace9dfdaa6b7702",
+    "figures/boundary_response_plot_data.csv": "567c9a71d710d9847dfb23b51b60d292ed3bc5353c4495597d4cb2b54f67c790",
+    "figures/boundary_performance_plot_data.csv": "b2caf4218b97373b299d4a3063435300d2a5224098006a28c9334d734ac26d89",
+    "figures/boundary_near_threshold_plot_data.csv": "59eb3a7c081f4c65f300f588696a6caff818f7a412e5a8a9d4aa420d3601e295"
+  }
+}

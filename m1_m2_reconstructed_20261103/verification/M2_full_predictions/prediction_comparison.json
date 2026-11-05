@@ -1,0 +1,16 @@
+{
+  "version": "M2",
+  "model": "full",
+  "scientific_integrations": 244,
+  "new_BSM1_integrations": 0,
+  "cases": 244,
+  "max_absolute_differences": {
+    "SNH_mean_eval": 0.0,
+    "SNH_max_eval": 0.0,
+    "SNO_mean_eval": 0.0,
+    "DO_mean_eval": 0.0
+  },
+  "label_disagreements": 0,
+  "tolerance": 1e-09,
+  "pass": true
+}

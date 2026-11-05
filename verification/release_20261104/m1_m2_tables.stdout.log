@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "model": "full",
+      "observed": [
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "model": "no_oxygen_demand_feedback",
+      "observed": [
+        10,
+        1
+      ],
+      "expected": [
+        10,
+        1
+      ],
+      "pass": true
+    },
+    {
+      "model": "logistic_basic",
+      "observed": [
+        0,
+        1
+      ],
+      "expected": [
+        0,
+        1
+      ],
+      "pass": true
+    },
+    {
+      "model": "logistic_shared_closure",
+      "observed": [
+        6,
+        0
+      ],
+      "expected": [
+        6,
+        0
+      ],
+      "pass": true
+    }
+  ],
+  "new_BSM1_integrations": 0,
+  "scope": "tables recomputed from frozen evidence; no new validation labels or historical timing runs"
+}

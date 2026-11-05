@@ -1,0 +1,16 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "predict",
+    "--version",
+    "M2",
+    "--model",
+    "no_oxygen_demand_feedback",
+    "--all-cases",
+    "--output",
+    "D:\\论文\\1\\_github_preparation_20261104\\clean_release_extended\\m2_ablated_prediction"
+  ],
+  "elapsed_seconds": 3.381883000000016,
+  "new_outputs_only": true,
+  "success": true
+}

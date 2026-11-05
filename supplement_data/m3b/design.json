@@ -1,0 +1,10 @@
+{
+  "question": "Do frozen M3 models resolve actual threshold sides and what reference cost does the fixed Gate require?",
+  "claims_to_test": {
+    "C1": "Each new condition has compliant and noncompliant references on the frozen fixed grid.",
+    "C2": "Model and Gate errors near 4 can be measured without post-reference tuning.",
+    "C3": "The preselected enriched references have stable labels under timestep halving."
+  },
+  "failure_policy": "Report missing sides, negative model comparisons, gate cost and numerical flips without further tuning.",
+  "author_input_needed": []
+}

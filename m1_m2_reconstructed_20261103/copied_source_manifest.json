@@ -1,0 +1,329 @@
+{
+  "version": "reconstructed-20261103-v1",
+  "files": {
+    "inputs/clean_environment_verification.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/clean_environment_verification.json",
+      "sha256": "f393bfd21a176ce5d67432759297488164c77835bf042a3fc2b0d24dfa91ef42"
+    },
+    "inputs/coefficient_all_outcomes.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_all_outcomes.csv",
+      "sha256": "d10815705f5364d35828e506670715969b53531714ec04074a52194cabd50483"
+    },
+    "inputs/coefficient_boundary_sensitivity.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_boundary_sensitivity.csv",
+      "sha256": "51da249dfdcfaf95a0e816e9fb1bd67bbbfb259e3d6709ad802bda0cb992501c"
+    },
+    "inputs/coefficient_completion.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_completion.json",
+      "sha256": "b857bbdede071a88367978c8d8a944c594a3889f7c25058377442fc48a2d67d3"
+    },
+    "inputs/coefficient_fine_timestep_audit.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_fine_timestep_audit.csv",
+      "sha256": "08aab04a0a880b35a378f41eeb68e76793b6487049b1cb468f778980b9920c36"
+    },
+    "inputs/coefficient_parameter_provenance.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_parameter_provenance.csv",
+      "sha256": "c5b811c027c2b6cec72721fae1366e71c3e8d28163c16e84cf2e3c07c827430a"
+    },
+    "inputs/coefficient_protocol.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_protocol.json",
+      "sha256": "5b56e07e47cde65dbc4fe7fec97e4fb7e894271c14748b104cb5b9e9bee60910"
+    },
+    "inputs/coefficient_sensitivity_summary.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_sensitivity_summary.csv",
+      "sha256": "ce6be8bc0272c0c3e0f4431746c38f3cb999c92a4a1e91be28e5943c0d892ccf"
+    },
+    "inputs/energy_boundary_diagnostic.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/energy_boundary_diagnostic.csv",
+      "sha256": "809505bd2bff4b6e6ea1cefde31dfdc8a7287038408a185cea7fb29d77511a40"
+    },
+    "inputs/final_relocation_verification.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/final_relocation_verification.json",
+      "sha256": "4fa1ceeaf938111fa98c1bfb14eecfff771c0c5621444afe6cd107b46e59d2d9"
+    },
+    "inputs/gate_analysis_summary.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/gate_analysis_summary.json",
+      "sha256": "02099a94e8e5281d03b89d1fce80b7611432f3ad820a47cc0e7609b047fdb6ea"
+    },
+    "inputs/gate_candidate_audit.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/gate_candidate_audit.csv",
+      "sha256": "231082bfa877e9f36019086dc7f7c00dee1833f1f99a2adc1ce381a534c29004"
+    },
+    "inputs/gate_cost_ledger.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/gate_cost_ledger.json",
+      "sha256": "2114b37589c215d28cf3e19a03d081300cb078a48c61780dfb5b7de078e03be4"
+    },
+    "inputs/gate_fine_reference_audit.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/gate_fine_reference_audit.csv",
+      "sha256": "136ba0f113ec4f946dfbcf0d852206ed7165ffa6f992b478942b308c091b907a"
+    },
+    "inputs/gate_independent_audit.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/gate_independent_audit.json",
+      "sha256": "b112c2df63ddb6ac5b7ccbfc7f01f4832f7a739fca65f3df9ea3f2dab40295ac"
+    },
+    "inputs/gate_protocol.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/gate_protocol.json",
+      "sha256": "9a59eadf004dcb77b75c9698a3f25d813aca9fe2c9a1a92581c3ba77d2f06b0e"
+    },
+    "inputs/gate_reference_metrics.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/gate_reference_metrics.csv",
+      "sha256": "06e95669766433e7f4fe572967b7a39898fa30f53d91a9db23ff5d9f9afc2f20"
+    },
+    "inputs/gate_summary.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/gate_summary.csv",
+      "sha256": "260c74546496c7d29072bc7b270bf950c12951effb643942c91dd16c915d5c26"
+    },
+    "inputs/INDEX.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/INDEX.json",
+      "sha256": "247ddc0bb45532c3937e86d11d4965ecce6872a824f6fa8d888701fd0dff9961"
+    },
+    "inputs/M1_challenge_decisions.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_challenge_decisions.csv",
+      "sha256": "44090104ae7613468bcf3469eb656025125da74fe22e14c6a84264b0e3c9dad0"
+    },
+    "inputs/M1_challenge_reference_96.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_challenge_reference_96.csv",
+      "sha256": "88dad8568fbbb8c2b1783c272a1b7d126306816f0f819aa01e3580dfbc5a83f4"
+    },
+    "inputs/M1_decision_audit.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_decision_audit.csv",
+      "sha256": "eb0958ae76a589af778441a8f98739809e8230f1d153882c1aac343319488d7e"
+    },
+    "inputs/M1_development_750.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_development_750.csv",
+      "sha256": "262c6b0c896bea9879b994b77850a58f37ec2bf3bae161e88527f88d8f92d0ee"
+    },
+    "inputs/M1_frozen_buffers.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_frozen_buffers.json",
+      "sha256": "e7f941622ea17d9d54b680b814f73a19fb7bed1f11b8e0016d4eb0d02eb124bd"
+    },
+    "inputs/M1_frozen_candidate_grid.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_frozen_candidate_grid.csv",
+      "sha256": "f6cd75eef7e71beb0932d040bd6472f4578e43d4bb7758b65610f4b71acf00e8"
+    },
+    "inputs/M1_frozen_logistic_predictions.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_frozen_logistic_predictions.csv",
+      "sha256": "2fb6ae488b48f5fed29d3c01987a21e3f4e16af55fe6724009adfce283465978"
+    },
+    "inputs/M1_frozen_surrogate_predictions.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_frozen_surrogate_predictions.csv",
+      "sha256": "56b51a8d6513d39bf842a962b0e963609f806976f5707c1398981a196d497d43"
+    },
+    "inputs/M1_half_flow_reference_30.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_half_flow_reference_30.csv",
+      "sha256": "4974b13c649491cff65b23221da91e6d5fcad2a93c7737f1d9d23b3255480a04"
+    },
+    "inputs/M1_logistic_model.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_logistic_model.json",
+      "sha256": "9f107ff6e8b3148db9a2878384d54c870e4d435edf23b67a9a0a0d85345a3999"
+    },
+    "inputs/M1_model_parameters.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_model_parameters.json",
+      "sha256": "ce6660aa80caa5e874c0adf8612cc39040258af1e533c647c13cace3d8277945"
+    },
+    "inputs/M1_reference_132.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M1_reference_132.csv",
+      "sha256": "f18d8b8864e67d35aeb2fc3e562c7ae2aa02bf30c10b482279198b93442aa398"
+    },
+    "inputs/M2_ablation_parameters.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_ablation_parameters.json",
+      "sha256": "5d8beb1019da6944a0bf70f4cda42f446ae84b5bb75db6dca1dbb546f8bc76d4"
+    },
+    "inputs/M2_boundary_summary.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_boundary_summary.csv",
+      "sha256": "ed18216fb9b3fb97ea7245fb79cd5d491d8c97c15264f77301131c31bdc60834"
+    },
+    "inputs/M2_classification_summary.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_classification_summary.csv",
+      "sha256": "f5ca668668a9c219065214874e2bd9f4da624951a877fb22c421e428b735304b"
+    },
+    "inputs/M2_cost_ledger.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_cost_ledger.csv",
+      "sha256": "93b876c4089a9f8424749e9733f2c2a1030acbaa3a7455c6558df748f4519e43"
+    },
+    "inputs/M2_frozen_candidate_grid.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_frozen_candidate_grid.csv",
+      "sha256": "6adb201d45e6021d2ab726b57e96fae6e20f8e1d7f7e097925c97acad24b94b1"
+    },
+    "inputs/M2_frozen_predictions.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_frozen_predictions.csv",
+      "sha256": "911185487534ae1f654b1048b4185d2410031c36a1c6d976ea56ae57287dccf5"
+    },
+    "inputs/M2_full_parameters.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_full_parameters.json",
+      "sha256": "6e0b7d2c2b8037e0b93a121fc1e416bc9254b85e131adb5c0f4c57f099567b24"
+    },
+    "inputs/M2_joined_decision_audit.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_joined_decision_audit.csv",
+      "sha256": "fda14f4162f6b5aeb60107a324375be2bb7a0a189e72951a494f0662c3b0cf38"
+    },
+    "inputs/M2_protocol.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_protocol.json",
+      "sha256": "cd7d1c527649b0c7d6d5bd658df95edf53a9727ab6217a35960b2983ae479a72"
+    },
+    "inputs/M2_reference_244.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_reference_244.csv",
+      "sha256": "148d04f87015c1e574b7e9c4ef8fb024fe2d0e37c2cd3bf3e5db0878856617cd"
+    },
+    "inputs/M2_search_queries.csv": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/M2_search_queries.csv",
+      "sha256": "1efef0b899739a3291f54109febd5e6bb449c916f4bfd5c322a974207b363bc5"
+    },
+    "inputs/portable_verification.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/portable_verification.json",
+      "sha256": "5f23446b3af27ea3f2d0dcf4689d50bd289161ea0c7820b2725437aa1cb0481c"
+    },
+    "inputs/program_completion.json": {
+      "source": "chinese_manuscript_integrated_20261017/supplement_data/program_completion.json",
+      "sha256": "7909f2631abea0636ed06cd57474c8c2b1d9746abeef07a4e006c39f6f22bcbf"
+    },
+    "legacy/controlled_models.py": {
+      "source": "model_revision_20261016/legacy/controlled_models.py",
+      "sha256": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382"
+    },
+    "legacy/M1_logistic_model.json": {
+      "source": "model_revision_20261016/legacy/M1_logistic_model.json",
+      "sha256": "9f107ff6e8b3148db9a2878384d54c870e4d435edf23b67a9a0a0d85345a3999"
+    },
+    "legacy/M2_full_parameters.json": {
+      "source": "model_revision_20261016/legacy/M2_full_parameters.json",
+      "sha256": "6e0b7d2c2b8037e0b93a121fc1e416bc9254b85e131adb5c0f4c57f099567b24"
+    },
+    "legacy/reference_runner.py": {
+      "source": "model_revision_20261016/legacy/reference_runner.py",
+      "sha256": "ada1bb3dc26cd37cb436ea06148e51660868c5f6c1322c7e5786fd3e04c74f47"
+    },
+    "legacy/THIRD_PARTY_NOTICES.md": {
+      "source": "model_revision_20261016/legacy/THIRD_PARTY_NOTICES.md",
+      "sha256": "a6c444a50d08fb7fdcc02da77abe52d7644a0f0c9c6f45105e5be16f4e09e36d"
+    },
+    "legacy/third_party/AUTHORS.md": {
+      "source": "model_revision_20261016/legacy/third_party/AUTHORS.md",
+      "sha256": "cfbd282ef1a46d3bec7428b0670e40dc9f6b94be0550b7a7333ca196e8317a98"
+    },
+    "legacy/third_party/LICENSE": {
+      "source": "model_revision_20261016/legacy/third_party/LICENSE",
+      "sha256": "979dfed37e9325764741e06237ad5629f5348e1a23701a58bb5efaf877509a3b"
+    },
+    "legacy/vendor/original_project/configs/surrogate_parameters.json": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/configs/surrogate_parameters.json",
+      "sha256": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96"
+    },
+    "legacy/vendor/original_project/src/aerbench/analysis.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/analysis.py",
+      "sha256": "e6b3ecb24623c9bdedf2475c8e18b9569c47379ee5abec9bde5591e24cd46198"
+    },
+    "legacy/vendor/original_project/src/aerbench/baselines.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/baselines.py",
+      "sha256": "720a8b925a510df497f1052c82406954cb6c3e2dd60a274985379a38d7d5a2db"
+    },
+    "legacy/vendor/original_project/src/aerbench/bsm1_validation.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/bsm1_validation.py",
+      "sha256": "154e6baec84b137dc7d0edb554e03b7a6f39d76eab57b3f5679e120ec0d3def2"
+    },
+    "legacy/vendor/original_project/src/aerbench/classification.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/classification.py",
+      "sha256": "aa367a1f95db4376aff30a177e1d05a9b898610cffaef4f974ba746e28ac7aff"
+    },
+    "legacy/vendor/original_project/src/aerbench/config.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/config.py",
+      "sha256": "7c0ff3b95e288cf51c7c39582bb4cb93f15e9b316546993e189ea5174cb1fa1a"
+    },
+    "legacy/vendor/original_project/src/aerbench/configuration.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/configuration.py",
+      "sha256": "6c9a78f7f78dc25522ad1dcc594ae56970cb14d959d910dfd67ccedefcf24961"
+    },
+    "legacy/vendor/original_project/src/aerbench/controllers.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/controllers.py",
+      "sha256": "8c638363e83f17611c69e09c48e6629530d0d60d48433d1b6a32bd0dd8d00f92"
+    },
+    "legacy/vendor/original_project/src/aerbench/dynamic_validation.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/dynamic_validation.py",
+      "sha256": "fe6fdf0a868308c3f426b820da871da59f9050ad2c7b0d0444990d78952b5725"
+    },
+    "legacy/vendor/original_project/src/aerbench/fixed_aeration.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/fixed_aeration.py",
+      "sha256": "f8db294e002e1d502b9055eaf122d52a678dbb42fb93f9f1626585f420f28b94"
+    },
+    "legacy/vendor/original_project/src/aerbench/heldout_runner.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/heldout_runner.py",
+      "sha256": "3caa70c3f9a74b6cf24679619beff38fc6bd611fe7595cc7f25fb9a61942fb77"
+    },
+    "legacy/vendor/original_project/src/aerbench/heldout_validation.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/heldout_validation.py",
+      "sha256": "b9a5a6bb929a29cc0d6f9ffe98b32685431054185f8610dd4997503c7545c33d"
+    },
+    "legacy/vendor/original_project/src/aerbench/large_scale_screening.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/large_scale_screening.py",
+      "sha256": "9e9dd966ac628c9a82988c82d418617094d6dc99633de2eeea0136b57a993214"
+    },
+    "legacy/vendor/original_project/src/aerbench/metrics.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/metrics.py",
+      "sha256": "49e85c1d4f3600af29c18d1443922645ef40f238e6ac33de136e6889e64d7f9e"
+    },
+    "legacy/vendor/original_project/src/aerbench/numerics.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/numerics.py",
+      "sha256": "778d49faf2c292c2db48b5bb99321955c7cb2ea3e1a93391089fdbdbde45b83b"
+    },
+    "legacy/vendor/original_project/src/aerbench/plotting.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/plotting.py",
+      "sha256": "6b97269af60e2edefe9ed55b77f18ee14d8f180b2419c23d265d93b70657a0ad"
+    },
+    "legacy/vendor/original_project/src/aerbench/provenance.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/provenance.py",
+      "sha256": "926ccb90f6ff9bae53917ed133880099bc7c7deedaf433cd730f8d4f97ca58a5"
+    },
+    "legacy/vendor/original_project/src/aerbench/risk_cue.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/risk_cue.py",
+      "sha256": "32841a083aef07ccb598c289d8213b7613cbbebcd1d382de0feead7d061ea5b8"
+    },
+    "legacy/vendor/original_project/src/aerbench/screening.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/screening.py",
+      "sha256": "79f8884f0508ac46379c424f1ac496cc9250513af0be80aada36f42b98e915af"
+    },
+    "legacy/vendor/original_project/src/aerbench/simulation.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/simulation.py",
+      "sha256": "8fcaa0bad0f37ec39a7b9f4fff4b291f388d686ab9948fdce6e615bda1fb525b"
+    },
+    "legacy/vendor/original_project/src/aerbench/steady_conditions.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/steady_conditions.py",
+      "sha256": "6e3f71bb54b4557bd9aebb7282db2784576da658b92e1ae421e1547636533f11"
+    },
+    "legacy/vendor/original_project/src/aerbench/surrogate.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/surrogate.py",
+      "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d"
+    },
+    "legacy/vendor/original_project/src/aerbench/timebase.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/timebase.py",
+      "sha256": "fc512d8b2c46133ee40d63a6ec7d764da16dfd4b094920efe24c2cc9276100c4"
+    },
+    "legacy/vendor/original_project/src/aerbench/timing_benchmark.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/timing_benchmark.py",
+      "sha256": "3043b4f36e92c1736a32ffd1106330cbea0503cd533ec158350510f84c99d9b6"
+    },
+    "legacy/vendor/original_project/src/aerbench/tuning.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/tuning.py",
+      "sha256": "6e248c323e374e7f39745d38e6950c79b53176adfa611e6e814b2487d62f926b"
+    },
+    "legacy/vendor/original_project/src/aerbench/uncertainty.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/uncertainty.py",
+      "sha256": "bc650d4ff7a511deca4ec9ea2574b3f49322e10aaa77ed6a8bfdfc56d530a6bc"
+    },
+    "legacy/vendor/original_project/src/aerbench/utils.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/utils.py",
+      "sha256": "4a72664e7fe381a8a9ca7ca0fb35aa7d4e0857ec3e3d74648996dae1e6e04159"
+    },
+    "legacy/vendor/original_project/src/aerbench/__init__.py": {
+      "source": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/__init__.py",
+      "sha256": "1558eaa2275e8c3bef89663cb499d25860fd9ce35020a36108ea070fceb0a94f"
+    },
+    "inputs/historical_initialization.json": {
+      "source": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/results/calibration/surrogate_parameters_fitted_frozen.json",
+      "sha256": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96"
+    },
+    "requirements-lock.txt": {
+      "source": "model_revision_20261016/requirements-lock.txt",
+      "sha256": "a1f4e60d34098669e1ae8c8694efb25aaa75d85fc6aadd7c27eba0a83c88e135"
+    }
+  }
+}

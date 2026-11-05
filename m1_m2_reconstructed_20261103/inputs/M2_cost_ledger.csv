@@ -1,0 +1,15 @@
+operation,seconds,scope
+full_fit_at_4,9.140331899980083,"three predefined starts, reused 750 labels"
+no_oxygen_demand_feedback_fit_at_4,0.27161709999199957,"three predefined starts, reused 750 labels"
+logistic_basic_fit_at_2,0.01414650003425777,three starts; threshold labels derived from existing 750 development peaks
+logistic_basic_fit_at_3,0.012384400004521012,three starts; threshold labels derived from existing 750 development peaks
+logistic_basic_fit_at_4,0.012003200012259185,three starts; threshold labels derived from existing 750 development peaks
+logistic_basic_fit_at_5,0.011811900069005787,three starts; threshold labels derived from existing 750 development peaks
+logistic_basic_fit_at_6,0.011809400049969554,three starts; threshold labels derived from existing 750 development peaks
+logistic_shared_closure_fit_at_2,0.029750899993814528,three starts; threshold labels derived from existing 750 development peaks
+logistic_shared_closure_fit_at_3,0.01708290004171431,three starts; threshold labels derived from existing 750 development peaks
+logistic_shared_closure_fit_at_4,0.01815420005004853,three starts; threshold labels derived from existing 750 development peaks
+logistic_shared_closure_fit_at_5,0.01853449991904199,three starts; threshold labels derived from existing 750 development peaks
+logistic_shared_closure_fit_at_6,0.017747400095686316,three starts; threshold labels derived from existing 750 development peaks
+fresh_main_244_kernel_sum,11921.141730199335,"parallel per-case kernel sum, not serial wall time"
+fresh_halfminute_8_kernel_sum,439.8301289998926,post-reference numerical diagnostic; parallel per-case sum

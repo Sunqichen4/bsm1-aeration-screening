@@ -1,0 +1,12 @@
+{
+  "freeze_sha256": "c5a5aa2e6ea73d2c0b143d1d011529d4d1b4b89dec29fba293dcbf0283f43965",
+  "main_timestep_min": 1.0,
+  "half_timestep_min": 0.5,
+  "expected_count": 6,
+  "compared_count": 6,
+  "maximum_absolute_peak_difference": 0.0003785371935398629,
+  "label_change_count": 0,
+  "complete": true,
+  "result_role": "independent_half_step_numerical_check_main_labels_not_replaced",
+  "expected_evaluation_samples_per_case": 20160
+}

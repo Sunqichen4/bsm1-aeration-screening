@@ -1,0 +1,93 @@
+[
+  {
+    "evidence_path": "source_evidence/historical_surrogate.py",
+    "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "size_bytes": 11562,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/historical_parameter_config.json",
+    "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/configs/surrogate_parameters.json",
+    "sha256": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96",
+    "size_bytes": 10974,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/historical_calibration.py",
+    "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/scripts/run_baseline_calibration.py",
+    "sha256": "56deebac8108804fa3859453f55f59573d5b2d04a00a588523b70c904b2fb9e8",
+    "size_bytes": 14088,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/historical_fitted_frozen.json",
+    "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/results/calibration/surrogate_parameters_fitted_frozen.json",
+    "sha256": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96",
+    "size_bytes": 10974,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/historical_model_description.py",
+    "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/scripts/build_eti_revised_manuscript.py",
+    "sha256": "eef98b1b5c8087bb1e7ae69ee562ac03d897e9ecdbca1049570c8c746c6af2d8",
+    "size_bytes": 61771,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/M2_controlled_models.py",
+    "workspace_source_path": "model_revision_20261016/legacy/controlled_models.py",
+    "sha256": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+    "size_bytes": 26927,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/M1_model_parameters.json",
+    "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/M1_model_parameters.json",
+    "sha256": "ce6660aa80caa5e874c0adf8612cc39040258af1e533c647c13cace3d8277945",
+    "size_bytes": 2985,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/M2_full_parameters.json",
+    "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/M2_full_parameters.json",
+    "sha256": "6e0b7d2c2b8037e0b93a121fc1e416bc9254b85e131adb5c0f4c57f099567b24",
+    "size_bytes": 4699,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/M2_protocol.json",
+    "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/M2_protocol.json",
+    "sha256": "cd7d1c527649b0c7d6d5bd658df95edf53a9727ab6217a35960b2983ae479a72",
+    "size_bytes": 6180,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/coefficient_parameter_provenance.csv",
+    "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_parameter_provenance.csv",
+    "sha256": "c5b811c027c2b6cec72721fae1366e71c3e8d28163c16e84cf2e3c07c827430a",
+    "size_bytes": 8943,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/coefficient_protocol.json",
+    "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_protocol.json",
+    "sha256": "5b56e07e47cde65dbc4fe7fec97e4fb7e894271c14748b104cb5b9e9bee60910",
+    "size_bytes": 2890,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/coefficient_completion.json",
+    "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_completion.json",
+    "sha256": "b857bbdede071a88367978c8d8a944c594a3889f7c25058377442fc48a2d67d3",
+    "size_bytes": 623,
+    "copy_verification": "byte_identical"
+  },
+  {
+    "evidence_path": "source_evidence/coefficient_sensitivity_summary.csv",
+    "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_sensitivity_summary.csv",
+    "sha256": "ce6be8bc0272c0c3e0f4431746c38f3cb999c92a4a1e91be28e5943c0d892ccf",
+    "size_bytes": 3771,
+    "copy_verification": "byte_identical"
+  }
+]

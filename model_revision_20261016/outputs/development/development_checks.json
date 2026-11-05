@@ -1,0 +1,7 @@
+{
+  "no_nonfinite": true,
+  "critical_clips_zero": true,
+  "steady_finite_max_difference": 0.00015973773262700774,
+  "selected_optimizer_success": true,
+  "pass": true
+}

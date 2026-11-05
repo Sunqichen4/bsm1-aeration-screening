@@ -1,0 +1,131 @@
+{
+  "version": "M3_continuous_reparameterized_20261016",
+  "stage": "development_protocol_before_new_reference_labels",
+  "development_information": "Only existing 750 cases; continuous SNH_max_eval. Development exploration and baseline fits precede final prospective freeze and are disclosed.",
+  "old_test_role": "The old 244 and 96 cases are not independent tests for M3 and are excluded from training and new primary evaluation.",
+  "target": "native BSM1 effluent NH4 maximum over [60,67), mg N/L",
+  "seed": 20261016,
+  "process_objective": "unweighted continuous peak squared error; residual divided by 4 mg N/L, a constant scaling only",
+  "process_starts": 3,
+  "max_nfev": 1000,
+  "bounds": {
+    "tau_h": [
+      2.0,
+      24.0
+    ],
+    "ammonia_activity": [
+      0.2,
+      25.0
+    ],
+    "k_oa": [
+      0.2,
+      8.0
+    ],
+    "oxygen_gain": [
+      0.1,
+      1.5
+    ],
+    "ss_to_nh": [
+      0.0,
+      0.1
+    ],
+    "oxygen_per_ammonia": [
+      0.1,
+      3.0
+    ]
+  },
+  "fixed_removal_cap_mgN_L_h": 40.0,
+  "canonical_nh4_factor": 4.8,
+  "fixed_oxygen_per_ammonia": 0.5208333333333334,
+  "process_models": [
+    "full_calibrated",
+    "full_fixed_ratio",
+    "no_feedback"
+  ],
+  "causal_ablation_pair": [
+    "full_fixed_ratio",
+    "no_feedback"
+  ],
+  "effective_dimensions": {
+    "full_calibrated": 6,
+    "full_fixed_ratio": 5,
+    "no_feedback": 5
+  },
+  "rho_profile_grid": [
+    0.1,
+    0.25,
+    0.5208333333333334,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "profile_interpretation": "Reoptimized development loss; not a confidence interval or physical identification.",
+  "finite_prediction": {
+    "method": "RK4",
+    "dt_minutes": 1.0,
+    "warmup_days": 60.0,
+    "eval_days": 7.0,
+    "samples": 10080,
+    "alignment": "step_start_[60,67)"
+  },
+  "statistical_supervision": "Both regression baselines see the identical 750 continuous peaks; only L and alpha*KLa are learned input features.",
+  "statistical_selection": "Three development scenario leave-one-group-out CV; transformations fitted within training folds only.",
+  "new_conditions": [
+    {
+      "load": 0.22,
+      "q": 0.4
+    },
+    {
+      "load": 0.22,
+      "q": 0.85
+    },
+    {
+      "load": 0.48,
+      "q": 0.4
+    },
+    {
+      "load": 0.48,
+      "q": 0.85
+    },
+    {
+      "load": 0.78,
+      "q": 0.4
+    },
+    {
+      "load": 0.78,
+      "q": 0.85
+    }
+  ],
+  "new_alpha_rule": "alpha=0.7+0.3*L+q*(1-(0.7+0.3*L)); all within joint training hull; six new constant conditions, 15C.",
+  "fixed_coarse_kla": [
+    40,
+    100,
+    160,
+    220,
+    300,
+    400,
+    520
+  ],
+  "prediction_boundary_grid": {
+    "start": 40,
+    "stop": 520,
+    "step": 2
+  },
+  "extra_candidates": "Union of first compliant dense-grid KLa minus/plus 2 for five new models, clipped to [40,520], excluding coarse. If >8 extras, take 8 rounded equally spaced order indices. Thus at most 15 candidates per condition. Selection uses frozen predictions only.",
+  "primary_evaluation": "Report coarse and prediction-enriched strata separately; condition is design unit. Raw concentration RMSE/MAE, false releases/rejections, boundary and frozen gate are distinct metrics.",
+  "gate": "Post-fit development max absolute peak residual b; direct compliant if prediction+b<4; direct noncompliant if prediction-b>4; otherwise reference. Joint/feature out-of-domain always reference. This is an empirical buffer, not a probability guarantee. All candidates receive independent scientific references for auditing.",
+  "reference": {
+    "native": "bsm2-python==0.0.16 BSM1OL",
+    "dt_minutes": 1.0,
+    "total_days": 67,
+    "window": "output_endpoint_60_le_t_lt_67",
+    "fresh_instances": true,
+    "workers": 4
+  },
+  "half_step_checks": "One prespecified candidate per new condition: closest full_calibrated predicted peak to 4, tie by KLa. 0.5-minute native recomputation after main references, with same pre-frozen identities.",
+  "no_post_test_adaptation": true,
+  "engineering_ranges_are_not_physiological_priors": true,
+  "historical_contextual_model": "Original M2 parameters are evaluated on the same new candidates as legacy_M2_binary; it keeps binary supervision and is not an equal-continuous-supervision baseline. Its displayed Gate uses the new common concentration-buffer wrapper, not the original KLa Gate. It does not select new boundary candidates.",
+  "development_exploration": "outputs/statistical_development and outputs/development_exploratory_01 retain earlier development-only runs. No new reference labels existed; final selected fits are rerun under strict source-hash binding."
+}

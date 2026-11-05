@@ -1,0 +1,187 @@
+{
+  "models": [
+    "full",
+    "no_oxygen_demand_feedback"
+  ],
+  "fit_names": [
+    "tau_h",
+    "mu_a",
+    "k_oa",
+    "oxygen_gain",
+    "ss_to_nh",
+    "nitrification_rate_cap",
+    "nh4_nitrification_factor"
+  ],
+  "bounds": {
+    "tau_h": [
+      2.0,
+      24.0
+    ],
+    "mu_a": [
+      0.2,
+      2.5
+    ],
+    "k_oa": [
+      0.2,
+      8.0
+    ],
+    "oxygen_gain": [
+      0.1,
+      1.5
+    ],
+    "ss_to_nh": [
+      0.0,
+      0.1
+    ],
+    "nitrification_rate_cap": [
+      0.2,
+      4.0
+    ],
+    "nh4_nitrification_factor": [
+      1.0,
+      10.0
+    ]
+  },
+  "seed": 20261014,
+  "n_starts": 3,
+  "max_nfev": 800,
+  "initialization": "normalized_bounds_midpoint_then_two_uniform_starts",
+  "random_start_interval_fraction": [
+    0.05,
+    0.95
+  ],
+  "probability_temperature_mgN_L": 0.5,
+  "nh4_limit_mgN_L": 4.0,
+  "objective": "unweighted_Brier_mean_squared_probability_error",
+  "optimizer": {
+    "method": "trf",
+    "ftol": 1e-07,
+    "xtol": 1e-08,
+    "gtol": 1e-07,
+    "diff_step": 1e-06
+  },
+  "final_ode_timestep_min": 1.0,
+  "warmup_days": 60.0,
+  "eval_days": 7.0,
+  "equivalence_tolerance_mgN_L": 0.001,
+  "near_bound_fraction": 1e-05,
+  "fixed_biomass_tau_a_h": 120.0,
+  "prior_source": "Original JWPE_article_clean_package/src/aerbench/surrogate.py, SurrogateParams literal defaults; no calibrated parameter JSON loaded. The fixed normalized biomass response and scales are historical BSM1-derived empirical information shared by both process models.",
+  "study_id": "local_oxygen_demand_feedback_and_constraint_reuse_20261014_v1",
+  "created_utc": "2026-10-14T07:41:26.492880+00:00",
+  "fit_seed": 20261014,
+  "development_cases": 750,
+  "development_path": "D:\\论文\\1\\revision_experiments_20261013\\results\\development_750.csv",
+  "base_project": "D:\\论文\\1\\aeration_benchmark_revision_bsm1_energy_fixed_complete\\aeration_benchmark_revision\\JWPE_article_clean_package",
+  "new_conditions": [
+    {
+      "name": "s_l10_a80",
+      "load_coordinate": 0.1,
+      "oxygen_transfer_factor": 0.8
+    },
+    {
+      "name": "s_l10_a95",
+      "load_coordinate": 0.1,
+      "oxygen_transfer_factor": 0.95
+    },
+    {
+      "name": "s_l35_a80",
+      "load_coordinate": 0.35,
+      "oxygen_transfer_factor": 0.8
+    },
+    {
+      "name": "s_l35_a95",
+      "load_coordinate": 0.35,
+      "oxygen_transfer_factor": 0.95
+    },
+    {
+      "name": "s_l55_a80",
+      "load_coordinate": 0.55,
+      "oxygen_transfer_factor": 0.8
+    },
+    {
+      "name": "s_l55_a95",
+      "load_coordinate": 0.55,
+      "oxygen_transfer_factor": 0.95
+    },
+    {
+      "name": "s_l70_a80",
+      "load_coordinate": 0.7,
+      "oxygen_transfer_factor": 0.8
+    },
+    {
+      "name": "s_l70_a95",
+      "load_coordinate": 0.7,
+      "oxygen_transfer_factor": 0.95
+    }
+  ],
+  "coarse_kla_values": [
+    40,
+    60,
+    80,
+    100,
+    120,
+    140,
+    160,
+    180,
+    200,
+    220,
+    240,
+    260,
+    280,
+    300,
+    320,
+    340,
+    360,
+    380,
+    400,
+    420,
+    440,
+    460,
+    480,
+    500,
+    520
+  ],
+  "dense_offsets_from_each_predicted_upper": [
+    -6.0,
+    -2.0,
+    2.0,
+    6.0
+  ],
+  "dense_selection_models": [
+    "full",
+    "no_oxygen_demand_feedback",
+    "logistic_basic",
+    "logistic_shared_closure"
+  ],
+  "primary_nh4_limit": 4.0,
+  "secondary_thresholds_mgN_L": [
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0
+  ],
+  "nh4_limit": 4.0,
+  "bsm1_timestep_min": 1.0,
+  "surrogate_timestep_min": 1.0,
+  "reference_eval_window": "native step right endpoints [60,67); matches first-round reference",
+  "tempmodel": false,
+  "temperature_scope": "constant native 15C influent; tempmodel=False disables the state balance, not kinetic temperature compensation",
+  "random_order_seed": 20261014,
+  "audit_workers": 4,
+  "primary_control": "delete only -0.4*r_h -2.5*r_a from the SO balance; retain all other rates, states, shared closures and assumptions",
+  "ablation_scope": "conditional value of oxygen-demand feedback inside this empirical model; ablation deliberately omits oxygen demand and is not a physical replacement",
+  "historical_information": "fixed shared biomass closure and fixed assumptions retain historical information; two process models share it exactly; shared-closure logistic receives its XH/XA targets",
+  "causal_scope": "controlled local feedback contrast, not universal architectural or mechanism-versus-statistics causality",
+  "loss": "mean squared probability residual (Brier); process probability sigmoid((4-SNH)/0.5), logistic expit(linear standardized features)",
+  "fit_policy": "3 predefined starts; max 800 nfev/start; minimum converged development loss; no test-driven model choice",
+  "secondary_policy": "coarse 200 cases only. Process parameters fit once at 4; never refit for 2,3,5,6. Logistic separately fits each threshold from the same already available 750 development peak concentrations; extra supervision and fitting reported",
+  "raw_outputs": "primary screening classification and coarse/dense boundary localization; guard does not erase raw errors",
+  "query_policy": "offline replay of frozen predictions and newly paid references; only queried values reach callbacks; counts are hypothetical deployment queries, not new integrations or serial wall-time savings",
+  "deployment_policy": "joint-condition outside domain uses full reference grid; guided-only search is a separately named diagnostic comparison",
+  "statistics": "8 predetermined condition clusters, descriptive paired differences; grid points and thresholds are correlated and not independent experimental replicates",
+  "numerical_gate": "each process model: all 750 finite RK4 versus training steady predictions; 1 vs 0.5 minute audit on predicted boundaries; count all projection interventions",
+  "study_cost": "all new candidates independently reference simulated, including dense points, plus separately counted half-minute audits; historical 750 not newly simulated",
+  "manuscript_modified": false
+}

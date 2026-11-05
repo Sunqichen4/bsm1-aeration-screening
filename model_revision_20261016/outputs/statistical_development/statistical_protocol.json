@@ -1,0 +1,124 @@
+{
+  "allowed_input_columns": [
+    "load_coordinate",
+    "oxygen_transfer_factor",
+    "kla"
+  ],
+  "derived_features": [
+    "load_coordinate",
+    "oxygen_transfer_factor * kla"
+  ],
+  "continuous_target": "SNH_max_eval",
+  "target_transform": "none; raw mg N/L",
+  "selection_metric": "unweighted mean of three scenario MSEs after nonnegative clipping",
+  "scaling": "population mean/std fitted on training fold only; zero std replaced with 1",
+  "polynomial_scaling": "standardize inputs, then standardize polynomial terms within training fold",
+  "intercept": "polynomial: unpenalized using target/term centering; RBF: fixed training-target mean plus centered-target KRR",
+  "kernel": "exp(-squared_standardized_distance / (2 * length_scale**2))",
+  "ridge_objectives": {
+    "poly_ridge": "sum squared residuals + penalty * squared coefficient norm",
+    "rbf_kernel_ridge": "sum squared centered-target residuals + penalty * squared RKHS norm"
+  },
+  "polynomial_grid": [
+    {
+      "degree": 1,
+      "penalty": 1e-06
+    },
+    {
+      "degree": 1,
+      "penalty": 0.001
+    },
+    {
+      "degree": 1,
+      "penalty": 1.0
+    },
+    {
+      "degree": 1,
+      "penalty": 100.0
+    },
+    {
+      "degree": 2,
+      "penalty": 1e-06
+    },
+    {
+      "degree": 2,
+      "penalty": 0.001
+    },
+    {
+      "degree": 2,
+      "penalty": 1.0
+    },
+    {
+      "degree": 2,
+      "penalty": 100.0
+    },
+    {
+      "degree": 3,
+      "penalty": 1e-06
+    },
+    {
+      "degree": 3,
+      "penalty": 0.001
+    },
+    {
+      "degree": 3,
+      "penalty": 1.0
+    },
+    {
+      "degree": 3,
+      "penalty": 100.0
+    }
+  ],
+  "rbf_grid": [
+    {
+      "length_scale": 0.3,
+      "penalty": 1e-06
+    },
+    {
+      "length_scale": 0.3,
+      "penalty": 0.001
+    },
+    {
+      "length_scale": 0.3,
+      "penalty": 1.0
+    },
+    {
+      "length_scale": 1.0,
+      "penalty": 1e-06
+    },
+    {
+      "length_scale": 1.0,
+      "penalty": 0.001
+    },
+    {
+      "length_scale": 1.0,
+      "penalty": 1.0
+    },
+    {
+      "length_scale": 3.0,
+      "penalty": 1e-06
+    },
+    {
+      "length_scale": 3.0,
+      "penalty": 0.001
+    },
+    {
+      "length_scale": 3.0,
+      "penalty": 1.0
+    }
+  ],
+  "tie_break": "first in predefined grid",
+  "nonnegative_prediction_clip": true,
+  "clip_counts_recorded": "each validation fold and final training predictions",
+  "development_scenarios": [
+    "baseline",
+    "high_load",
+    "low_oxygen_transfer"
+  ],
+  "development_rows": 750,
+  "evaluation_data_access": "none; function only consumes supplied development frame",
+  "seed": 20261016,
+  "randomness": "none",
+  "historical_M1_logistic": "binary-supervision historical baseline, not equal continuous supervision",
+  "total_seconds": 0.3466290999986086
+}

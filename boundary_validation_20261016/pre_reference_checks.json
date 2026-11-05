@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "source_M3_freeze_sha256": "c5a5aa2e6ea73d2c0b143d1d011529d4d1b4b89dec29fba293dcbf0283f43965",
+  "model_sha256": "fa635d9814cba79fd1f5c28d4b16eb6871432db777079aec2ae8f0cd05871ca7",
+  "gates_sha256": "717c4f62646e88cc0c7e3208ed0702017ec9e4164bc879b18454e579e1b7a5b2",
+  "n_candidates": 120,
+  "n_conditions": 6,
+  "primary_count": 108,
+  "enriched_count": 12,
+  "half_count": 12,
+  "old_M3_input_duplicates": [],
+  "physical_duplicates": 0,
+  "critical_NH4_DO_clips": 0,
+  "steady_finite_max_abs_difference": 0.00015494750326716655,
+  "finite_prediction_wall_seconds": 26.461907099999735,
+  "new_reference_labels_read": false
+}

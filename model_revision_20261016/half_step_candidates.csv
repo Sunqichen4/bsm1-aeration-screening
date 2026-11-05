@@ -1,0 +1,7 @@
+candidate_id,scenario,load_coordinate,oxygen_transfer_factor,kla,effective_kla,grid_kind,selection_reason
+m3_0004,m3_n01_l0.22_q0.40,0.22,0.8596,202.0,173.63920000000002,prediction_enriched,union_prediction_boundary_plus_minus_2
+m3_0019,m3_n02_l0.22_q0.85,0.22,0.9649,180.0,173.682,prediction_enriched,union_prediction_boundary_plus_minus_2
+m3_0035,m3_n03_l0.48_q0.40,0.48,0.9064,204.0,184.9056,prediction_enriched,union_prediction_boundary_plus_minus_2
+m3_0049,m3_n04_l0.48_q0.85,0.48,0.9766,188.0,183.6008,prediction_enriched,union_prediction_boundary_plus_minus_2
+m3_0066,m3_n05_l0.78_q0.40,0.78,0.9603999999999999,204.0,195.92159999999998,prediction_enriched,union_prediction_boundary_plus_minus_2
+m3_0081,m3_n06_l0.78_q0.85,0.78,0.9901,198.0,196.03979999999999,prediction_enriched,union_prediction_boundary_plus_minus_2

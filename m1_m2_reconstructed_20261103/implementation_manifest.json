@@ -1,0 +1,8 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "files": {
+    "reproduce.py": "1d68364b4f375488a94e562dcf71fada5718c9461f1e63b605b8b1feb68b8262",
+    "README.md": "43c4e8aa4b2ab558d8a8ce6cecf48a8add0e8c364db9a637e47051f540f5fc11",
+    "tests/test_reconstruction.py": "2ef7a8dab788199cf48ca864fedecc74cb68c28d7a3dfd39e8f1860c8f243ceb"
+  }
+}

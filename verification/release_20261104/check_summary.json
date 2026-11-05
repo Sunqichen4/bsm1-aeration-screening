@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "extended": true,
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "checks": [
+    {
+      "check": "release_integrity",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.6166
+    },
+    {
+      "check": "m1_m2_integrity",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 13.0441
+    },
+    {
+      "check": "m1_m2_tables",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 1.3721
+    },
+    {
+      "check": "m1_m2_tests",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 7.6387
+    },
+    {
+      "check": "m3_m3b_replay",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 65.4724
+    },
+    {
+      "check": "input_guard_tests",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.1993
+    },
+    {
+      "check": "m1_prediction",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 3.8873
+    },
+    {
+      "check": "m2_full_prediction",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 4.725
+    },
+    {
+      "check": "m2_ablated_prediction",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 4.1028
+    },
+    {
+      "check": "m1_gate_replay",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 4.4106
+    },
+    {
+      "check": "native_reference_example",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 42.4204
+    }
+  ],
+  "checks_planned": 11,
+  "scope": "Release integrity; current replay and tests. Extended mode adds surrogate integrations, Gate replay, and one fresh constant-condition native reference. Historical dynamic, sensitivity, timing and all native batches are not rerun.",
+  "fitting_executed": false,
+  "fresh_native_reference_executed": true
+}

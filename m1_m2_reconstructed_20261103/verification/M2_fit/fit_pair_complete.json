@@ -1,0 +1,13 @@
+{
+  "design_sha256": "1a49d1dccf61ff2fbaae42cb399d9fdfbb78fe44679d01901d0f55336625c851",
+  "models": {
+    "full": {
+      "eligible_for_new_predictions": true,
+      "fit_runtime_seconds": 13.147963399998844
+    },
+    "no_oxygen_demand_feedback": {
+      "eligible_for_new_predictions": true,
+      "fit_runtime_seconds": 0.5159855999518186
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "pairs": 540,
+  "maximum_absolute_peak_difference": 0.0,
+  "maximum_buffer_difference": 0.0,
+  "differences": {
+    "raw_compliant": 0,
+    "in_joint_domain": 0,
+    "in_feature_domain": 0,
+    "direct_release": 0,
+    "direct_reject": 0,
+    "recheck": 0
+  },
+  "all_peak_raw_and_gate_values_identical": true
+}

@@ -1,0 +1,40 @@
+{
+  "model": "no_oxygen_demand_feedback",
+  "cases": 750,
+  "dt_minutes": 1.0,
+  "warmup_days": 60.0,
+  "eval_days": 7.0,
+  "finite_prediction_elapsed_seconds": 17.37857410009019,
+  "max_abs_SNH_difference": 0.00012399903936533008,
+  "mean_abs_SNH_difference": 2.874588759732166e-05,
+  "n_steady_finite_label_disagreements": 0,
+  "n_ode_label_errors": 10,
+  "total_lower_clips": 0,
+  "total_upper_clips": 0,
+  "state_clips": {
+    "XH": {
+      "lower": 0,
+      "upper": 0
+    },
+    "SS": {
+      "lower": 0,
+      "upper": 0
+    },
+    "XA": {
+      "lower": 0,
+      "upper": 0
+    },
+    "SNO": {
+      "lower": 0,
+      "upper": 0
+    },
+    "SNH": {
+      "lower": 0,
+      "upper": 0
+    },
+    "SO": {
+      "lower": 0,
+      "upper": 0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "audited_at_utc": "2026-10-15T03:26:14.228138+00:00",
+  "status": "PASS",
+  "audit_scope": "integrity and independent calculation checks; scientific error counts reported separately",
+  "audit_source_sha256": "3860e60ec28031b6e8903d4f04be5cc54a327fc09471bbef49ad38761a5e5a93",
+  "freeze_sha256": "d6e8dd569a50348dbd2263e98ec8f00ec7804428b4e76b37d028818a65923812",
+  "checkpoints_verified": 96,
+  "fine_checkpoints_verified": 8,
+  "all_started_after_freeze": true,
+  "unchanged_gate_recomputed_exactly": true,
+  "actual_inputs_match_frozen_applicability_hashes": true,
+  "actual_input_temperature_15C": true,
+  "original_frozen_inputs_hashes_verified": true,
+  "candidate_labels_not_in_gate_inputs": true,
+  "surrogate_numerics": {
+    "scope": "postfreeze diagnostic on all fixed candidates; no decision changes",
+    "cases": 96,
+    "label_changes": 0,
+    "peak_max_absolute_difference": 1.5831744804017944e-09,
+    "mean_max_absolute_difference": 1.727286758068658e-09,
+    "fine_lower_clips": 0,
+    "fine_upper_clips": 0,
+    "original_lower_clips": 0,
+    "original_upper_clips": 0
+  },
+  "fine_solver_warning_count": 0,
+  "fine_negative_evaluation_concentration_count": 0,
+  "limitations": [
+    "prespecified finite grid, not independent random trials",
+    "native internal clipping not instrumented",
+    "timing is parallel audit cost, not serial speedup",
+    "zero observed raw false releases does not exercise their capture"
+  ]
+}

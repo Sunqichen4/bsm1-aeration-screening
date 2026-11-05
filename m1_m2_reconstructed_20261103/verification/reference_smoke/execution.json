@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "reference-smoke",
+    "--output",
+    "verification/reference_smoke"
+  ],
+  "elapsed_seconds": 63.707628400065005,
+  "new_outputs_only": true,
+  "success": true
+}

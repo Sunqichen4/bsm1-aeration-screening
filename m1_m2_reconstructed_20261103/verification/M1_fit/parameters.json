@@ -1,0 +1,64 @@
+{
+  "protocol": "reconstructed_M1_historical_initialization_plus_two_normalized_gaussian_0.1_perturbations_v1",
+  "historical_perturbation_code_recovered": false,
+  "seed": 20261013,
+  "parameters": {
+    "tau_h": 3.106746786484001,
+    "mu_h": 0.75,
+    "mu_a": 2.499999923878061,
+    "k_s": 30.0,
+    "k_nh": 1.0,
+    "k_oh": 0.35,
+    "k_oa": 6.80164450922926,
+    "hill_n": 2.0,
+    "so_sat": 8.0,
+    "oxygen_gain": 1.4999999846406857,
+    "y_no": 3.0,
+    "ss_to_nh": 0.09999999999999999,
+    "nitrification_rate_cap": 2.1572224483870084,
+    "nh4_nitrification_factor": 9.999999999963734,
+    "biomass_tau_h": 120.0,
+    "biomass_tau_a": 120.00439340692897,
+    "xh_reference": 1200.0,
+    "xa_reference": 534.0,
+    "bsm1_xba_asymptote": 152.5,
+    "bsm1_xba_logistic_slope": 0.08,
+    "bsm1_xba_logistic_midpoint": 123.7,
+    "xh_oxygen_response_weight": 0.018,
+    "biomass_load_exponent": 0.5,
+    "biomass_temperature_exponent": 1.0
+  },
+  "selected_start": 1,
+  "runs": [
+    {
+      "start": 0,
+      "success": true,
+      "nfev": 185,
+      "loss": 0.0027652437948432434,
+      "jacobian_rank": 6
+    },
+    {
+      "start": 1,
+      "success": true,
+      "nfev": 166,
+      "loss": 0.0027652437642737638,
+      "jacobian_rank": 6
+    },
+    {
+      "start": 2,
+      "success": true,
+      "nfev": 143,
+      "loss": 0.0027652438161407792,
+      "jacobian_rank": 6
+    }
+  ],
+  "finite_audit": {
+    "max_abs_steady_finite_difference": 7.578982924094646e-05,
+    "label_disagreements": 0,
+    "lower_clips": 0,
+    "upper_clips": 0
+  },
+  "max_abs_development_peak_difference_from_frozen": 0.00012393138634436696,
+  "development_classification_differences_from_frozen": 0,
+  "scope": "new explicitly reconstructed initialization protocol, not an exact historical optimizer replay; frozen publication parameters remain authoritative"
+}

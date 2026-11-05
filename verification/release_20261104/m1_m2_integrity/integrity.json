@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checked_copied_files": 81,
+  "failures": [],
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "numba": "0.65.1",
+    "bsm2-python": "0.0.16"
+  },
+  "scope": "copied frozen evidence and retained scientific sources; no historical release recovery claimed"
+}

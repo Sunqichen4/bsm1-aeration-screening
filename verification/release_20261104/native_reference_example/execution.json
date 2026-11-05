@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "reference-smoke",
+    "--output",
+    "D:\\论文\\1\\_github_preparation_20261104\\clean_release_extended\\native_reference_example"
+  ],
+  "elapsed_seconds": 41.43369159999929,
+  "new_outputs_only": true,
+  "success": true
+}

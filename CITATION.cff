@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the associated author manuscript and the specific repository release used. The public release URL and DOI are not yet assigned."
+type: software
+title: "Research code and data for decision-oriented aeration screening in activated sludge systems"
+version: "2026.11.04-staging"
+authors:
+  - family-names: Guo
+    given-names: Xifeng
+  - family-names: Sun
+    given-names: Qichen
+  - family-names: Chen
+    given-names: Cong
+  - family-names: Wang
+    given-names: Changtao
+  - family-names: Yuan
+    given-names: Baolong
+preferred-citation:
+  type: unpublished
+  title: "Decision-oriented aeration screening in activated sludge systems: comparing mechanism-inspired and statistical models with targeted BSM1 verification"
+  authors:
+    - family-names: Guo
+      given-names: Xifeng
+    - family-names: Sun
+      given-names: Qichen
+    - family-names: Chen
+      given-names: Cong
+    - family-names: Wang
+      given-names: Changtao
+    - family-names: Yuan
+      given-names: Baolong
+  year: 2026

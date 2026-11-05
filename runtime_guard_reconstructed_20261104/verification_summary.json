@@ -1,0 +1,61 @@
+{
+  "implementation": "runtime-routing-reconstructed-20261104-v1",
+  "tests_passed": 10,
+  "example_results": [
+    {
+      "example": "constant_in_scope",
+      "exit_code": 0,
+      "report": {
+        "implementation": "runtime-routing-reconstructed-20261104-v1",
+        "status": "in_scope",
+        "reasons": [],
+        "reference_executed": false,
+        "final_compliant": null,
+        "required_action": "apply_frozen_model_and_verification_rule",
+        "rows_checked": 2,
+        "columns_checked": 22,
+        "effective_kla_d_1": 171.0,
+        "in_joint_condition_hull": true,
+        "in_model_feature_hull": true,
+        "numerical_comparison_atol": 1e-09
+      }
+    },
+    {
+      "example": "cold_dynamic_fallback",
+      "exit_code": 0,
+      "report": {
+        "implementation": "runtime-routing-reconstructed-20261104-v1",
+        "status": "fallback_required",
+        "reasons": [
+          "time_varying_inputs:SS",
+          "temperature_outside_fixed_15_degC_scope",
+          "outside_declared_constant_load_family:SS,TEMP"
+        ],
+        "reference_executed": false,
+        "final_compliant": null,
+        "required_action": "run_fresh_successful_native_BSM1_before_final_decision",
+        "rows_checked": 2,
+        "columns_checked": 22,
+        "effective_kla_d_1": 171.0,
+        "in_joint_condition_hull": true,
+        "in_model_feature_hull": true,
+        "numerical_comparison_atol": 1e-09
+      }
+    },
+    {
+      "example": "invalid_units",
+      "exit_code": 2,
+      "report": {
+        "implementation": "runtime-routing-reconstructed-20261104-v1",
+        "status": "invalid_input",
+        "reasons": [
+          "units_must_match_explicit_native_schema"
+        ],
+        "reference_executed": false,
+        "final_compliant": null,
+        "required_action": "stop_and_correct_input"
+      }
+    }
+  ],
+  "scope": "New input checks and routing only; no reference execution or scientific labels; not the original historical adapter"
+}

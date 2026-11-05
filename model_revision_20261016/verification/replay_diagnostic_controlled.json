@@ -1,0 +1,98 @@
+{
+  "baseline_parser_thread_experiment": [
+    {
+      "phase": "threads_set_before_imports",
+      "parser": "default_parser",
+      "model": "poly_ridge",
+      "maximum_error": 5.329070518200751e-15,
+      "case": "m3_0064",
+      "classification_differences": 0
+    },
+    {
+      "phase": "threads_set_before_imports",
+      "parser": "default_parser",
+      "model": "rbf_kernel_ridge",
+      "maximum_error": 1.0244548320770264e-08,
+      "case": "m3_0064",
+      "classification_differences": 0
+    },
+    {
+      "phase": "threads_set_before_imports",
+      "parser": "round_trip_parser",
+      "model": "poly_ridge",
+      "maximum_error": 0.0,
+      "case": "m3_0001",
+      "classification_differences": 0
+    },
+    {
+      "phase": "threads_set_before_imports",
+      "parser": "round_trip_parser",
+      "model": "rbf_kernel_ridge",
+      "maximum_error": 0.0,
+      "case": "m3_0001",
+      "classification_differences": 0
+    }
+  ],
+  "all_540_round_trip_and_thread1": [
+    {
+      "model": "full_calibrated",
+      "cases": 90,
+      "maximum_error": 0.0,
+      "case": "m3_0001"
+    },
+    {
+      "model": "full_fixed_ratio",
+      "cases": 90,
+      "maximum_error": 0.0,
+      "case": "m3_0001"
+    },
+    {
+      "model": "legacy_M2_binary",
+      "cases": 90,
+      "maximum_error": 0.0,
+      "case": "m3_0001"
+    },
+    {
+      "model": "no_feedback",
+      "cases": 90,
+      "maximum_error": 0.0,
+      "case": "m3_0001"
+    },
+    {
+      "model": "poly_ridge",
+      "cases": 90,
+      "maximum_error": 0.0,
+      "case": "m3_0001"
+    },
+    {
+      "model": "rbf_kernel_ridge",
+      "cases": 90,
+      "maximum_error": 0.0,
+      "case": "m3_0001"
+    }
+  ],
+  "all_540_maximum_error": 0.0,
+  "blas": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "E:\\conda\\envs\\torch25\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-4bb64bb73b19ae7523581172b5c4a821.dll",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "E:\\conda\\envs\\torch25\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-48c358d105077551cc9cc3ba79387ed5.dll",
+      "version": "0.3.29.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "rbf_max_absolute_weight": 8820228.647022849
+}

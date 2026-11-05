@@ -1,0 +1,11 @@
+{
+Traceback (most recent call last):
+  "passed": false,
+  "role": "post_freeze_relocation_and_prediction_replay_no_fit_no_new_native_labels",
+  "copied_directory": "D:\\论文\\1\\model_revision_20261016\\.runtime_cache\\relocation smoke\\复制程序"
+}
+  File "D:\论文\1\model_revision_20261016\verification\portability_check.py", line 52, in <module>
+    main()
+  File "D:\论文\1\model_revision_20261016\verification\portability_check.py", line 49, in main
+    raise RuntimeError("Relocation audit failed; inspect portability_validation.json")
+RuntimeError: Relocation audit failed; inspect portability_validation.json

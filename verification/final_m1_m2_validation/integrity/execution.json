@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "verify",
+    "--output",
+    "D:/论文/1/_delivery_work_20261103/final_m1_m2_validation/integrity"
+  ],
+  "elapsed_seconds": 0.7469126998912543,
+  "new_outputs_only": true,
+  "success": true
+}

@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "reproduce",
+    "--output",
+    "D:\\论文\\1\\_github_preparation_20261104\\clean_release_extended\\m1_m2_tables"
+  ],
+  "elapsed_seconds": 0.6712876000001415,
+  "new_outputs_only": true,
+  "success": true
+}

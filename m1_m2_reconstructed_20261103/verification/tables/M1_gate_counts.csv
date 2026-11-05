@@ -1,0 +1,13 @@
+method,buffer_policy,guard,cases,false_acceptances,false_rejections,reference_requests,final_false_acceptances,final_false_rejections
+logistic,guard_sensitivity,0.0,132,0,1,72,0,0
+logistic,guard_sensitivity,10.0,132,0,1,82,0,0
+logistic,guard_sensitivity,20.0,132,0,1,88,0,0
+logistic,guard_sensitivity,40.0,132,0,1,92,0,0
+logistic,individual,20.0,132,0,1,88,0,0
+logistic,shared,20.0,132,0,1,88,0,0
+six_state,guard_sensitivity,0.0,132,0,18,74,0,0
+six_state,guard_sensitivity,10.0,132,0,18,84,0,0
+six_state,guard_sensitivity,20.0,132,0,18,88,0,0
+six_state,guard_sensitivity,40.0,132,0,18,92,0,0
+six_state,individual,20.0,132,0,18,88,0,0
+six_state,shared,20.0,132,0,18,88,0,0

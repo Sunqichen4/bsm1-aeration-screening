@@ -1,0 +1,8 @@
+{
+  "candidate_id": "s_l10_a80_K0040",
+  "new_BSM1_integrations": 1,
+  "SNH_peak_abs_difference": 0.0,
+  "SNH_mean_abs_difference": 0.0,
+  "classification_matches": true,
+  "scope": "one constant-condition native integration; not all historical raw trajectories"
+}

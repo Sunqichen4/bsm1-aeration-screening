@@ -1,0 +1,14 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "predict",
+    "--version",
+    "M1",
+    "--all-cases",
+    "--output",
+    "D:/论文/1/_delivery_work_20261103/interface_fix/M1_predictions"
+  ],
+  "elapsed_seconds": 3.252566199982539,
+  "new_outputs_only": true,
+  "success": true
+}

@@ -1,0 +1,501 @@
+{
+  "audit_date_local": "2026-11-03",
+  "operation": "read-only provenance search, byte-identical evidence extraction and summary; no new simulation or refit",
+  "status": "READY_WITH_WARNINGS",
+  "conclusion": "Historical code use and exclusion from the listed optimizations are verified. An independent literature source, derivation, or estimation record for the four numbers was not located within the searched retained material.",
+  "limits": [
+    "Filesystem timestamps and folder labels were not used to establish chronological origin.",
+    "The historical calibration completed_utc is metadata about a different eight-parameter calibration; it does not date the introduction or justify values of the four coefficients.",
+    "Search absence is limited to the retained scope listed in search_inventory.json; no claim that a record never existed.",
+    "This audit did not run new scientific simulations, refit coefficients, or verify every bibliography entry online."
+  ],
+  "search": {
+    "scope_roots": [
+      "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package",
+      "model_revision_20261016/legacy",
+      "boundary_validation_20261016/legacy",
+      "chinese_manuscript_integrated_20261017/supplement_data"
+    ],
+    "extensions": [
+      ".docx",
+      ".json",
+      ".md",
+      ".py",
+      ".txt"
+    ],
+    "files_searched": 1663,
+    "matches": 22,
+    "errors": [],
+    "search_pattern": "系数\\s*18|18[、,，].{0,20}0[.]25|18[.]0?\\s*\\*\\s*r_h|2[.]50?\\s*\\*\\s*r_a|substrate_h_consumption|oxygen_a_demand",
+    "docx_extraction": "Word document.xml paragraph text including equation text where stored as XML; OLE equation binaries were not interpreted"
+  },
+  "coefficient_records": [
+    {
+      "coefficient": "substrate_h_consumption",
+      "value": 18.0,
+      "unit_when_normalized_rate_in_h_inverse": "mg COD L^-1",
+      "term": "S_S balance: -18 r_H",
+      "earliest_traceable_layer": "retained historical original_project source; chronological first introduction cannot be established from available files",
+      "source_evidence": "source_evidence/historical_surrogate.py",
+      "source_line_1based": 207,
+      "receiving_state": "SS",
+      "provenance_status": "VERIFIED_HISTORICAL_USE; UNVERIFIED_ORIGINAL_BASIS",
+      "historical_25_point_optimized": false,
+      "current_M2_750_label_optimized": false,
+      "basis_record_found": false,
+      "valid_conclusion_scope": "Results for the tested empirical configuration and the reported fixed-parameter perturbations; no universal physical or stoichiometric interpretation."
+    },
+    {
+      "coefficient": "sno_h_sink",
+      "value": 0.25,
+      "unit_when_normalized_rate_in_h_inverse": "mg N L^-1",
+      "term": "S_NO balance: -0.25 r_H",
+      "earliest_traceable_layer": "retained historical original_project source; chronological first introduction cannot be established from available files",
+      "source_evidence": "source_evidence/historical_surrogate.py",
+      "source_line_1based": 213,
+      "receiving_state": "SNO",
+      "provenance_status": "VERIFIED_HISTORICAL_USE; UNVERIFIED_ORIGINAL_BASIS",
+      "historical_25_point_optimized": false,
+      "current_M2_750_label_optimized": false,
+      "basis_record_found": false,
+      "valid_conclusion_scope": "Results for the tested empirical configuration and the reported fixed-parameter perturbations; no universal physical or stoichiometric interpretation."
+    },
+    {
+      "coefficient": "oxygen_h_demand",
+      "value": 0.4,
+      "unit_when_normalized_rate_in_h_inverse": "mg O2 L^-1",
+      "term": "S_O balance: -0.40 r_H",
+      "earliest_traceable_layer": "retained historical original_project source; chronological first introduction cannot be established from available files",
+      "source_evidence": "source_evidence/historical_surrogate.py",
+      "source_line_1based": 214,
+      "receiving_state": "SO",
+      "provenance_status": "VERIFIED_HISTORICAL_USE; UNVERIFIED_ORIGINAL_BASIS",
+      "historical_25_point_optimized": false,
+      "current_M2_750_label_optimized": false,
+      "basis_record_found": false,
+      "valid_conclusion_scope": "Results for the tested empirical configuration and the reported fixed-parameter perturbations; no universal physical or stoichiometric interpretation."
+    },
+    {
+      "coefficient": "oxygen_a_demand",
+      "value": 2.5,
+      "unit_when_normalized_rate_in_h_inverse": "mg O2 L^-1",
+      "term": "S_O balance: -2.50 r_A",
+      "earliest_traceable_layer": "retained historical original_project source; chronological first introduction cannot be established from available files",
+      "source_evidence": "source_evidence/historical_surrogate.py",
+      "source_line_1based": 214,
+      "receiving_state": "SO",
+      "provenance_status": "VERIFIED_HISTORICAL_USE; UNVERIFIED_ORIGINAL_BASIS",
+      "historical_25_point_optimized": false,
+      "current_M2_750_label_optimized": false,
+      "basis_record_found": false,
+      "valid_conclusion_scope": "Results for the tested empirical configuration and the reported fixed-parameter perturbations; no universal physical or stoichiometric interpretation."
+    }
+  ],
+  "historical_calibration": {
+    "parameter_names": [
+      "tau_h",
+      "mu_a",
+      "k_oa",
+      "oxygen_gain",
+      "ss_to_nh",
+      "nitrification_rate_cap",
+      "nh4_nitrification_factor",
+      "biomass_tau_a"
+    ],
+    "n_calibration_points": 25,
+    "recorded_completed_utc": "2026-07-31T09:12:28.140388+00:00",
+    "four_constants_in_fit_names": false
+  },
+  "M1_calibration": {
+    "listed_config_parameters": [
+      "tau_h",
+      "mu_a",
+      "k_oa",
+      "oxygen_gain",
+      "ss_to_nh",
+      "nitrification_rate_cap",
+      "nh4_nitrification_factor",
+      "biomass_tau_a"
+    ],
+    "optimized_steady_parameters": [
+      "tau_h",
+      "mu_a",
+      "k_oa",
+      "oxygen_gain",
+      "ss_to_nh",
+      "nitrification_rate_cap",
+      "nh4_nitrification_factor"
+    ],
+    "four_constants_in_fit_names": false,
+    "source": "source_evidence/M1_model_parameters.json"
+  },
+  "M2_calibration": {
+    "fit_names": [
+      "tau_h",
+      "mu_a",
+      "k_oa",
+      "oxygen_gain",
+      "ss_to_nh",
+      "nitrification_rate_cap",
+      "nh4_nitrification_factor"
+    ],
+    "four_constants_in_fit_names": false,
+    "source": "source_evidence/M2_controlled_models.py"
+  },
+  "M3_scope_note": "The free-rho M3 formulation allows an effective oxygen-demand/removal ratio to vary; this provenance classification concerns the inherited M1/M2 literal coefficients and the default fixed ratio 2.5/4.8, not a claim that free-rho M3 always fixes the autotrophic oxygen coefficient at 2.5.",
+  "historical_protocol_hash_checks": {
+    "original_surrogate.py": {
+      "expected": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+      "observed": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+      "match": true,
+      "evidence_path": "source_evidence/historical_surrogate.py"
+    },
+    "historical_parameters.json": {
+      "expected": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96",
+      "observed": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96",
+      "match": true,
+      "evidence_path": "source_evidence/historical_parameter_config.json"
+    },
+    "historical_calibration.py": {
+      "expected": "56deebac8108804fa3859453f55f59573d5b2d04a00a588523b70c904b2fb9e8",
+      "observed": "56deebac8108804fa3859453f55f59573d5b2d04a00a588523b70c904b2fb9e8",
+      "match": true,
+      "evidence_path": "source_evidence/historical_calibration.py"
+    },
+    "full_parameters.json": {
+      "expected": "6e0b7d2c2b8037e0b93a121fc1e416bc9254b85e131adb5c0f4c57f099567b24",
+      "observed": "6e0b7d2c2b8037e0b93a121fc1e416bc9254b85e131adb5c0f4c57f099567b24",
+      "match": true,
+      "evidence_path": "source_evidence/M2_full_parameters.json"
+    },
+    "controlled_models.py": {
+      "expected": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+      "observed": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+      "match": true,
+      "evidence_path": "source_evidence/M2_controlled_models.py"
+    }
+  },
+  "retained_source_copies": [
+    {
+      "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/results_wej_heldout/source_snapshot/src/aerbench/surrogate.py",
+      "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+      "coefficient_lines": [
+        {
+          "line_1based": 207,
+          "text": "dSS = (influent.cod - SS) / tau - 18.0 * r_h"
+        },
+        {
+          "line_1based": 213,
+          "text": "dSNO = (2.0 - SNO) / tau + p.y_no * r_a - 0.25 * r_h"
+        },
+        {
+          "line_1based": 214,
+          "text": "dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a"
+        }
+      ]
+    },
+    {
+      "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/src/aerbench/surrogate.py",
+      "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+      "coefficient_lines": [
+        {
+          "line_1based": 207,
+          "text": "dSS = (influent.cod - SS) / tau - 18.0 * r_h"
+        },
+        {
+          "line_1based": 213,
+          "text": "dSNO = (2.0 - SNO) / tau + p.y_no * r_a - 0.25 * r_h"
+        },
+        {
+          "line_1based": 214,
+          "text": "dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a"
+        }
+      ]
+    },
+    {
+      "path": "boundary_validation_20261016/legacy/vendor/original_project/src/aerbench/surrogate.py",
+      "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+      "coefficient_lines": [
+        {
+          "line_1based": 207,
+          "text": "dSS = (influent.cod - SS) / tau - 18.0 * r_h"
+        },
+        {
+          "line_1based": 213,
+          "text": "dSNO = (2.0 - SNO) / tau + p.y_no * r_a - 0.25 * r_h"
+        },
+        {
+          "line_1based": 214,
+          "text": "dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a"
+        }
+      ]
+    },
+    {
+      "path": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/surrogate.py",
+      "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+      "coefficient_lines": [
+        {
+          "line_1based": 207,
+          "text": "dSS = (influent.cod - SS) / tau - 18.0 * r_h"
+        },
+        {
+          "line_1based": 213,
+          "text": "dSNO = (2.0 - SNO) / tau + p.y_no * r_a - 0.25 * r_h"
+        },
+        {
+          "line_1based": 214,
+          "text": "dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a"
+        }
+      ]
+    }
+  ],
+  "evidence_manifest": [
+    {
+      "evidence_path": "source_evidence/historical_surrogate.py",
+      "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/src/aerbench/surrogate.py",
+      "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+      "size_bytes": 11562,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/historical_parameter_config.json",
+      "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/configs/surrogate_parameters.json",
+      "sha256": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96",
+      "size_bytes": 10974,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/historical_calibration.py",
+      "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/scripts/run_baseline_calibration.py",
+      "sha256": "56deebac8108804fa3859453f55f59573d5b2d04a00a588523b70c904b2fb9e8",
+      "size_bytes": 14088,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/historical_fitted_frozen.json",
+      "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/results/calibration/surrogate_parameters_fitted_frozen.json",
+      "sha256": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96",
+      "size_bytes": 10974,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/historical_model_description.py",
+      "workspace_source_path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/scripts/build_eti_revised_manuscript.py",
+      "sha256": "eef98b1b5c8087bb1e7ae69ee562ac03d897e9ecdbca1049570c8c746c6af2d8",
+      "size_bytes": 61771,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/M2_controlled_models.py",
+      "workspace_source_path": "model_revision_20261016/legacy/controlled_models.py",
+      "sha256": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+      "size_bytes": 26927,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/M1_model_parameters.json",
+      "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/M1_model_parameters.json",
+      "sha256": "ce6660aa80caa5e874c0adf8612cc39040258af1e533c647c13cace3d8277945",
+      "size_bytes": 2985,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/M2_full_parameters.json",
+      "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/M2_full_parameters.json",
+      "sha256": "6e0b7d2c2b8037e0b93a121fc1e416bc9254b85e131adb5c0f4c57f099567b24",
+      "size_bytes": 4699,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/M2_protocol.json",
+      "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/M2_protocol.json",
+      "sha256": "cd7d1c527649b0c7d6d5bd658df95edf53a9727ab6217a35960b2983ae479a72",
+      "size_bytes": 6180,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/coefficient_parameter_provenance.csv",
+      "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_parameter_provenance.csv",
+      "sha256": "c5b811c027c2b6cec72721fae1366e71c3e8d28163c16e84cf2e3c07c827430a",
+      "size_bytes": 8943,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/coefficient_protocol.json",
+      "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_protocol.json",
+      "sha256": "5b56e07e47cde65dbc4fe7fec97e4fb7e894271c14748b104cb5b9e9bee60910",
+      "size_bytes": 2890,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/coefficient_completion.json",
+      "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_completion.json",
+      "sha256": "b857bbdede071a88367978c8d8a944c594a3889f7c25058377442fc48a2d67d3",
+      "size_bytes": 623,
+      "copy_verification": "byte_identical"
+    },
+    {
+      "evidence_path": "source_evidence/coefficient_sensitivity_summary.csv",
+      "workspace_source_path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_sensitivity_summary.csv",
+      "sha256": "ce6be8bc0272c0c3e0f4431746c38f3cb999c92a4a1e91be28e5943c0d892ccf",
+      "size_bytes": 3771,
+      "copy_verification": "byte_identical"
+    }
+  ],
+  "sensitivity_records": [
+    {
+      "variant": "baseline",
+      "coefficient": "baseline",
+      "multiplier": "1.0",
+      "false_release": "0",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "0",
+      "NH4_peak_RMSE_mgN_L": "5.966406211233147"
+    },
+    {
+      "variant": "substrate_h_consumption_x0.8",
+      "coefficient": "substrate_h_consumption",
+      "multiplier": "0.8",
+      "false_release": "0",
+      "conservative_rejection": "5",
+      "changed_labels_vs_baseline": "5",
+      "NH4_peak_RMSE_mgN_L": "6.174252785001527"
+    },
+    {
+      "variant": "substrate_h_consumption_x0.9",
+      "coefficient": "substrate_h_consumption",
+      "multiplier": "0.9",
+      "false_release": "0",
+      "conservative_rejection": "3",
+      "changed_labels_vs_baseline": "3",
+      "NH4_peak_RMSE_mgN_L": "6.066965014293438"
+    },
+    {
+      "variant": "substrate_h_consumption_x1.1",
+      "coefficient": "substrate_h_consumption",
+      "multiplier": "1.1",
+      "false_release": "4",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "4",
+      "NH4_peak_RMSE_mgN_L": "5.8726054813012825"
+    },
+    {
+      "variant": "substrate_h_consumption_x1.2",
+      "coefficient": "substrate_h_consumption",
+      "multiplier": "1.2",
+      "false_release": "6",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "6",
+      "NH4_peak_RMSE_mgN_L": "5.785579589447259"
+    },
+    {
+      "variant": "sno_h_sink_x0.8",
+      "coefficient": "sno_h_sink",
+      "multiplier": "0.8",
+      "false_release": "0",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "0",
+      "NH4_peak_RMSE_mgN_L": "5.966406211233147"
+    },
+    {
+      "variant": "sno_h_sink_x0.9",
+      "coefficient": "sno_h_sink",
+      "multiplier": "0.9",
+      "false_release": "0",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "0",
+      "NH4_peak_RMSE_mgN_L": "5.966406211233147"
+    },
+    {
+      "variant": "sno_h_sink_x1.1",
+      "coefficient": "sno_h_sink",
+      "multiplier": "1.1",
+      "false_release": "0",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "0",
+      "NH4_peak_RMSE_mgN_L": "5.966406211233147"
+    },
+    {
+      "variant": "sno_h_sink_x1.2",
+      "coefficient": "sno_h_sink",
+      "multiplier": "1.2",
+      "false_release": "0",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "0",
+      "NH4_peak_RMSE_mgN_L": "5.966406211233147"
+    },
+    {
+      "variant": "oxygen_h_demand_x0.8",
+      "coefficient": "oxygen_h_demand",
+      "multiplier": "0.8",
+      "false_release": "4",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "4",
+      "NH4_peak_RMSE_mgN_L": "5.995076457786374"
+    },
+    {
+      "variant": "oxygen_h_demand_x0.9",
+      "coefficient": "oxygen_h_demand",
+      "multiplier": "0.9",
+      "false_release": "3",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "3",
+      "NH4_peak_RMSE_mgN_L": "5.9801330231675545"
+    },
+    {
+      "variant": "oxygen_h_demand_x1.1",
+      "coefficient": "oxygen_h_demand",
+      "multiplier": "1.1",
+      "false_release": "0",
+      "conservative_rejection": "2",
+      "changed_labels_vs_baseline": "2",
+      "NH4_peak_RMSE_mgN_L": "5.95395430432484"
+    },
+    {
+      "variant": "oxygen_h_demand_x1.2",
+      "coefficient": "oxygen_h_demand",
+      "multiplier": "1.2",
+      "false_release": "0",
+      "conservative_rejection": "3",
+      "changed_labels_vs_baseline": "3",
+      "NH4_peak_RMSE_mgN_L": "5.9428363024555475"
+    },
+    {
+      "variant": "oxygen_a_demand_x0.8",
+      "coefficient": "oxygen_a_demand",
+      "multiplier": "0.8",
+      "false_release": "20",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "20",
+      "NH4_peak_RMSE_mgN_L": "6.65043637228545"
+    },
+    {
+      "variant": "oxygen_a_demand_x0.9",
+      "coefficient": "oxygen_a_demand",
+      "multiplier": "0.9",
+      "false_release": "16",
+      "conservative_rejection": "0",
+      "changed_labels_vs_baseline": "16",
+      "NH4_peak_RMSE_mgN_L": "6.259146327022056"
+    },
+    {
+      "variant": "oxygen_a_demand_x1.1",
+      "coefficient": "oxygen_a_demand",
+      "multiplier": "1.1",
+      "false_release": "0",
+      "conservative_rejection": "26",
+      "changed_labels_vs_baseline": "26",
+      "NH4_peak_RMSE_mgN_L": "5.88871856526495"
+    },
+    {
+      "variant": "oxygen_a_demand_x1.2",
+      "coefficient": "oxygen_a_demand",
+      "multiplier": "1.2",
+      "false_release": "0",
+      "conservative_rejection": "44",
+      "changed_labels_vs_baseline": "44",
+      "NH4_peak_RMSE_mgN_L": "6.128019741076044"
+    }
+  ],
+  "author_input_needed": "Only if the author wishes to claim an independent original source or estimated physiological coefficient: supply the original derivation, fitting log, lab record, or source citation. The existing scoped empirical conclusions do not require inventing such a source."
+}

@@ -1,0 +1,129 @@
+{
+  "version": "M3B",
+  "evidence_role": "small formal CSV/JSON copied without recalculation",
+  "full_source_and_trajectory_directory": "D:\\论文\\1\\boundary_validation_20261016",
+  "public_archive": false,
+  "large_npz_included": false,
+  "source_files": [
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\protocol.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\protocol.json",
+      "bytes": 4001,
+      "sha256": "5267222e16da6d092ea11f87af902eed429f2b660df08f0e4a5c7a233343aedc"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\design.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\design.json",
+      "bytes": 597,
+      "sha256": "653f64cff86098d6d5e3848223e9341a0849376810939bbc2097f9358da7d101"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\freeze.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\freeze.json",
+      "bytes": 9091,
+      "sha256": "4783d6f09a906dbba788eb2d888d49ec25f2c8363b47d71e245751bda27042b5"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\new_candidates.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\new_candidates.csv",
+      "bytes": 13458,
+      "sha256": "a5b14f6a4ac81f108fb6ec3eb7ecf692aa4732e79b6d8050181402200dca8429"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\frozen_predictions.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\frozen_predictions.csv",
+      "bytes": 260877,
+      "sha256": "567dea52e034012466e10491334ba89adb29b23f5c47b7f65e42a086119c14b2"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\reference_summary.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\reference_summary.csv",
+      "bytes": 53837,
+      "sha256": "1f9310af830f0b80a4eb40ce3f8ba3bb288f21dcabd1402acc049e2a0226fc21"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\metrics_overall.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\metrics_overall.csv",
+      "bytes": 2794,
+      "sha256": "ac6cbd618017b2c23d85e6b49c8cf0495a30e7345d7445f5503e67c3ed9ca1d1"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\metrics_by_condition.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\metrics_by_condition.csv",
+      "bytes": 16063,
+      "sha256": "23f10d8a5baf110a7b58fb63299295ef1e9a37047938dcc70c810bd50980834e"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\matched_pair_by_condition.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\matched_pair_by_condition.csv",
+      "bytes": 7403,
+      "sha256": "066c26704a5a6b6091ece1cf253c823544e056692090aa839ce18aedaeed7efd"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\near_threshold_metrics.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\near_threshold_metrics.csv",
+      "bytes": 6341,
+      "sha256": "a9d77e6e88c44b2d81359c05b757ac395c57413bbb50fbcb202feb11029e43ec"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\coverage_by_condition.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\coverage_by_condition.csv",
+      "bytes": 4244,
+      "sha256": "6f3ff9c91e65a8b473c3e0bd3d2c87244632dbc5cd539c0e3b8bd0cdaa0c67d1"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\observed_sign_changes.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\observed_sign_changes.csv",
+      "bytes": 3556,
+      "sha256": "acdf30de352fda63ba2e7f3baa9909565ff3cc37a19e04358c459d66b7dda63e"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\boundary_selection.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\boundary_selection.csv",
+      "bytes": 1310,
+      "sha256": "d13d5fdfcd11be067cbce32bd47a8191a620d7aba761541a781c7681ba327ac9"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\half_step_candidates.csv",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\half_step_candidates.csv",
+      "bytes": 1843,
+      "sha256": "bfd77fe0ca6b832fdb9467805f3800ff8a48b307d6b716c3142f6912aafd8154"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\reference_audit.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\reference_audit.json",
+      "bytes": 759,
+      "sha256": "e4f8aac53e0d0d1bb822b6342f936f0d65445c9cd8f66eb2ac1191b093be2b37"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\reference_execution.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\reference_execution.json",
+      "bytes": 854,
+      "sha256": "3410c8a6357a0a1b8d2fafc6319788b2cf36aef951234dd8cefb7f784130a382"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\portability_validation.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\portability_validation.json",
+      "bytes": 1804,
+      "sha256": "5bb82b148f5b6064ac5a83bfd313a13531718b9c84f17924503f5a8d30e7534b"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\independent_review.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\independent_review.json",
+      "bytes": 132363,
+      "sha256": "0525a103125e9d5985de9ff5cb95681d0a93ffa2459cbfb74a537ee21c73efe3"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\numerical\\half_step_diagnostics.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\numerical\\half_step_diagnostics.json",
+      "bytes": 434,
+      "sha256": "498449639d04a38076b6228ff20e476b3d6e02c256563cbbd9b45e8b2d7b6db4"
+    },
+    {
+      "source": "D:\\论文\\1\\boundary_validation_20261016\\numerical\\half_step_audit.json",
+      "destination": "D:\\论文\\1\\chinese_manuscript_integrated_20261017\\supplement_data\\m3b\\numerical\\half_step_audit.json",
+      "bytes": 1000,
+      "sha256": "261a4e5ed3f1358023657c6fba01198a08e305181c1c28c03add51aad0ef6281"
+    }
+  ]
+}

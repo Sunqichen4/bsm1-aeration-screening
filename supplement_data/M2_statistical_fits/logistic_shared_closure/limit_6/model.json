@@ -1,0 +1,36 @@
+{
+  "variant": "logistic_shared_closure",
+  "limit_mgN_L": 6.0,
+  "feature_names": [
+    "load_coordinate",
+    "effective_kla",
+    "shared_historical_XH_eq",
+    "shared_historical_XA_eq"
+  ],
+  "feature_mean": [
+    0.3333333333333333,
+    251.99999999999997,
+    1234.4334908935073,
+    477.6906749816247
+  ],
+  "feature_scale": [
+    0.4714045207910326,
+    132.7855413815827,
+    55.142070836408664,
+    231.38596817617946
+  ],
+  "coefficients": [
+    14.368713669391763,
+    -39.999999999988816,
+    39.99999999974155,
+    19.789758410443515,
+    39.99999999996126
+  ],
+  "selected_start": 0,
+  "training_cases": 750,
+  "loss": 0.0010388965294787116,
+  "fit_seconds": 0.017747400095686316,
+  "supervision": "threshold labels derived only from existing 750 development peaks",
+  "historical_information": "shared fixed empirical biomass closure",
+  "capacity_scope": "linear logistic basis; equal tuning cap is not equal model capacity"
+}

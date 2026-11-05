@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "n_predictions": 720,
+  "maximum_peak_difference": 0.0,
+  "checks": {
+    "predicted_peak": true,
+    "raw_compliant": true,
+    "buffer_mgN_L": true,
+    "in_joint_domain": true,
+    "in_feature_domain": true,
+    "direct_release": true,
+    "direct_reject": true,
+    "recheck": true
+  }
+}

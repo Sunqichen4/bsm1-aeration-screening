@@ -1,0 +1,16 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "predict",
+    "--version",
+    "M2",
+    "--model",
+    "no_oxygen_demand_feedback",
+    "--all-cases",
+    "--output",
+    "verification/M2_ablation_predictions"
+  ],
+  "elapsed_seconds": 4.613630200037733,
+  "new_outputs_only": true,
+  "success": true
+}

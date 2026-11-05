@@ -1,0 +1,12 @@
+{
+  "primary_scientific_integrations": 96,
+  "fine_scientific_integrations": 8,
+  "total_actual_scientific_integrations": 104,
+  "warmup_is_primary_candidate_not_extra": true,
+  "unique_primary_candidates_rechecked_by_any_policy": 80,
+  "primary_independent_direct_decision_audit": 16,
+  "per_model_reference_calls_are_not_additive_integrations": true,
+  "primary_kernel_seconds_sum": 3050.2333153000036,
+  "timing_scope": "parallel audit case-duration sum; not serial speedup",
+  "fine_kernel_seconds_sum": 435.79540949999864
+}
