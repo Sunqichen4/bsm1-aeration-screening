@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/historical_surrogate.py",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/historical_parameter_config.json",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/historical_calibration.py",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/historical_fitted_frozen.json",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/historical_model_description.py",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/M2_controlled_models.py",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/M1_model_parameters.json",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/M2_full_parameters.json",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/M2_protocol.json",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/coefficient_parameter_provenance.csv",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/coefficient_protocol.json",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/coefficient_completion.json",
+      "pass": true
+    },
+    {
+      "name": "evidence_sha256",
+      "path": "source_evidence/coefficient_sensitivity_summary.csv",
+      "pass": true
+    },
+    {
+      "name": "historical_protocol_hash_match",
+      "source": "original_surrogate.py",
+      "pass": true
+    },
+    {
+      "name": "historical_protocol_hash_match",
+      "source": "historical_parameters.json",
+      "pass": true
+    },
+    {
+      "name": "historical_protocol_hash_match",
+      "source": "historical_calibration.py",
+      "pass": true
+    },
+    {
+      "name": "historical_protocol_hash_match",
+      "source": "full_parameters.json",
+      "pass": true
+    },
+    {
+      "name": "historical_protocol_hash_match",
+      "source": "controlled_models.py",
+      "pass": true
+    },
+    {
+      "name": "historical_eight_fit_variables",
+      "pass": true
+    },
+    {
+      "name": "M1_fit_variables",
+      "pass": true
+    },
+    {
+      "name": "M2_seven_fit_variables",
+      "pass": true
+    },
+    {
+      "name": "historical_equation_location",
+      "line_1based": 207,
+      "pass": true
+    },
+    {
+      "name": "historical_equation_location",
+      "line_1based": 213,
+      "pass": true
+    },
+    {
+      "name": "historical_equation_location",
+      "line_1based": 214,
+      "pass": true
+    },
+    {
+      "name": "sensitivity_17_variants",
+      "pass": true
+    },
+    {
+      "name": "oxygen_a_x0.8_twenty_false_releases",
+      "pass": true
+    },
+    {
+      "name": "oxygen_a_x1.2_forty_four_rejections",
+      "pass": true
+    },
+    {
+      "name": "basis_not_fabricated",
+      "pass": true
+    }
+  ],
+  "new_scientific_simulations": 0,
+  "new_refits": 0,
+  "scope": "Evidence integrity and retained record consistency only; independent original coefficient basis remains unverified."
+}

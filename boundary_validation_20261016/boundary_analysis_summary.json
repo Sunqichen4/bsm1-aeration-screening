@@ -1,0 +1,42 @@
+{
+  "version": "M3B_descriptive_boundary_analysis_v1",
+  "created_at_utc": "2026-10-16T14:22:34.401292+00:00",
+  "analysis_source_sha256": "a74e340889b6e4043ab360879f6b6d8677d5ec9359d2d7ffe8e2a25f87604392",
+  "freeze_sha256": "4783d6f09a906dbba788eb2d888d49ec25f2c8363b47d71e245751bda27042b5",
+  "source_sha256": {
+    "new_candidates.csv": "a5b14f6a4ac81f108fb6ec3eb7ecf692aa4732e79b6d8050181402200dca8429",
+    "reference_summary.csv": "1f9310af830f0b80a4eb40ce3f8ba3bb288f21dcabd1402acc049e2a0226fc21",
+    "evaluation_joined.csv": "3a250a4dd58a7d00b4ac45a7e51e5d94873888ea2088cfb79b853a63a5d2a2a8",
+    "freeze.json": "4783d6f09a906dbba788eb2d888d49ec25f2c8363b47d71e245751bda27042b5",
+    "outputs/development/models.json": "fa635d9814cba79fd1f5c28d4b16eb6871432db777079aec2ae8f0cd05871ca7",
+    "outputs/development/gates.json": "717c4f62646e88cc0c7e3208ed0702017ec9e4164bc879b18454e579e1b7a5b2",
+    "metrics_overall.csv": "ac6cbd618017b2c23d85e6b49c8cf0495a30e7345d7445f5503e67c3ed9ca1d1"
+  },
+  "output_sha256": {
+    "coverage_by_condition.csv": "6f3ff9c91e65a8b473c3e0bd3d2c87244632dbc5cd539c0e3b8bd0cdaa0c67d1",
+    "observed_sign_changes.csv": "acdf30de352fda63ba2e7f3baa9909565ff3cc37a19e04358c459d66b7dda63e",
+    "near_threshold_metrics.csv": "a9d77e6e88c44b2d81359c05b757ac395c57413bbb50fbcb202feb11029e43ec",
+    "matched_pair_by_condition.csv": "066c26704a5a6b6091ece1cf253c823544e056692090aa839ce18aedaeed7efd",
+    "boundary_candidate_truth.csv": "f76217eba5bd77017cb4e01c61e1604bec6882e285e7b8380d77be291cad24b7"
+  },
+  "n_candidates": 120,
+  "n_conditions": 6,
+  "coarse_conditions_with_both_sides": 6,
+  "coarse_conditions_missing_a_side": [],
+  "windows_mgN_L": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "compliance_definition": "reference_peak <= 4 mg N/L",
+  "strict_sign_change_definition": "Adjacent sampled reference margins have a strictly negative product; zero is not a strict sign.",
+  "adjacency_definition": "Consecutive effective-KLa samples within each reported stratum, without monotonicity or interpolation.",
+  "nearest_distance_definition": "Absolute observed peak-minus-4 distance; absent sides yield null, never zero.",
+  "matched_pair_definition": "Fixed-ratio full and no-feedback both have five fitted parameters; differences are full minus no-feedback, descriptive only.",
+  "inference_limits": [
+    "Strata have different sampling rules and are reported separately.",
+    "Near-threshold subsets are defined by observed reference values; counts and errors are descriptive.",
+    "Coverage and sampled sign changes do not identify a continuous optimum or prove monotonicity.",
+    "No labels, parameters, Gates, conditions or candidates are changed by this analysis."
+  ]
+}

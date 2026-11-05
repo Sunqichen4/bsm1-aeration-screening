@@ -1,0 +1,40 @@
+{
+  "model": "full",
+  "cases": 750,
+  "dt_minutes": 1.0,
+  "warmup_days": 60.0,
+  "eval_days": 7.0,
+  "finite_prediction_elapsed_seconds": 22.162217299919575,
+  "max_abs_SNH_difference": 7.576144331444823e-05,
+  "mean_abs_SNH_difference": 1.655869871571188e-05,
+  "n_steady_finite_label_disagreements": 0,
+  "n_ode_label_errors": 2,
+  "total_lower_clips": 0,
+  "total_upper_clips": 0,
+  "state_clips": {
+    "XH": {
+      "lower": 0,
+      "upper": 0
+    },
+    "SS": {
+      "lower": 0,
+      "upper": 0
+    },
+    "XA": {
+      "lower": 0,
+      "upper": 0
+    },
+    "SNO": {
+      "lower": 0,
+      "upper": 0
+    },
+    "SNH": {
+      "lower": 0,
+      "upper": 0
+    },
+    "SO": {
+      "lower": 0,
+      "upper": 0
+    }
+  }
+}

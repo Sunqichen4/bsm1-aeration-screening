@@ -1,0 +1,28 @@
+{
+  "variant": "logistic_basic",
+  "limit_mgN_L": 3.0,
+  "feature_names": [
+    "load_coordinate",
+    "effective_kla"
+  ],
+  "feature_mean": [
+    0.3333333333333333,
+    251.99999999999997
+  ],
+  "feature_scale": [
+    0.4714045207910326,
+    132.7855413815827
+  ],
+  "coefficients": [
+    24.739300447113862,
+    -4.569190548006342,
+    39.999999998947736
+  ],
+  "selected_start": 1,
+  "training_cases": 750,
+  "loss": 0.0030288046971234214,
+  "fit_seconds": 0.012384400004521012,
+  "supervision": "threshold labels derived only from existing 750 development peaks",
+  "historical_information": "L and effective KLa only",
+  "capacity_scope": "linear logistic basis; equal tuning cap is not equal model capacity"
+}

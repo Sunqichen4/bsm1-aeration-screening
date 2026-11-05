@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "role": "post_freeze_relocation_and_prediction_replay_no_fit_no_new_native_labels",
+  "copied_directory": "D:\\论文\\1\\model_revision_20261016\\.runtime_cache\\relocation smoke 02\\复制程序",
+  "script_sha256": "6e7c93e423968a7746873f91aff441c59e4bae2ffc5c892395fec75bdbe90eec",
+  "results": [
+    {
+      "command": [
+        "fresh_reference.py",
+        ".",
+        "--audit"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"passed\": true,\n  \"freeze_sha256\": \"c5a5aa2e6ea73d2c0b143d1d011529d4d1b4b89dec29fba293dcbf0283f43965\",\n  \"audited_at_utc\": \"2026-10-16T13:31:52.127224+00:00\",\n  \"expected_count\": 90,\n  \"successful_count\": 90,\n  \"failed_count\": 0,\n  \"errors\": [],\n  \"old_label_imports\": false,\n  \"timestep_min\": 1.0,\n  \"expected_evaluation_samples_per_case\": 10080,\n  \"checks\": [\n    \"frozen_model_prediction_route_design_protocol_hashes\",\n    \"candidate_and_freeze_identity\",\n    \"native_source_hashes\",\n    \"raw_trajectory_hashes\",\n    \"full_candidate_coverage\",\n    \"raw_SNH_peak_mean_and_zero_violation\",\n    \"strict_endpoint_reporting_60_le_t_lt_67\",\n    \"native_influent_reconstruction_and_hash\",\n    \"all_saved_evaluation_metrics\",\n    \"summary_consistency\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "fresh_reference.py",
+        ".",
+        "--audit-half-step"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"passed\": true,\n  \"freeze_sha256\": \"c5a5aa2e6ea73d2c0b143d1d011529d4d1b4b89dec29fba293dcbf0283f43965\",\n  \"audited_at_utc\": \"2026-10-16T13:31:55.337332+00:00\",\n  \"expected_count\": 6,\n  \"successful_count\": 6,\n  \"failed_count\": 0,\n  \"errors\": [],\n  \"old_label_imports\": false,\n  \"timestep_min\": 0.5,\n  \"expected_evaluation_samples_per_case\": 20160,\n  \"checks\": [\n    \"frozen_model_prediction_route_design_protocol_hashes\",\n    \"candidate_and_freeze_identity\",\n    \"native_source_hashes\",\n    \"raw_trajectory_hashes\",\n    \"full_candidate_coverage\",\n    \"raw_SNH_peak_mean_and_zero_violation\",\n    \"strict_endpoint_reporting_60_le_t_lt_67\",\n    \"native_influent_reconstruction_and_hash\",\n    \"all_saved_evaluation_metrics\",\n    \"summary_consistency\",\n    \"frozen_half_ids_match_main_inputs\",\n    \"fresh_half_step_raw_labels\",\n    \"main_half_peak_and_label_differences\",\n    \"half_step_diagnostic_summary\"\n  ],\n  \"maximum_absolute_peak_difference\": 0.0003785371935398629,\n  \"label_change_count\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "-c",
+        "import run_study as s\nimport json,numpy as np,pandas as pd\nf=pd.read_csv(\"new_candidates.csv\",float_precision=\"round_trip\")\nm=s.read(s.ROOT/\"outputs/development/models.json\")\np=s.all_predict(f,m,finite=True)[[\"candidate_id\",\"model\",\"predicted_peak\"]]\nexpected=pd.read_csv(\"frozen_predictions.csv\",float_precision=\"round_trip\")\nz=p.merge(expected,on=[\"candidate_id\",\"model\"],validate=\"one_to_one\",suffixes=(\"_replay\",\"_frozen\"))\nerr=float(np.max(np.abs(z.predicted_peak_replay-z.predicted_peak_frozen)))\nraw_errors=int(((z.predicted_peak_replay<=4.)!=z.raw_compliant).sum())\nrelease=(z.predicted_peak_replay+z.buffer_mgN_L<4.)&z.in_joint_domain&z.in_feature_domain\nreject=(z.predicted_peak_replay-z.buffer_mgN_L>4.)&z.in_joint_domain&z.in_feature_domain\ngate_errors=int(((release!=z.direct_release)|(reject!=z.direct_reject)|((~(release|reject))!=z.recheck)).sum())\nprint(json.dumps({\"prediction_pairs\":len(z),\"maximum_absolute_difference\":err,\"raw_decision_differences\":raw_errors,\"gate_differences\":gate_errors,\"passed\":len(z)==540 and err<1e-9 and raw_errors==0 and gate_errors==0}))\nassert len(z)==540 and err<1e-9 and raw_errors==0 and gate_errors==0\n"
+      ],
+      "returncode": 0,
+      "stdout": "{\"prediction_pairs\": 540, \"maximum_absolute_difference\": 0.0, \"raw_decision_differences\": 0, \"gate_differences\": 0, \"passed\": true}\n",
+      "stderr": ""
+    }
+  ]
+}

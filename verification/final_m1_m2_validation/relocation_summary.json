@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "relocated_package": "m1_m2_reconstructed_20261103",
+  "commands": [
+    "verify",
+    "reproduce",
+    "predict --version M1 --all-cases"
+  ],
+  "source_and_implementation_byte_comparisons": {
+    "reproduce.py": true,
+    "README.md": true,
+    "tests/test_reconstruction.py": true,
+    "copied_source_manifest.json": true,
+    "implementation_manifest.json": true,
+    "implementation_reproduce.py": true,
+    "implementation_README.md": true,
+    "implementation_tests/test_reconstruction.py": true
+  },
+  "new_BSM1_integrations": 0,
+  "fitting_repeated": false,
+  "cache_excluded": true,
+  "S15_scope_checked": true,
+  "S15_scope_text": "M1 process and M2 logistic refitting use explicitly reconstructed initialization protocols; frozen paper results remain evidence and refits are saved separately.",
+  "interface_fix_verified": "interface_fix/interface_fix_validation.json",
+  "implementation_files_checked_again_after_interface_fix": true
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "saved-reference audit and frozen prediction/metric replay; no new native BSM1 runs or scientific refit",
+  "results": [
+    {
+      "study": "model_revision_20261016",
+      "exit_code": 0,
+      "elapsed_seconds": 34.24835970000095
+    },
+    {
+      "study": "boundary_validation_20261016",
+      "exit_code": 0,
+      "elapsed_seconds": 31.096356600000945
+    }
+  ]
+}

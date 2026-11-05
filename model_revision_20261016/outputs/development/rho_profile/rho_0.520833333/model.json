@@ -1,0 +1,113 @@
+{
+  "kind": "full_calibrated",
+  "values": [
+    14.643998436034876,
+    3.029010405197166,
+    7.999999999979139,
+    0.563255623870124,
+    0.09999999999990304,
+    0.5208333333333334
+  ],
+  "parameters": {
+    "tau_h": 14.643998436034876,
+    "ammonia_activity": 3.029010405197166,
+    "k_oa": 7.999999999979139,
+    "oxygen_gain": 0.563255623870124,
+    "ss_to_nh": 0.09999999999990304,
+    "oxygen_per_ammonia": 0.5208333333333334
+  },
+  "fit_names": [
+    "tau_h",
+    "ammonia_activity",
+    "k_oa",
+    "oxygen_gain",
+    "ss_to_nh"
+  ],
+  "effective_dimension": 5,
+  "selected_start": 1,
+  "training_mse": 9.995379923843787,
+  "training_rmse": 3.161547077594099,
+  "fit_seconds": 0.6466254999995726,
+  "supervision": "existing_development_continuous_NH4_peaks_only",
+  "n_training_cases": 750,
+  "fixed_cap": 40.0,
+  "canonical_kNA": 4.8,
+  "historical_biomass_prior": true,
+  "runs": [
+    {
+      "start": 0,
+      "initial_mse": 136.84295527547067,
+      "mse": 9.995379924687434,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 24,
+      "elapsed_seconds": 0.1916452000004938,
+      "normalized_solution": [
+        0.5747272540260957,
+        0.11407099009473028,
+        0.999999999998685,
+        0.3309008439929797,
+        0.9999999999988822
+      ],
+      "values": [
+        14.643999588574106,
+        3.028960554349311,
+        7.999999999989743,
+        0.5632611815901716,
+        0.09999999999988823,
+        0.5208333333333334
+      ]
+    },
+    {
+      "start": 1,
+      "initial_mse": 69.97212746174132,
+      "mse": 9.995379923843787,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 34,
+      "elapsed_seconds": 0.24332290000165813,
+      "normalized_solution": [
+        0.5747272016379489,
+        0.11407300020956314,
+        0.9999999999973256,
+        0.3308968741929457,
+        0.9999999999990303
+      ],
+      "values": [
+        14.643998436034876,
+        3.029010405197166,
+        7.999999999979139,
+        0.563255623870124,
+        0.09999999999990304,
+        0.5208333333333334
+      ]
+    },
+    {
+      "start": 2,
+      "initial_mse": 34.9737476678199,
+      "mse": 9.995379923852159,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 27,
+      "elapsed_seconds": 0.20720380000057048,
+      "normalized_solution": [
+        0.5747273299919186,
+        0.11407338974220244,
+        0.9999999999999635,
+        0.3308959166683835,
+        0.9999999999999845
+      ],
+      "values": [
+        14.644001259822208,
+        3.0290200656066206,
+        7.999999999999715,
+        0.5632542833357369,
+        0.09999999999999845,
+        0.5208333333333334
+      ]
+    }
+  ]
+}

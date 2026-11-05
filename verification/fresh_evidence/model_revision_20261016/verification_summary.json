@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "scope": "relocation, frozen hashes, raw saved reference audit, finite prediction and gate replay, metrics, lightweight tests; no new native reference integration or scientific refit",
+  "study": "model_revision_20261016",
+  "executable": "E:\\conda\\envs\\torch25\\python.exe",
+  "results": [
+    {
+      "stage": "main_audit",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "fresh_reference.py",
+        ".",
+        "--audit"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.929016900015995
+    },
+    {
+      "stage": "half_audit",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "fresh_reference.py",
+        ".",
+        "--audit-half-step"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.992910699918866
+    },
+    {
+      "stage": "prediction_replay",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-c",
+        "import run_study as s\nimport json,numpy as np,pandas as pd\nf=pd.read_csv(\"new_candidates.csv\",float_precision=\"round_trip\")\nm=s.read(s.ROOT/\"outputs/development/models.json\")\np=s.all_predict(f,m,finite=True)[[\"candidate_id\",\"model\",\"predicted_peak\"]]\ne=pd.read_csv(\"frozen_predictions.csv\",float_precision=\"round_trip\")\nz=p.merge(e,on=[\"candidate_id\",\"model\"],validate=\"one_to_one\",suffixes=(\"_replay\",\"_frozen\"))\nerr=float(np.max(np.abs(z.predicted_peak_replay-z.predicted_peak_frozen)))\nraw=int(((z.predicted_peak_replay<=4.)!=z.raw_compliant).sum())\nrelease=(z.predicted_peak_replay+z.buffer_mgN_L<4.)&z.in_joint_domain&z.in_feature_domain\nreject=(z.predicted_peak_replay-z.buffer_mgN_L>4.)&z.in_joint_domain&z.in_feature_domain\ngate=int(((release!=z.direct_release)|(reject!=z.direct_reject)|((~(release|reject))!=z.recheck)).sum())\nresult={\"prediction_pairs\":len(z),\"maximum_absolute_difference\":err,\"raw_decision_differences\":raw,\"gate_differences\":gate,\"passed\":len(z)==540 and err<1e-9 and raw==0 and gate==0}\nprint(json.dumps(result));assert result[\"passed\"]\n"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 81.95929159992374
+    },
+    {
+      "stage": "analysis",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "analyze_results.py",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.467651500133798
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=D:\\论文\\1\\_m3_delivery_verification_20261103\\fresh_evidence\\model_revision_20261016\\tests.xml"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 24.773043000139296
+    }
+  ],
+  "regenerated_preserved_outside_original_package": [
+    "analysis_summary.json",
+    "reference_audit.json",
+    "numerical/half_step_audit.json"
+  ],
+  "copied_package_restored": true,
+  "original_copy_identical": true,
+  "native_ODE_executed": false,
+  "models_refit": false
+}

@@ -1,0 +1,14 @@
+# New local runs and generated caches only. Historical tracked evidence is retained.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.runtime_cache/
+runtime_cache/
+runs/
+~$*
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

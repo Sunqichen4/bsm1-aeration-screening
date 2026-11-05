@@ -1,0 +1,27 @@
+{
+  "full_calibrated": {
+    "absolute_peak_buffer_mgN_L": 11.611538264062851,
+    "calibration": "maximum development absolute finite-peak residual; empirical only; no nominal coverage probability",
+    "n_calibration": 750
+  },
+  "full_fixed_ratio": {
+    "absolute_peak_buffer_mgN_L": 15.506975275260107,
+    "calibration": "maximum development absolute finite-peak residual; empirical only; no nominal coverage probability",
+    "n_calibration": 750
+  },
+  "no_feedback": {
+    "absolute_peak_buffer_mgN_L": 12.014708359625224,
+    "calibration": "maximum development absolute finite-peak residual; empirical only; no nominal coverage probability",
+    "n_calibration": 750
+  },
+  "poly_ridge": {
+    "absolute_peak_buffer_mgN_L": 18.647551514465896,
+    "calibration": "maximum development absolute finite-peak residual; empirical only; no nominal coverage probability",
+    "n_calibration": 750
+  },
+  "rbf_kernel_ridge": {
+    "absolute_peak_buffer_mgN_L": 8.820228675641225,
+    "calibration": "maximum development absolute finite-peak residual; empirical only; no nominal coverage probability",
+    "n_calibration": 750
+  }
+}

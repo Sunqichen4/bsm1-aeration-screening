@@ -1,0 +1,113 @@
+{
+  "kind": "full_calibrated",
+  "values": [
+    16.42604802456912,
+    3.4383233916277267,
+    7.999999999984954,
+    0.2706156367282956,
+    0.09999999999999075,
+    0.25
+  ],
+  "parameters": {
+    "tau_h": 16.42604802456912,
+    "ammonia_activity": 3.4383233916277267,
+    "k_oa": 7.999999999984954,
+    "oxygen_gain": 0.2706156367282956,
+    "ss_to_nh": 0.09999999999999075,
+    "oxygen_per_ammonia": 0.25
+  },
+  "fit_names": [
+    "tau_h",
+    "ammonia_activity",
+    "k_oa",
+    "oxygen_gain",
+    "ss_to_nh"
+  ],
+  "effective_dimension": 5,
+  "selected_start": 1,
+  "training_mse": 7.967776539709215,
+  "training_rmse": 2.8227250202081704,
+  "fit_seconds": 0.701887600000191,
+  "supervision": "existing_development_continuous_NH4_peaks_only",
+  "n_training_cases": 750,
+  "fixed_cap": 40.0,
+  "canonical_kNA": 4.8,
+  "historical_biomass_prior": true,
+  "runs": [
+    {
+      "start": 0,
+      "initial_mse": 159.9883798398918,
+      "mse": 7.967776539994277,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 28,
+      "elapsed_seconds": 0.22623050000038347,
+      "normalized_solution": [
+        0.6557289542277503,
+        0.1305771878903731,
+        0.9999999999557243,
+        0.12186874523045864,
+        0.9999999999754208
+      ],
+      "values": [
+        16.426036993010506,
+        3.438314259681253,
+        7.99999999965465,
+        0.2706162433226421,
+        0.09999999999754208,
+        0.25
+      ]
+    },
+    {
+      "start": 1,
+      "initial_mse": 117.89322818086693,
+      "mse": 7.967776539709215,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 29,
+      "elapsed_seconds": 0.24551939999946626,
+      "normalized_solution": [
+        0.6557294556622327,
+        0.13057755611402122,
+        0.9999999999980711,
+        0.12186831194878256,
+        0.9999999999999074
+      ],
+      "values": [
+        16.42604802456912,
+        3.4383233916277267,
+        7.999999999984954,
+        0.2706156367282956,
+        0.09999999999999075,
+        0.25
+      ]
+    },
+    {
+      "start": 2,
+      "initial_mse": 69.38778958001198,
+      "mse": 7.9677765474494615,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 25,
+      "elapsed_seconds": 0.225563100000727,
+      "normalized_solution": [
+        0.6557279744129958,
+        0.13058566733065208,
+        0.9999999999999638,
+        0.12186392619185142,
+        0.999999999999625
+      ],
+      "values": [
+        16.42601543708591,
+        3.4385245498001717,
+        7.999999999999718,
+        0.270609496668592,
+        0.09999999999996251,
+        0.25
+      ]
+    }
+  ]
+}

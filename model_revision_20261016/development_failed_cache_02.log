@@ -1,0 +1,51 @@
+Fitting full_calibrated
+full_calibrated steady RMSE 2.37583177049451 finite RMSE 2.3758344726700726 critical clips 0 equivalence 7.359981098176149e-05
+Fitting full_fixed_ratio
+full_fixed_ratio steady RMSE 3.161547077594099 finite RMSE 3.1615496348798473 critical clips 0 equivalence 8.780476467151743e-05
+Fitting no_feedback
+no_feedback steady RMSE 2.7089708936455326 finite RMSE 2.7089709216965607 critical clips 0 equivalence 0.00015973773262700774
+Traceback (most recent call last):
+  File "D:\论文\1\model_revision_20261016\run_study.py", line 208, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "D:\论文\1\model_revision_20261016\run_study.py", line 205, in main
+    if args.stage=="fit":development()
+                         ^^^^^^^^^^^^^
+  File "D:\论文\1\model_revision_20261016\run_study.py", line 83, in development
+    old=legacy_predict(d,legacy,finite=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文\1\model_revision_20261016\run_study.py", line 43, in legacy_predict
+    g=m.predict_cases(frame,model["parameters"],model="full",dt_minutes=1.)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文\1\model_revision_20261016\legacy\controlled_models.py", line 325, in predict_cases
+    _simulate(p, 0., 1., 160., dt_minutes, 0., dt_minutes/1440., code)
+  File "E:\conda\envs\torch25\Lib\site-packages\numba\core\dispatcher.py", line 443, in _compile_for_args
+    raise e
+  File "E:\conda\envs\torch25\Lib\site-packages\numba\core\dispatcher.py", line 376, in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\conda\envs\torch25\Lib\site-packages\numba\core\dispatcher.py", line 889, in compile
+    cres = self._cache.load_overload(sig, self.targetctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\conda\envs\torch25\Lib\site-packages\numba\core\caching.py", line 721, in load_overload
+    return self._load_overload(sig, target_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\conda\envs\torch25\Lib\site-packages\numba\core\caching.py", line 728, in _load_overload
+    data = self._cache_file.load(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\conda\envs\torch25\Lib\site-packages\numba\core\caching.py", line 576, in load
+    return self._load_data(data_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\conda\envs\torch25\Lib\site-packages\numba\core\caching.py", line 618, in _load_data
+    tup = pickle.loads(data)
+          ^^^^^^^^^^^^^^^^^^
+  File "E:\conda\envs\torch25\Lib\site-packages\numba\core\environment.py", line 51, in _rebuild_env
+    mod = importlib.import_module(modname)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\conda\envs\torch25\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'm3_legacy_oracle'

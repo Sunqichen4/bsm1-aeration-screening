@@ -1,0 +1,3 @@
+method,cases,false_acceptances,false_rejections,reference_requests,final_false_acceptances,final_false_rejections
+logistic,96,0,2,80,0,0
+six_state,96,4,2,80,0,0

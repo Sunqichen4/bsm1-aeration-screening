@@ -1,0 +1,7 @@
+﻿model,stratum,window_mgN_L,n_candidates,reference_compliant_count,reference_noncompliant_count,rmse,mae,mean_error,raw_false_releases,raw_false_rejections,gate_selected,gate_selected_fraction,gate_corrected_errors,gate_missed_errors,final_false_releases,final_false_rejections
+full_calibrated,coarse,0.5,8,6,2,3.252024624769841,3.2473350893191117,3.2473350893191117,0,6,8,1.0,6,0,0,0
+full_fixed_ratio,coarse,0.5,8,6,2,4.274648388695386,4.232762634239387,4.232762634239387,0,6,8,1.0,6,0,0,0
+no_feedback,coarse,0.5,8,6,2,2.0255864586898085,1.7678489463136298,1.7678489463136298,0,6,8,1.0,6,0,0,0
+poly_ridge,coarse,0.5,8,6,2,6.459642592408798,6.396126827059662,6.396126827059662,0,6,8,1.0,6,0,0,0
+rbf_kernel_ridge,coarse,0.5,8,6,2,6.392168342255482,6.386566909554305,6.386566909554305,0,6,8,1.0,6,0,0,0
+legacy_M2_binary,coarse,0.5,8,6,2,0.14576507429622368,0.11944294813720457,0.03995847693528953,0,1,8,1.0,1,0,0,0

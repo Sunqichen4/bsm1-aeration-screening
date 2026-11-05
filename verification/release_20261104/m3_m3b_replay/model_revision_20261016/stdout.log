@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "study": "model_revision_20261016",
+  "scope": "frozen inputs, saved raw main/half trajectories, exact finite predictions and gate branches, independently reaggregated overall/per-condition metrics",
+  "frozen_files": 58,
+  "frozen_inputs_unchanged": true,
+  "main_cases": 90,
+  "half_cases": 6,
+  "prediction_replay": {
+    "passed": true,
+    "prediction_count": 540,
+    "maximum_peak_difference": 0.0,
+    "exact_checks": {
+      "predicted_peak": true,
+      "raw_compliant": true,
+      "buffer_mgN_L": true,
+      "in_joint_domain": true,
+      "in_feature_domain": true,
+      "direct_release": true,
+      "direct_reject": true,
+      "recheck": true
+    }
+  },
+  "metric_checks": {
+    "metrics_overall.csv": {
+      "passed": true,
+      "rows": 18,
+      "numeric_tolerance": {
+        "rtol": 1e-12,
+        "atol": 1e-10
+      }
+    },
+    "metrics_by_condition.csv": {
+      "passed": true,
+      "rows": 108,
+      "numeric_tolerance": {
+        "rtol": 1e-12,
+        "atol": 1e-10
+      }
+    }
+  },
+  "native_ODE_executed": false,
+  "models_refit": false,
+  "external_historical_worktree_protection": "not checked; package-internal frozen files and native source hashes checked",
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "D:\\论文\\1\\_github_preparation_20261104\\.venv_release_check\\Scripts\\python.exe",
+  "packages": {
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "numba": "0.65.1",
+    "bsm2-python": "0.0.16"
+  }
+}

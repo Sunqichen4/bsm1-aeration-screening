@@ -1,0 +1,117 @@
+{
+  "individual": {
+    "six_state": {
+      "enabled": true,
+      "release_buffer": 23.855421686747007,
+      "rejection_buffer": 23.855421686746865,
+      "development_thresholds": [
+        {
+          "scenario": "baseline",
+          "reference": {
+            "status": "bracketed",
+            "lower": 153.73493975903614,
+            "upper": 155.66265060240966,
+            "grid_step": 1.9277108433735748
+          },
+          "prediction": {
+            "status": "bracketed",
+            "lower": 151.80722891566265,
+            "upper": 153.73493975903614,
+            "grid_step": 1.9277108433735748
+          }
+        },
+        {
+          "scenario": "high_load",
+          "reference": {
+            "status": "bracketed",
+            "lower": 186.5060240963856,
+            "upper": 188.43373493975903,
+            "grid_step": 1.9277108433735748
+          },
+          "prediction": {
+            "status": "bracketed",
+            "lower": 188.43373493975903,
+            "upper": 190.36144578313247,
+            "grid_step": 1.9277108433735748
+          }
+        },
+        {
+          "scenario": "low_oxygen_transfer",
+          "reference": {
+            "status": "bracketed",
+            "lower": 153.49397590361446,
+            "upper": 154.8433734939759,
+            "grid_step": 1.3493975903615478
+          },
+          "prediction": {
+            "status": "bracketed",
+            "lower": 153.49397590361446,
+            "upper": 154.8433734939759,
+            "grid_step": 1.3493975903615478
+          }
+        }
+      ],
+      "unit": "effective_KLa_d-1",
+      "calibration_scope": "old_development_only_not_a_statistical_guarantee"
+    },
+    "logistic": {
+      "enabled": true,
+      "release_buffer": 21.927710843373518,
+      "rejection_buffer": 21.927710843373518,
+      "development_thresholds": [
+        {
+          "scenario": "baseline",
+          "reference": {
+            "status": "bracketed",
+            "lower": 153.73493975903614,
+            "upper": 155.66265060240966,
+            "grid_step": 1.9277108433735748
+          },
+          "prediction": {
+            "status": "bracketed",
+            "lower": 153.73493975903614,
+            "upper": 155.66265060240966,
+            "grid_step": 1.9277108433735748
+          }
+        },
+        {
+          "scenario": "high_load",
+          "reference": {
+            "status": "bracketed",
+            "lower": 186.5060240963856,
+            "upper": 188.43373493975903,
+            "grid_step": 1.9277108433735748
+          },
+          "prediction": {
+            "status": "bracketed",
+            "lower": 186.5060240963856,
+            "upper": 188.43373493975903,
+            "grid_step": 1.9277108433735748
+          }
+        },
+        {
+          "scenario": "low_oxygen_transfer",
+          "reference": {
+            "status": "bracketed",
+            "lower": 153.49397590361446,
+            "upper": 154.8433734939759,
+            "grid_step": 1.3493975903615478
+          },
+          "prediction": {
+            "status": "bracketed",
+            "lower": 153.49397590361446,
+            "upper": 154.8433734939759,
+            "grid_step": 1.3493975903615478
+          }
+        }
+      ],
+      "unit": "effective_KLa_d-1",
+      "calibration_scope": "old_development_only_not_a_statistical_guarantee"
+    }
+  },
+  "shared": {
+    "enabled": true,
+    "release_buffer": 23.855421686747007,
+    "rejection_buffer": 23.855421686746865
+  }
+}

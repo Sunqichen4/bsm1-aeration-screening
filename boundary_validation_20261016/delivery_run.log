@@ -1,0 +1,14 @@
+{
+  "source_M3": {
+    "records_checked": 390,
+    "unchanged_count": 390,
+    "passed": true
+  },
+  "archive": {
+    "path": "D:\\论文\\1\\M3B_boundary_program_and_results_20261016.zip",
+    "files": 386,
+    "bytes": 219212820,
+    "sha256": "3e3f9d28a1aa6fa7c736cfe83d6df496e1e64eb68ffe5d1b11ac41004e6031a9",
+    "crc_and_content_sha256_verified": true
+  }
+}

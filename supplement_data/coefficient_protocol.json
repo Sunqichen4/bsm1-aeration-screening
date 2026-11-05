@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-10-15T02:48:18.986193+00:00",
+  "study_type": "post_hoc_one_at_a_time_fixed_parameter_sensitivity",
+  "known_reference_cases": 244,
+  "known_references_not_new_independent_validation": true,
+  "refitting": false,
+  "model_version": "M2 full process model frozen 20261014",
+  "coefficients": {
+    "substrate_h_consumption": 18.0,
+    "sno_h_sink": 0.25,
+    "oxygen_h_demand": 0.4,
+    "oxygen_a_demand": 2.5
+  },
+  "multipliers": [
+    0.8,
+    0.9,
+    1.1,
+    1.2
+  ],
+  "n_variants_including_baseline": 17,
+  "primary_solver": {
+    "integrator": "RK4",
+    "dt_minutes": 1.0,
+    "warmup_days": 60.0,
+    "evaluation_days": 7.0,
+    "evaluation_alignment": "step_start_[60,67)",
+    "initial_state": [
+      1200.0,
+      75.0,
+      110.0,
+      6.0,
+      8.0,
+      2.0
+    ],
+    "state_lower_bounds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "state_upper_bounds": [
+      5000.0,
+      500.0,
+      1200.0,
+      80.0,
+      80.0,
+      8.0
+    ]
+  },
+  "primary_full_simulations": 4148,
+  "outcomes": [
+    "NH4_peak_and_mean_RMSE",
+    "DO_mean_RMSE_tank5",
+    "SNO_mean_RMSE_effluent",
+    "false_release",
+    "conservative_rejection",
+    "label_change_from_baseline",
+    "per_condition_first_compliant_KLa_on_existing_union_grid",
+    "all_state_clipping_counts"
+  ],
+  "fine_selection_rule": "For each of 16 variants, choose the changed-label candidate closest to 4 mgN/L; if no label changes, choose greatest absolute NH4 peak change. Ties sort by candidate_id. One additional SNO-only maximum-change point per sno_h_sink variant is not required: the 16 selected points are retained and SNO convergence is also checked.",
+  "fine_solver_dt_minutes": 0.5,
+  "fine_simulations": 16,
+  "comparison_scope": "Existing mixed coarse+dense candidate union; discrete boundaries are not continuous optimal thresholds. Fixed parameters, not structural uncertainty bounds or global sensitivity.",
+  "baseline_equivalence_tolerance_mgL": 1e-09,
+  "input_hashes": {
+    "controlled_models.py": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+    "full_parameters.json": "6e0b7d2c2b8037e0b93a121fc1e416bc9254b85e131adb5c0f4c57f099567b24",
+    "reference_244.csv": "148d04f87015c1e574b7e9c4ef8fb024fe2d0e37c2cd3bf3e5db0878856617cd",
+    "frozen_predictions.csv": "911185487534ae1f654b1048b4185d2410031c36a1c6d976ea56ae57287dccf5",
+    "original_surrogate.py": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "historical_parameters.json": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96",
+    "historical_calibration.py": "56deebac8108804fa3859453f55f59573d5b2d04a00a588523b70c904b2fb9e8",
+    "fit_design.json": "3923bda9b3c6503dbd1b0e57e53181b3de7cb897be717c31a7ad88d51e4119ba"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "predict",
+    "--version",
+    "M1",
+    "--model",
+    "full",
+    "--all-cases",
+    "--output",
+    "D:\\论文\\1\\_github_preparation_20261104\\clean_release_extended\\m1_prediction"
+  ],
+  "elapsed_seconds": 3.1272769999995944,
+  "new_outputs_only": true,
+  "success": true
+}

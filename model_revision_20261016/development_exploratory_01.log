@@ -1,0 +1,13 @@
+Fitting full_calibrated
+full_calibrated steady RMSE 2.37583177049451 finite RMSE 2.3758344726700726 critical clips 0 equivalence 7.359981098176149e-05
+Fitting full_fixed_ratio
+full_fixed_ratio steady RMSE 3.161547077594099 finite RMSE 3.1615496348798473 critical clips 0 equivalence 8.780476467151743e-05
+Fitting no_feedback
+no_feedback steady RMSE 2.7089708936455326 finite RMSE 2.7089709216965607 critical clips 0 equivalence 0.00015973773262700774
+Profile rho 0.1 RMSE 2.375831770227703
+Profile rho 0.25 RMSE 2.8227250202081704
+Profile rho 0.5208333333333334 RMSE 3.161547077594099
+Profile rho 1.0 RMSE 3.372342728154484
+Profile rho 1.5 RMSE 3.3772226864608177
+Profile rho 2.0 RMSE 3.3964363995774116
+Profile rho 3.0 RMSE 3.5024454980748163

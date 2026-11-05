@@ -1,0 +1,19 @@
+{
+  "version": "M1",
+  "model": "full",
+  "scientific_integrations": 132,
+  "new_BSM1_integrations": 0,
+  "cases": 132,
+  "max_absolute_differences": {
+    "SNH_mean_eval": 1.4210854715202004e-14,
+    "SNH_max_eval": 1.0658141036401503e-14,
+    "SNO_mean_eval": 3.552713678800501e-15,
+    "DO_mean_eval": 1.7763568394002505e-15
+  },
+  "label_disagreements": 0,
+  "tolerance": 1e-09,
+  "pass": true,
+  "logistic_probability_max_abs_difference": 1.1102230246251565e-15,
+  "logistic_label_disagreements": 0,
+  "logistic_probability_tolerance": 1e-12
+}

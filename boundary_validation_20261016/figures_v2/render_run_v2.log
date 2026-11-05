@@ -1,0 +1,27 @@
+{
+  "version": "M3B_boundary_figures_v2",
+  "created_at_utc": "2026-10-17T04:33:32.135145+00:00",
+  "script_sha256": "6d679aa00f8bafa098a5580927658af70abd256007e3d5bb6a771dfbe50a5ffa",
+  "freeze_sha256": "4783d6f09a906dbba788eb2d888d49ec25f2c8363b47d71e245751bda27042b5",
+  "boundary_analysis_summary_sha256": "c46295689e479e39274164dc5ea5f3ff488c4d1e0c7d29c5c8563d2a41ef108e",
+  "primary_stratum": "coarse",
+  "peak_units": "mg N/L",
+  "effective_kla_units": "d^-1",
+  "reference_policy": "Raw independent sampled peaks; no smoothing or added response points.",
+  "line_policy": "Straight joins of frozen sampled model predictions as visual guides only.",
+  "design_note": "Faceted interaction plot and restrained categorical palette based on the supplied reference library.",
+  "formats": "PNG 320 dpi; TIFF 600 dpi LZW; editable SVG/PDF text",
+  "files": {
+    "figures_v2/M3B_threshold_response_v2.png": "20109100b281ba1af038b5c5e7f08677a0df5c0d2ffd58b9dbd1a4e074326ffe",
+    "figures_v2/M3B_threshold_response_v2.tiff": "5d2f6bff3541172bc587b85f60fb2cf00bc99bc3da681a7920913660231f7c97",
+    "figures_v2/M3B_threshold_response_v2.svg": "afb1802a4e4469432c0c34255d6291629a093cdbf0509bbe59a9d96e04dd5480",
+    "figures_v2/M3B_threshold_response_v2.pdf": "3e927eed74cb46107a665a253b84c81b9bd8fcf3af537f0784bcd28ab64897ce",
+    "figures_v2/M3B_fixed_grid_performance_v2.png": "539ccbd238e0d6a6a4704f5ef9f7c2821b20a7048008810df725380ff33acca8",
+    "figures_v2/M3B_fixed_grid_performance_v2.tiff": "e73ece7e69d552033c708cf833b2a4a6d3894d187d62421a99acc3b27c043444",
+    "figures_v2/M3B_fixed_grid_performance_v2.svg": "f4ba35287c2d0f4bf8235f41884734342750db37d98bf7ba4d3bd4130e1c2323",
+    "figures_v2/M3B_fixed_grid_performance_v2.pdf": "4198b93ae5ed18023670941acaf03c5b424783b7f74714b50bb2a268baa37dbe",
+    "figures_v2/boundary_response_plot_data_v2.csv": "567c9a71d710d9847dfb23b51b60d292ed3bc5353c4495597d4cb2b54f67c790",
+    "figures_v2/boundary_performance_plot_data_v2.csv": "b2caf4218b97373b299d4a3063435300d2a5224098006a28c9334d734ac26d89",
+    "figures_v2/boundary_near_threshold_plot_data_v2.csv": "59eb3a7c081f4c65f300f588696a6caff818f7a412e5a8a9d4aa420d3601e295"
+  }
+}

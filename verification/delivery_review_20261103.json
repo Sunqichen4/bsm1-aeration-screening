@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-03",
+  "status": "PASS_WITH_DOCUMENTED_SCOPE",
+  "supplementary_evidence_files": 106,
+  "all_106_byte_identical_to_source": true,
+  "original_completed_manuscripts_unmodified": true,
+  "chinese_abstract_and_introduction_xml_unchanged": true,
+  "document_checks": [
+    {
+      "file": "Manuscript_Delivery_20261103.docx",
+      "all_ole_and_omml_unchanged": true,
+      "all_media_and_other_zip_members_unchanged": true,
+      "scientific_results_tables_unchanged": true
+    },
+    {
+      "file": "Supplementary_Material_Delivery_20261103.docx",
+      "all_ole_and_omml_unchanged": true,
+      "all_media_and_other_zip_members_unchanged": true,
+      "scientific_results_tables_unchanged": true
+    }
+  ],
+  "rendered_pages": {
+    "manuscript": 32,
+    "supplement": 52
+  },
+  "layout_review": "All changed page PNGs visually reviewed; unchanged pages matched previously reviewed renders byte for byte. Long commands and isolated lines corrected and re-rendered.",
+  "dependency_locks_identical": true,
+  "M1_M2_core": "new reconstructed-20261103-v1; sources/input integrity, frozen predictions, Gate, tables, refits and one native constant-condition reference executed; final relocated interface checks passed",
+  "M3_M3B": "saved 90+6 and 120+12 raw trajectories audited; 1260 exact frozen predictions and Gate fields; aggregate metrics; 798 scientific-package files unchanged after final replay",
+  "tests": {
+    "M1_M2": 7,
+    "M3": 114,
+    "M3B": 69,
+    "total": 190
+  },
+  "coefficient_evidence_checks": 28,
+  "fresh_native_BSM1_integrations_this_round": 1,
+  "published_results_replaced": false,
+  "remaining_limits": [
+    "Original deleted M1/M2 release and some historical adapters/scripts not recovered; reconstruction scope documented",
+    "M1 process perturbations and M2 Logistic initialization use named reconstructed protocols",
+    "Independent original derivation or estimation basis for four empirical constants not located",
+    "This round used an existing matching Windows environment rather than a new clean installation",
+    "Public archival, author-code license and journal-specific author declarations not created; bibliography not audited online in this round"
+  ]
+}

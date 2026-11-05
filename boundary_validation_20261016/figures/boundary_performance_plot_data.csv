@@ -1,0 +1,7 @@
+﻿model,stratum,n_candidates,reference_compliant_count,rmse,mae,mean_error,raw_false_releases,raw_false_rejections,raw_errors,gate_selected,gate_selected_fraction,gate_corrected_false_releases,gate_corrected_false_rejections,gate_corrected_errors,gate_missed_false_releases,gate_missed_false_rejections,gate_missed_errors,gate_rechecks_of_correct_raw_predictions,final_false_releases,final_false_rejections,final_errors
+full_calibrated,coarse,108,48,3.0519097943009084,2.4913623753188623,0.7278316099861191,0,23,23,84,0.7777777777777778,0,23,23,0,0,0,61,0,0,0
+full_fixed_ratio,coarse,108,48,4.388886169496692,3.6806961463869556,0.7562940902043457,0,38,38,99,0.9166666666666666,0,38,38,0,0,0,61,0,0,0
+no_feedback,coarse,108,48,3.463124951513922,2.7084142152637556,-0.2284409789342135,0,23,23,90,0.8333333333333334,0,23,23,0,0,0,67,0,0,0
+poly_ridge,coarse,108,48,6.962927082433007,5.72068498732256,1.7874783380918364,0,45,45,106,0.9814814814814815,0,45,45,0,0,0,61,0,0,0
+rbf_kernel_ridge,coarse,108,48,4.8650415628326575,4.383693365421486,3.516745980972888,0,33,33,58,0.5370370370370371,0,33,33,0,0,0,25,0,0,0
+legacy_M2_binary,coarse,108,48,3.8996672442440197,2.422274840183965,-2.1826940188862496,0,1,1,102,0.9444444444444444,0,1,1,0,0,0,101,0,0,0

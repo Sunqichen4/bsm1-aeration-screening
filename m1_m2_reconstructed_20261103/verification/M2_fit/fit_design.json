@@ -1,0 +1,186 @@
+{
+  "protocol": {
+    "models": [
+      "full",
+      "no_oxygen_demand_feedback"
+    ],
+    "fit_names": [
+      "tau_h",
+      "mu_a",
+      "k_oa",
+      "oxygen_gain",
+      "ss_to_nh",
+      "nitrification_rate_cap",
+      "nh4_nitrification_factor"
+    ],
+    "bounds": {
+      "tau_h": [
+        2.0,
+        24.0
+      ],
+      "mu_a": [
+        0.2,
+        2.5
+      ],
+      "k_oa": [
+        0.2,
+        8.0
+      ],
+      "oxygen_gain": [
+        0.1,
+        1.5
+      ],
+      "ss_to_nh": [
+        0.0,
+        0.1
+      ],
+      "nitrification_rate_cap": [
+        0.2,
+        4.0
+      ],
+      "nh4_nitrification_factor": [
+        1.0,
+        10.0
+      ]
+    },
+    "seed": 20261014,
+    "n_starts": 3,
+    "max_nfev": 800,
+    "initialization": "normalized_bounds_midpoint_then_two_uniform_starts",
+    "random_start_interval_fraction": [
+      0.05,
+      0.95
+    ],
+    "probability_temperature_mgN_L": 0.5,
+    "nh4_limit_mgN_L": 4.0,
+    "objective": "unweighted_Brier_mean_squared_probability_error",
+    "optimizer": {
+      "method": "trf",
+      "ftol": 1e-07,
+      "xtol": 1e-08,
+      "gtol": 1e-07,
+      "diff_step": 1e-06
+    },
+    "final_ode_timestep_min": 1.0,
+    "warmup_days": 60.0,
+    "eval_days": 7.0,
+    "equivalence_tolerance_mgN_L": 0.001,
+    "near_bound_fraction": 1e-05,
+    "fixed_biomass_tau_a_h": 120.0,
+    "prior_source": "Original JWPE_article_clean_package/src/aerbench/surrogate.py, SurrogateParams literal defaults; no calibrated parameter JSON loaded. The fixed normalized biomass response and scales are historical BSM1-derived empirical information shared by both process models."
+  },
+  "source_sha256": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+  "development_label_sha256": "cb560ea6b6178a3ff81ad9d5d3189a70ab23142d8c7644b7ecdbe93f490f134e",
+  "shared_default_parameters": {
+    "tau_h": 8.0,
+    "mu_h": 0.75,
+    "mu_a": 1.05,
+    "k_s": 30.0,
+    "k_nh": 1.0,
+    "k_oh": 0.35,
+    "k_oa": 3.0,
+    "hill_n": 2.0,
+    "so_sat": 8.0,
+    "oxygen_gain": 0.55,
+    "y_no": 3.0,
+    "ss_to_nh": 0.03,
+    "nitrification_rate_cap": 1.6,
+    "nh4_nitrification_factor": 4.8,
+    "biomass_tau_h": 120.0,
+    "biomass_tau_a": 120.0,
+    "xh_reference": 1200.0,
+    "xa_reference": 534.0,
+    "bsm1_xba_asymptote": 152.5,
+    "bsm1_xba_logistic_slope": 0.08,
+    "bsm1_xba_logistic_midpoint": 123.7,
+    "xh_oxygen_response_weight": 0.018,
+    "biomass_load_exponent": 0.5,
+    "biomass_temperature_exponent": 1.0
+  },
+  "prior_source": "Original JWPE_article_clean_package/src/aerbench/surrogate.py, SurrogateParams literal defaults; no calibrated parameter JSON loaded. The fixed normalized biomass response and scales are historical BSM1-derived empirical information shared by both process models.",
+  "initial_normalized_vectors": [
+    [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    [
+      0.7540702237984511,
+      0.47907811622936053,
+      0.1543701306342351,
+      0.8331097407879077,
+      0.5864155742484305,
+      0.4160387991255934,
+      0.5600468102986769
+    ],
+    [
+      0.7072761960640943,
+      0.5251277174529304,
+      0.3666821079602514,
+      0.49720277810350855,
+      0.9423722048820724,
+      0.3791946173635477,
+      0.77514701991186
+    ]
+  ],
+  "initial_parameter_vectors": [
+    [
+      13.0,
+      1.3499999999999999,
+      4.1,
+      0.7999999999999999,
+      0.05,
+      2.1,
+      5.5
+    ],
+    [
+      18.589544923565924,
+      1.301879667327529,
+      1.4040870189470338,
+      1.2663536371030708,
+      0.058641557424843054,
+      1.7809474366772546,
+      6.040421292688092
+    ],
+    [
+      17.560076313410075,
+      1.40779375014174,
+      3.060120442089961,
+      0.7960838893449119,
+      0.09423722048820725,
+      1.640939545981481,
+      7.97632317920674
+    ]
+  ],
+  "initialization_excludes_old_fitted_parameters": true,
+  "conditional_comparison": "Only oxygen-demand feedback in dSO; all historical closure information shared.",
+  "fixed_parameters": [
+    "mu_h",
+    "k_s",
+    "k_nh",
+    "k_oh",
+    "hill_n",
+    "so_sat",
+    "y_no",
+    "biomass_tau_h",
+    "biomass_tau_a",
+    "xh_reference",
+    "xa_reference",
+    "bsm1_xba_asymptote",
+    "bsm1_xba_logistic_slope",
+    "bsm1_xba_logistic_midpoint",
+    "xh_oxygen_response_weight",
+    "biomass_load_exponent",
+    "biomass_temperature_exponent"
+  ],
+  "strictly_unidentifiable_in_steady_training": [
+    "biomass_tau_a",
+    "biomass_tau_h"
+  ],
+  "new_reference_labels_read": false,
+  "design_sha256": "1a49d1dccf61ff2fbaae42cb399d9fdfbb78fe44679d01901d0f55336625c851"
+}

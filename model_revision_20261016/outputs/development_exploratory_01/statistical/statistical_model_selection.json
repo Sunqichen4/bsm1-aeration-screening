@@ -1,0 +1,317 @@
+[
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 0,
+    "hyperparameters": {
+      "degree": 1,
+      "penalty": 1e-06
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 95.98765249397805,
+    "scenario_mses": {
+      "baseline": 49.09072195436801,
+      "high_load": 135.51460175675328,
+      "low_oxygen_transfer": 103.35763377081285
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 1,
+    "hyperparameters": {
+      "degree": 1,
+      "penalty": 0.001
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 95.98781219198581,
+    "scenario_mses": {
+      "baseline": 49.090852691176956,
+      "high_load": 135.5148520672469,
+      "low_oxygen_transfer": 103.35773181753358
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 2,
+    "hyperparameters": {
+      "degree": 1,
+      "penalty": 1.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 96.14740726784699,
+    "scenario_mses": {
+      "baseline": 49.22145944272757,
+      "high_load": 135.76478659156598,
+      "low_oxygen_transfer": 103.4559757692474
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 3,
+    "hyperparameters": {
+      "degree": 1,
+      "penalty": 100.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 110.9624319005561,
+    "scenario_mses": {
+      "baseline": 60.87156157329611,
+      "high_load": 157.73700182137657,
+      "low_oxygen_transfer": 114.27873230699561
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 4,
+    "hyperparameters": {
+      "degree": 2,
+      "penalty": 1e-06
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 58.69680685450041,
+    "scenario_mses": {
+      "baseline": 62.90761172382879,
+      "high_load": 80.98937928583197,
+      "low_oxygen_transfer": 32.193429553840446
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 5,
+    "hyperparameters": {
+      "degree": 2,
+      "penalty": 0.001
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 58.69681656922199,
+    "scenario_mses": {
+      "baseline": 62.907315944722185,
+      "high_load": 80.9897001007013,
+      "low_oxygen_transfer": 32.19343366224249
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 6,
+    "hyperparameters": {
+      "degree": 2,
+      "penalty": 1.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 58.70806707915042,
+    "scenario_mses": {
+      "baseline": 62.61569123864411,
+      "high_load": 81.31021561134911,
+      "low_oxygen_transfer": 32.198294387458006
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 7,
+    "hyperparameters": {
+      "degree": 2,
+      "penalty": 100.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 68.09020147285484,
+    "scenario_mses": {
+      "baseline": 55.67321846223261,
+      "high_load": 110.76495960531622,
+      "low_oxygen_transfer": 37.8324263510157
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 8,
+    "hyperparameters": {
+      "degree": 3,
+      "penalty": 1e-06
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 60.831848230763775,
+    "scenario_mses": {
+      "baseline": 65.09872047905594,
+      "high_load": 84.55623455898724,
+      "low_oxygen_transfer": 32.84058965424815
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 9,
+    "hyperparameters": {
+      "degree": 3,
+      "penalty": 0.001
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 60.83092902268701,
+    "scenario_mses": {
+      "baseline": 65.09585931092063,
+      "high_load": 84.55639092866377,
+      "low_oxygen_transfer": 32.840536828476615
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 10,
+    "hyperparameters": {
+      "degree": 3,
+      "penalty": 1.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 59.95122889441873,
+    "scenario_mses": {
+      "baseline": 62.350061498979294,
+      "high_load": 84.71436216338546,
+      "low_oxygen_transfer": 32.78926302089144
+    },
+    "selected": false
+  },
+  {
+    "model_name": "poly_ridge",
+    "candidate_index": 11,
+    "hyperparameters": {
+      "degree": 3,
+      "penalty": 100.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 54.318833182979695,
+    "scenario_mses": {
+      "baseline": 24.857540486443078,
+      "high_load": 104.61049184552012,
+      "low_oxygen_transfer": 33.4884672169759
+    },
+    "selected": true
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 0,
+    "hyperparameters": {
+      "length_scale": 0.3,
+      "penalty": 1e-06
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 115.276757626649,
+    "scenario_mses": {
+      "baseline": 8.072333065094307,
+      "high_load": 337.32754885645824,
+      "low_oxygen_transfer": 0.4303909583944451
+    },
+    "selected": false
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 1,
+    "hyperparameters": {
+      "length_scale": 0.3,
+      "penalty": 0.001
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 119.66008840542766,
+    "scenario_mses": {
+      "baseline": 21.550927463184298,
+      "high_load": 337.3271252810281,
+      "low_oxygen_transfer": 0.10221247207061224
+    },
+    "selected": false
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 2,
+    "hyperparameters": {
+      "length_scale": 0.3,
+      "penalty": 1.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 122.67392568688636,
+    "scenario_mses": {
+      "baseline": 28.059824496338486,
+      "high_load": 337.34476752517713,
+      "low_oxygen_transfer": 2.617185039143488
+    },
+    "selected": false
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 3,
+    "hyperparameters": {
+      "length_scale": 1.0,
+      "penalty": 1e-06
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 20544.493264947385,
+    "scenario_mses": {
+      "baseline": 61504.83703909759,
+      "high_load": 126.97831716004563,
+      "low_oxygen_transfer": 1.664438584523632
+    },
+    "selected": false
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 4,
+    "hyperparameters": {
+      "length_scale": 1.0,
+      "penalty": 0.001
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 63.021496265837605,
+    "scenario_mses": {
+      "baseline": 57.046838108112944,
+      "high_load": 125.96959099563857,
+      "low_oxygen_transfer": 6.048059693761317
+    },
+    "selected": false
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 5,
+    "hyperparameters": {
+      "length_scale": 1.0,
+      "penalty": 1.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 54.83808999160416,
+    "scenario_mses": {
+      "baseline": 11.564825337184411,
+      "high_load": 134.8964801530251,
+      "low_oxygen_transfer": 18.05296448460296
+    },
+    "selected": false
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 6,
+    "hyperparameters": {
+      "length_scale": 3.0,
+      "penalty": 1e-06
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 27.20390153963156,
+    "scenario_mses": {
+      "baseline": 5.170551450338351,
+      "high_load": 66.13402465445293,
+      "low_oxygen_transfer": 10.3071285141034
+    },
+    "selected": true
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 7,
+    "hyperparameters": {
+      "length_scale": 3.0,
+      "penalty": 0.001
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 49.089339268882476,
+    "scenario_mses": {
+      "baseline": 38.45608535497661,
+      "high_load": 82.0592254269463,
+      "low_oxygen_transfer": 26.75270702472453
+    },
+    "selected": false
+  },
+  {
+    "model_name": "rbf_kernel_ridge",
+    "candidate_index": 8,
+    "hyperparameters": {
+      "length_scale": 3.0,
+      "penalty": 1.0
+    },
+    "mean_scenario_mse_mgN_per_L_squared": 56.85429618614146,
+    "scenario_mses": {
+      "baseline": 27.06157064925924,
+      "high_load": 97.13293187805766,
+      "low_oxygen_transfer": 46.36838603110748
+    },
+    "selected": false
+  }
+]

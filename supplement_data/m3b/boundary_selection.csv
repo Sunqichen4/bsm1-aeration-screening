@@ -1,0 +1,7 @@
+scenario,load_coordinate,q,oxygen_transfer_factor,left_z,right_z,left_predicted_minus_4,right_predicted_minus_4,root_method,root_z,selection_status
+m3b_n01_l0.13_q0.27,0.13,0.27,0.80947,112.0,220.0,25.44839066363349,-3.083570601432167,brentq_xtol_1e-10_rtol_1e-12,157.5283619587785,one_legacy_steady_crossing_not_unique_or_minimal_claim
+m3b_n02_l0.31_q0.63,0.31,0.63,0.92341,112.0,220.0,27.594695841404857,-2.9825118115578095,brentq_xtol_1e-10_rtol_1e-12,163.35419067235458,one_legacy_steady_crossing_not_unique_or_minimal_claim
+m3b_n03_l0.43_q0.38,0.43,0.38,0.89398,112.0,220.0,29.04077025489333,-2.9037162117716937,brentq_xtol_1e-10_rtol_1e-12,167.47424735887395,one_legacy_steady_crossing_not_unique_or_minimal_claim
+m3b_n04_l0.61_q0.77,0.61,0.77,0.97309,112.0,220.0,31.230969748839264,-2.763611754000202,brentq_xtol_1e-10_rtol_1e-12,173.9332076426228,one_legacy_steady_crossing_not_unique_or_minimal_claim
+m3b_n05_l0.73_q0.34,0.73,0.34,0.9465399999999999,112.0,220.0,32.70427396669025,-2.6518919031037376,brentq_xtol_1e-10_rtol_1e-12,178.37973999545716,one_legacy_steady_crossing_not_unique_or_minimal_claim
+m3b_n06_l0.91_q0.68,0.91,0.68,0.99136,112.0,220.0,34.93263233989196,-2.4482636948016703,brentq_xtol_1e-10_rtol_1e-12,185.19137325493887,one_legacy_steady_crossing_not_unique_or_minimal_claim

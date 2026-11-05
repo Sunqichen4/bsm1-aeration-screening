@@ -1,0 +1,18 @@
+{
+  "completed_utc": "2026-10-15T02:51:11.599370+00:00",
+  "elapsed_seconds": 72.19574730000022,
+  "protocol_sha256": "5b56e07e47cde65dbc4fe7fec97e4fb7e894271c14748b104cb5b9e9bee60910",
+  "post_hoc_existing_reference_analysis": true,
+  "new_bsm1_calls": 0,
+  "fit_calls": 0,
+  "n_references": 244,
+  "variants": 17,
+  "full_surrogate_simulations": 4148,
+  "fine_surrogate_simulations": 16,
+  "fine_label_changes": 0,
+  "max_fine_NH4_peak_difference": 1.2578738051161054e-09,
+  "baseline_equivalence_pass": true,
+  "lower_clips_all_primary": 0,
+  "upper_clips_all_primary": 0,
+  "nonfinite_all_primary": 0
+}

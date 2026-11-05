@@ -1,0 +1,167 @@
+{
+  "model": "full",
+  "parameters": {
+    "tau_h": 3.1068956070130334,
+    "mu_h": 0.75,
+    "mu_a": 2.4999999990900332,
+    "k_s": 30.0,
+    "k_nh": 1.0,
+    "k_oh": 0.35,
+    "k_oa": 6.802314761759237,
+    "hill_n": 2.0,
+    "so_sat": 8.0,
+    "oxygen_gain": 1.4999999787944531,
+    "y_no": 3.0,
+    "ss_to_nh": 0.09999999999999999,
+    "nitrification_rate_cap": 2.1501373977467453,
+    "nh4_nitrification_factor": 9.999999999999998,
+    "biomass_tau_h": 120.0,
+    "biomass_tau_a": 120.0,
+    "xh_reference": 1200.0,
+    "xa_reference": 534.0,
+    "bsm1_xba_asymptote": 152.5,
+    "bsm1_xba_logistic_slope": 0.08,
+    "bsm1_xba_logistic_midpoint": 123.7,
+    "xh_oxygen_response_weight": 0.018,
+    "biomass_load_exponent": 0.5,
+    "biomass_temperature_exponent": 1.0
+  },
+  "selected_start": 2,
+  "fit_names": [
+    "tau_h",
+    "mu_a",
+    "k_oa",
+    "oxygen_gain",
+    "ss_to_nh",
+    "nitrification_rate_cap",
+    "nh4_nitrification_factor"
+  ],
+  "n_training_cases": 750,
+  "supervision": "old_750_binary_labels_only_for_current_fit",
+  "prior_source": "Original JWPE_article_clean_package/src/aerbench/surrogate.py, SurrogateParams literal defaults; no calibrated parameter JSON loaded. The fixed normalized biomass response and scales are historical BSM1-derived empirical information shared by both process models.",
+  "protocol": {
+    "models": [
+      "full",
+      "no_oxygen_demand_feedback"
+    ],
+    "fit_names": [
+      "tau_h",
+      "mu_a",
+      "k_oa",
+      "oxygen_gain",
+      "ss_to_nh",
+      "nitrification_rate_cap",
+      "nh4_nitrification_factor"
+    ],
+    "bounds": {
+      "tau_h": [
+        2.0,
+        24.0
+      ],
+      "mu_a": [
+        0.2,
+        2.5
+      ],
+      "k_oa": [
+        0.2,
+        8.0
+      ],
+      "oxygen_gain": [
+        0.1,
+        1.5
+      ],
+      "ss_to_nh": [
+        0.0,
+        0.1
+      ],
+      "nitrification_rate_cap": [
+        0.2,
+        4.0
+      ],
+      "nh4_nitrification_factor": [
+        1.0,
+        10.0
+      ]
+    },
+    "seed": 20261014,
+    "n_starts": 3,
+    "max_nfev": 800,
+    "initialization": "normalized_bounds_midpoint_then_two_uniform_starts",
+    "random_start_interval_fraction": [
+      0.05,
+      0.95
+    ],
+    "probability_temperature_mgN_L": 0.5,
+    "nh4_limit_mgN_L": 4.0,
+    "objective": "unweighted_Brier_mean_squared_probability_error",
+    "optimizer": {
+      "method": "trf",
+      "ftol": 1e-07,
+      "xtol": 1e-08,
+      "gtol": 1e-07,
+      "diff_step": 1e-06
+    },
+    "final_ode_timestep_min": 1.0,
+    "warmup_days": 60.0,
+    "eval_days": 7.0,
+    "equivalence_tolerance_mgN_L": 0.001,
+    "near_bound_fraction": 1e-05,
+    "fixed_biomass_tau_a_h": 120.0,
+    "prior_source": "Original JWPE_article_clean_package/src/aerbench/surrogate.py, SurrogateParams literal defaults; no calibrated parameter JSON loaded. The fixed normalized biomass response and scales are historical BSM1-derived empirical information shared by both process models."
+  },
+  "design_sha256": "1a49d1dccf61ff2fbaae42cb399d9fdfbb78fe44679d01901d0f55336625c851",
+  "source_sha256": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+  "development_label_sha256": "cb560ea6b6178a3ff81ad9d5d3189a70ab23142d8c7644b7ecdbe93f490f134e",
+  "fit_runtime_seconds": 9.140331899980083,
+  "selected_jacobian_rank": 6,
+  "all_starts_optimizer_success": true,
+  "selected_optimizer_success": true,
+  "finite_time_equivalence_status": "verified_on_all_750",
+  "strictly_unidentifiable_fixed_relaxation_parameters": [
+    "biomass_tau_h",
+    "biomass_tau_a"
+  ],
+  "historical_closure_shared_by_pair": true,
+  "new_reference_labels_read": false,
+  "finite_time_audit": {
+    "model": "full",
+    "cases": 750,
+    "dt_minutes": 1.0,
+    "warmup_days": 60.0,
+    "eval_days": 7.0,
+    "finite_prediction_elapsed_seconds": 11.653942100005224,
+    "max_abs_SNH_difference": 7.576144331444823e-05,
+    "mean_abs_SNH_difference": 1.655869871571188e-05,
+    "n_steady_finite_label_disagreements": 0,
+    "n_ode_label_errors": 2,
+    "total_lower_clips": 0,
+    "total_upper_clips": 0,
+    "state_clips": {
+      "XH": {
+        "lower": 0,
+        "upper": 0
+      },
+      "SS": {
+        "lower": 0,
+        "upper": 0
+      },
+      "XA": {
+        "lower": 0,
+        "upper": 0
+      },
+      "SNO": {
+        "lower": 0,
+        "upper": 0
+      },
+      "SNH": {
+        "lower": 0,
+        "upper": 0
+      },
+      "SO": {
+        "lower": 0,
+        "upper": 0
+      }
+    }
+  },
+  "eligible_for_new_predictions": true
+}

@@ -1,0 +1,39 @@
+# M3 workflow versions observed in E:\conda\envs\torch25 on 2026-10-16.
+# Python 3.11.15 (Windows x86_64); use a Python 3.11 interpreter.
+# Scope: science/reference + plotting + tests and their pinned dependencies.
+# This is not a freeze of every package in the user's conda environment.
+# PyTorch 2.11.0+cu128 is present but not needed by M3 and is not required here.
+
+# Numerical work and native reference implementation
+numpy==2.4.3
+pandas==2.3.3
+scipy==1.16.3
+numba==0.65.1
+llvmlite==0.47.0
+bsm2-python==0.0.16
+control==0.10.2
+tqdm==4.70.0
+
+# Statistical/legacy compatibility and plotting
+scikit-learn==1.8.0
+joblib==1.5.3
+threadpoolctl==3.6.0
+matplotlib==3.10.9
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.63.0
+kiwisolver==1.5.0
+Pillow==11.1.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+six==1.17.0
+pytz==2026.3.post1
+tzdata==2025.3
+packaging==26.3
+
+# Verification
+pytest==8.4.2
+colorama==0.4.6
+iniconfig==2.3.0
+pluggy==1.6.0
+Pygments==2.19.2

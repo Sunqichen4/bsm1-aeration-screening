@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "reproduce",
+    "--output",
+    "verification/tables"
+  ],
+  "elapsed_seconds": 0.19346700003370643,
+  "new_outputs_only": true,
+  "success": true
+}

@@ -1,0 +1,15 @@
+{
+  "at_utc": "2026-10-16T12:46:57.140326+00:00",
+  "protocol_sha256": "3f09158b46b72915eaf501028f806937e23c2b6aaa23e44ef855ad6a8558ed93",
+  "data_sha256": "262c6b0c896bea9879b994b77850a58f37ec2bf3bae161e88527f88d8f92d0ee",
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "E:\\conda\\envs\\torch25\\python.exe",
+  "packages": {
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "numba": "0.65.1",
+    "bsm2-python": "0.0.16"
+  },
+  "scope": "Development only. No old 244/96 cases or new reference labels are read."
+}

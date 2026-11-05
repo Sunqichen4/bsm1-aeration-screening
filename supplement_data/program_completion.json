@@ -1,0 +1,299 @@
+{
+  "status": "COMPLETED_WITH_SCIENTIFIC_LIMITS",
+  "created_utc": "2026-10-15T04:09:50.666043+00:00",
+  "scope": "New program supplements and actual runs; original manuscripts and frozen research preserved",
+  "coefficient_sensitivity": {
+    "completed_utc": "2026-10-15T02:51:11.599370+00:00",
+    "elapsed_seconds": 72.19574730000022,
+    "protocol_sha256": "5b56e07e47cde65dbc4fe7fec97e4fb7e894271c14748b104cb5b9e9bee60910",
+    "post_hoc_existing_reference_analysis": true,
+    "new_bsm1_calls": 0,
+    "fit_calls": 0,
+    "n_references": 244,
+    "variants": 17,
+    "full_surrogate_simulations": 4148,
+    "fine_surrogate_simulations": 16,
+    "fine_label_changes": 0,
+    "max_fine_NH4_peak_difference": 1.2578738051161054e-09,
+    "baseline_equivalence_pass": true,
+    "lower_clips_all_primary": 0,
+    "upper_clips_all_primary": 0,
+    "nonfinite_all_primary": 0
+  },
+  "gate_validation": {
+    "completed_at_utc": "2026-10-15T03:25:20.853732+00:00",
+    "freeze_sha256": "d6e8dd569a50348dbd2263e98ec8f00ec7804428b4e76b37d028818a65923812",
+    "all_primary_checkpoint_raw_summary_hashes_verified": true,
+    "primary_candidates": 96,
+    "conditions": 8,
+    "reference_safe": 52,
+    "reference_unsafe": 44,
+    "solver_warning_count": 0,
+    "negative_evaluation_concentration_count": 0,
+    "native_internal_clipping": "not instrumented",
+    "fine_reference_checks": 8,
+    "fine_label_changes": 0,
+    "fine_maximum_peak_difference": 0.0006544100346141946,
+    "model_summary": [
+      {
+        "method": "logistic",
+        "scenario": "all",
+        "candidates": 96,
+        "reference_safe": 52,
+        "reference_unsafe": 44,
+        "policy_reference_calls": 80,
+        "policy_direct_release": 8,
+        "policy_direct_reject": 8,
+        "raw_false_release": 0,
+        "raw_conservative_reject": 2,
+        "captured_raw_false_release": 0,
+        "captured_raw_conservative_reject": 2,
+        "final_false_release": 0,
+        "final_conservative_reject": 0,
+        "raw_false_release_capture_rate": null,
+        "capture_claim": "not_activated_no_raw_false_release_observed"
+      },
+      {
+        "method": "six_state",
+        "scenario": "all",
+        "candidates": 96,
+        "reference_safe": 52,
+        "reference_unsafe": 44,
+        "policy_reference_calls": 80,
+        "policy_direct_release": 8,
+        "policy_direct_reject": 8,
+        "raw_false_release": 4,
+        "raw_conservative_reject": 2,
+        "captured_raw_false_release": 4,
+        "captured_raw_conservative_reject": 2,
+        "final_false_release": 0,
+        "final_conservative_reject": 0,
+        "raw_false_release_capture_rate": 1.0,
+        "capture_claim": "observed_on_this_prespecified_grid_only"
+      }
+    ],
+    "cost_ledger": {
+      "primary_scientific_integrations": 96,
+      "fine_scientific_integrations": 8,
+      "total_actual_scientific_integrations": 104,
+      "warmup_is_primary_candidate_not_extra": true,
+      "unique_primary_candidates_rechecked_by_any_policy": 80,
+      "primary_independent_direct_decision_audit": 16,
+      "per_model_reference_calls_are_not_additive_integrations": true,
+      "primary_kernel_seconds_sum": 3050.2333153000036,
+      "timing_scope": "parallel audit case-duration sum; not serial speedup",
+      "fine_kernel_seconds_sum": 435.79540949999864
+    }
+  },
+  "fresh_fit_reproduction": [
+    {
+      "model": "full",
+      "parameters": 24,
+      "max_abs_difference": 0.0
+    },
+    {
+      "model": "no_oxygen_demand_feedback",
+      "parameters": 24,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "portable_release": {
+    "files": 464,
+    "package_manifest_sha256": "85223f371702fa49480293629f786a81aefc2adf9eed7e0d22037f2030fdd3c9",
+    "cli_sha256": "618bf8cf8a659df67ac4660ca1f0201a42aac2a8979a8d33098a67e95f6af276",
+    "relocated_manifest_identical": true
+  },
+  "clean_environment_status": "PASS",
+  "final_relocated_extension_status": "PASS",
+  "native_reference_cost": {
+    "prospective_gate_integrations": 104,
+    "additional_program_smokes": 4,
+    "total_actual_new_integrations": 108,
+    "parallel_duration_is_not_serial_speedup": true
+  },
+  "original_preservation": {
+    "status": "PASS",
+    "checked_utc": "2026-10-15T03:29:54.958865+00:00",
+    "files_checked": 4762,
+    "changed_or_missing": [],
+    "added": []
+  },
+  "program_tests": {
+    "coefficient": {
+      "tests_run": 7,
+      "failures": 0,
+      "errors": 0,
+      "passed": true,
+      "elapsed_seconds": 2.865762200000063
+    },
+    "gate_routing": {
+      "tested_at_utc": "2026-10-15T02:51:33.840958+00:00",
+      "tests_run": 4,
+      "failures": 0,
+      "errors": 0,
+      "success": true,
+      "fault_injection_is_scientific_evidence": false
+    },
+    "negative_portability_checks": {
+      "tested_utc": "2026-10-15T04:07:42.837736+00:00",
+      "source_cli_sha256": "618bf8cf8a659df67ac4660ca1f0201a42aac2a8979a8d33098a67e95f6af276",
+      "source_release_manifest_sha256": "85223f371702fa49480293629f786a81aefc2adf9eed7e0d22037f2030fdd3c9",
+      "source_file_count": 464,
+      "source_package_mutated": false,
+      "all_writes_under": "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release",
+      "new_bsm1_calls": 0,
+      "new_proxy_integrations": 0,
+      "negative_test_groups": 3,
+      "negative_command_subcases": 5,
+      "positive_controls": 1,
+      "all_pass": true,
+      "commands": [
+        {
+          "name": "intact_manifest_positive_control",
+          "command_argv": [
+            "E:\\conda\\envs\\torch25\\python.exe",
+            "-B",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\intact_package\\reproduce.py",
+            "verify",
+            "--output",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\intact_package\\test_output"
+          ],
+          "cwd": "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\intact_package",
+          "returncode": 0,
+          "elapsed_seconds": 12.670733500001006,
+          "expected_token": null,
+          "expected_success": true,
+          "proxy_predictions_created": 0,
+          "log": "negative_test_copies\\final_release\\intact_manifest_positive_control.txt",
+          "pass": true,
+          "archivable_log": "negative_test_copies/final_intact_manifest_positive_control.txt",
+          "log_sha256": "4817cca5696f316d90fc2c0908c790c00b492bbde40597afeb328cfc2cb2ed76"
+        },
+        {
+          "name": "frozen_input_rejected_before_predict",
+          "command_argv": [
+            "E:\\conda\\envs\\torch25\\python.exe",
+            "-B",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_frozen_input\\reproduce.py",
+            "predict",
+            "--version",
+            "M2",
+            "--output",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_frozen_input\\test_output"
+          ],
+          "cwd": "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_frozen_input",
+          "returncode": 1,
+          "elapsed_seconds": 0.11370290000013483,
+          "expected_token": "Corrupt evidence or source",
+          "expected_success": false,
+          "proxy_predictions_created": 0,
+          "log": "negative_test_copies\\final_release\\frozen_input_rejected_before_predict.txt",
+          "pass": true,
+          "archivable_log": "negative_test_copies/final_frozen_input_rejected_before_predict.txt",
+          "log_sha256": "522c35c008b9af780f4ac4841509881a5dfe92bde07f385bdb46f755003a9a50"
+        },
+        {
+          "name": "modified_cli_manifest_rejected",
+          "command_argv": [
+            "E:\\conda\\envs\\torch25\\python.exe",
+            "-B",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_cli\\reproduce.py",
+            "verify",
+            "--output",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_cli\\test_output"
+          ],
+          "cwd": "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_cli",
+          "returncode": 1,
+          "elapsed_seconds": 0.2665755000016361,
+          "expected_token": "Corrupt package",
+          "expected_success": false,
+          "proxy_predictions_created": 0,
+          "log": "negative_test_copies\\final_release\\modified_cli_manifest_rejected.txt",
+          "pass": true,
+          "archivable_log": "negative_test_copies/final_modified_cli_manifest_rejected.txt",
+          "log_sha256": "a2f3496b977fabb106dd7764c54ee2d3b534231e1ca6d4fd79313c3d2db00992"
+        },
+        {
+          "name": "modified_kernel_manifest_rejected",
+          "command_argv": [
+            "E:\\conda\\envs\\torch25\\python.exe",
+            "-B",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_kernel\\reproduce.py",
+            "predict",
+            "--version",
+            "M2",
+            "--output",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_kernel\\test_output"
+          ],
+          "cwd": "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\tampered_kernel",
+          "returncode": 1,
+          "elapsed_seconds": 0.12324240000089048,
+          "expected_token": "Corrupt evidence or source",
+          "expected_success": false,
+          "proxy_predictions_created": 0,
+          "log": "negative_test_copies\\final_release\\modified_kernel_manifest_rejected.txt",
+          "pass": true,
+          "archivable_log": "negative_test_copies/final_modified_kernel_manifest_rejected.txt",
+          "log_sha256": "a6229e6845010d24e53a87170a5c3eaa0cb27dac7748fd87f48c891dc1499eb4"
+        },
+        {
+          "name": "M1_ablation_explicitly_rejected",
+          "command_argv": [
+            "E:\\conda\\envs\\torch25\\python.exe",
+            "-B",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\M1_ablation_misuse\\reproduce.py",
+            "predict",
+            "--version",
+            "M1",
+            "--model",
+            "no_oxygen_demand_feedback",
+            "--output",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\M1_ablation_misuse\\test_output"
+          ],
+          "cwd": "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\M1_ablation_misuse",
+          "returncode": 1,
+          "elapsed_seconds": 0.8249737000005553,
+          "expected_token": "M1",
+          "expected_success": false,
+          "proxy_predictions_created": 0,
+          "log": "negative_test_copies\\final_release\\M1_ablation_explicitly_rejected.txt",
+          "pass": true,
+          "archivable_log": "negative_test_copies/final_M1_ablation_explicitly_rejected.txt",
+          "log_sha256": "72a9add7c9d5d77eeb8d9897567c80ab5f7c574d8d542ab738aa837638210147"
+        },
+        {
+          "name": "missing_release_manifest_rejected",
+          "command_argv": [
+            "E:\\conda\\envs\\torch25\\python.exe",
+            "-B",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\missing_release_manifest\\reproduce.py",
+            "verify",
+            "--output",
+            "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\missing_release_manifest\\test_output"
+          ],
+          "cwd": "D:\\论文\\1\\program_completion_20261015\\coefficient_sensitivity\\negative_test_copies\\final_release\\missing_release_manifest",
+          "returncode": 1,
+          "elapsed_seconds": 0.12050009999984468,
+          "expected_token": "package_manifest.json",
+          "expected_success": false,
+          "proxy_predictions_created": 0,
+          "log": "negative_test_copies\\final_release\\missing_release_manifest_rejected.txt",
+          "pass": true,
+          "archivable_log": "negative_test_copies/final_missing_release_manifest_rejected.txt",
+          "log_sha256": "100c114825f457c6a57d8be5d13038b9dd403fde3379fa867a37a1588c889fff"
+        }
+      ],
+      "source_cli_sha256_after_tests": "618bf8cf8a659df67ac4660ca1f0201a42aac2a8979a8d33098a67e95f6af276",
+      "source_release_manifest_sha256_after_tests": "85223f371702fa49480293629f786a81aefc2adf9eed7e0d22037f2030fdd3c9",
+      "source_cli_and_manifest_unchanged_after_tests": true
+    }
+  },
+  "independent_program_review_status": "PASS_ALL_REPORTED_PROGRAM_ISSUES_RESOLVED",
+  "not_resolved_by_programming": [
+    "Historical literature/derivation for empirical constants was not found; author evidence is still needed if claimed.",
+    "Single-factor +/-10/20 percent stress tests are not physiological parameter intervals or global uncertainty analysis.",
+    "Finite-grid observed Gate capture is not a universal reliability guarantee.",
+    "Local reproducibility archive is not yet a published repository or DOI.",
+    "English manuscript and reviewer responses are outside this program-only task."
+  ]
+}

@@ -1,0 +1,40 @@
+112:         oxygen_h = SO / (p.k_oh + SO + 1e-9)
+113:         oxygen_a = (SO ** p.hill_n) / (p.k_oa ** p.hill_n + SO ** p.hill_n + 1e-9)
+114:         r_h = mu_h * (SS / (p.k_s + SS + 1e-9)) * oxygen_h * (XH / 1000.0)
+115:         r_a_unlimited = mu_a * (SNH / (p.k_nh + SNH + 1e-9)) * oxygen_a * (XA / 100.0)
+116:         r_a = min(r_a_unlimited, p.nitrification_rate_cap * scenario.nitrification_cap_scale)
+117:         kla_eff = scenario.kla_scale * p.oxygen_gain * (u / 240.0)
+118:         r_o2 = kla_eff * (p.so_sat - SO)
+119:         return {"r_h": float(r_h), "r_a": float(r_a), "r_o2": float(r_o2)}
+120: 
+121:     def biomass_equilibrium_targets(
+122:         self,
+123:         u: float,
+124:         influent: InfluentPoint,
+125:         scenario: ScenarioConfig,
+
+193:         influent: InfluentPoint,
+194:         scenario: ScenarioConfig,
+195:         dt_h: float,
+196:     ) -> np.ndarray:
+197:         """Return one explicit-Euler candidate before applying state bounds."""
+198:         p = self.params
+199:         XH, SS, XA, SNO, SNH, SO = x
+200:         tau = p.tau_h / max(influent.q_scale, 1e-6)
+201:         r = self.rates(x, u, influent, scenario)
+202:         r_h, r_a, r_o2 = r["r_h"], r["r_a"], r["r_o2"]
+203: 
+204:         targets = self.biomass_equilibrium_targets(u, influent, scenario)
+205:         dXH = (targets["XH_eq"] - XH) / max(p.biomass_tau_h, 1e-6)
+206:         dXA = (targets["XA_eq"] - XA) / max(p.biomass_tau_a, 1e-6)
+207:         dSS = (influent.cod - SS) / tau - 18.0 * r_h
+208:         dSNH = (
+209:             (influent.nh4 - SNH) / tau
+210:             + p.ss_to_nh * max(SS, 0.0) / tau
+211:             - p.nh4_nitrification_factor * r_a
+212:         )
+213:         dSNO = (2.0 - SNO) / tau + p.y_no * r_a - 0.25 * r_h
+214:         dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a
+215: 
+216:         dx = np.array([dXH, dSS, dXA, dSNO, dSNH, dSO], dtype=float)
+217:         return x + dt_h * dx

@@ -1,0 +1,12 @@
+{
+  "question": "Does a reduced parameterization remove inactive/confounded degrees of freedom, and does continuous task calibration improve concentration and screening on new constant conditions?",
+  "claim_C1": "Reparameterization removes the N-removal scale gauge relative to NH4/DO observations when the oxygen coefficient is also free; it does not identify physical constants or preserve SNO under arbitrary gauge changes.",
+  "claim_C2": "The continuous full model is compared with continuous regression using identical 750 target values; any superiority is to be assessed after freeze, not assumed.",
+  "claim_C3": "Fixed-ratio full versus no-feedback is the matched five-parameter ablation; the six-parameter calibrated version has additional flexibility and is not that causal pair.",
+  "reparameterization": {"A":"mu_a*k_NA", "C":"cap*k_NA", "rho":"gamma_A/k_NA", "NH4_removal":"min(A*activity*NH4/(K_N+NH4)*DO_hill*XA/100,C)", "DO_autotrophic_demand":"rho*NH4_removal"},
+  "cap_basis": "On development domain L<=1,T>=2,f<=0.1,steady N removal <=(40.5+0.1*312)/2=35.85<40. The cap is inactive there by construction; transient activation is separately monitored.",
+  "historical_prior": "All process models retain the original empirical biomass closure. Pure regressors use L,z only, so matching target supervision does not eliminate all historical prior/capacity differences.",
+  "limitations": ["Six new conditions do not establish general risk or plant validity.", "Continuous calibration is a new study version, not retroactive repair of M1/M2.", "Profile loss and Jacobian rank are diagnostics, not physical parameter confidence intervals.", "No temperature/dynamic extension or measured plant energy is claimed.", "All failed/negative results and all pre-reference predictions are retained."],
+  "authorization": "User requested code modifications and autonomous local execution, including Python/PyTorch as needed. NumPy/SciPy/Numba suffice for this small model.",
+  "outputs": ["new source code and tests", "development fits and identifiability diagnostics", "prospective freeze and raw new BSM1 references", "independent raw audit and versioned Chinese report"]
+}

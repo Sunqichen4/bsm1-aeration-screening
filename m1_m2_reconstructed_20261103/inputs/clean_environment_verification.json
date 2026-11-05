@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-10-15T03:32:45.671668+00:00",
+  "package_path": "D:\\论文\\1\\program_completion_20261015\\_verification\\迁移 测试\\portable_package",
+  "interpreter": "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+  "isolated_site_packages": true,
+  "pythonpath_removed": true,
+  "manifest_sha256": "93ae72353bbcb43ae2ea6f474ac78ba9689bc0d30bf2cd31552da69e1335c692",
+  "jobs": [
+    {
+      "name": "environment",
+      "returncode": 0,
+      "elapsed_seconds": 4.165951799999675,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-c",
+        "import sys,site,json,importlib.metadata as m; print(json.dumps({'python':sys.version,'prefix':sys.prefix,'base_prefix':sys.base_prefix,'system_site_packages':site.ENABLE_USER_SITE,'packages':{n:m.version(n) for n in ['numpy','pandas','scipy','numba','llvmlite','bsm2-python']}}))"
+      ],
+      "log": "_verification\\clean_relocation_runs\\environment.log"
+    },
+    {
+      "name": "pip_check",
+      "returncode": 0,
+      "elapsed_seconds": 25.7039079999995,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "log": "_verification\\clean_relocation_runs\\pip_check.log"
+    },
+    {
+      "name": "integrity",
+      "returncode": 0,
+      "elapsed_seconds": 8.689897300000666,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "verify",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_relocation_runs\\integrity"
+      ],
+      "log": "_verification\\clean_relocation_runs\\integrity.log"
+    },
+    {
+      "name": "tables",
+      "returncode": 0,
+      "elapsed_seconds": 42.215843199999654,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "reproduce",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_relocation_runs\\tables"
+      ],
+      "log": "_verification\\clean_relocation_runs\\tables.log"
+    },
+    {
+      "name": "M1_predictions",
+      "returncode": 0,
+      "elapsed_seconds": 283.25031020000097,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "predict",
+        "--version",
+        "M1",
+        "--all-cases",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_relocation_runs\\M1_predictions"
+      ],
+      "log": "_verification\\clean_relocation_runs\\M1_predictions.log"
+    },
+    {
+      "name": "M2_predictions",
+      "returncode": 0,
+      "elapsed_seconds": 298.4219054999994,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "predict",
+        "--version",
+        "M2",
+        "--all-cases",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_relocation_runs\\M2_predictions"
+      ],
+      "log": "_verification\\clean_relocation_runs\\M2_predictions.log"
+    },
+    {
+      "name": "M2_fit",
+      "returncode": 0,
+      "elapsed_seconds": 335.84160259999953,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "fit-m2",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_relocation_runs\\M2_fit"
+      ],
+      "log": "_verification\\clean_relocation_runs\\M2_fit.log"
+    },
+    {
+      "name": "constant_reference",
+      "returncode": 0,
+      "elapsed_seconds": 313.1694932999999,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "reference-smoke",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_relocation_runs\\constant_reference"
+      ],
+      "log": "_verification\\clean_relocation_runs\\constant_reference.log"
+    },
+    {
+      "name": "cold_dynamic_guard",
+      "returncode": 0,
+      "elapsed_seconds": 43.864617799999905,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "guard-smoke",
+        "--weather",
+        "dry",
+        "--temperature",
+        "10",
+        "--real-reference",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_relocation_runs\\cold_dynamic_guard"
+      ],
+      "log": "_verification\\clean_relocation_runs\\cold_dynamic_guard.log"
+    }
+  ],
+  "actual_native_smoke_integrations": 2,
+  "cost_scope": "additional program smoke calls; separate from the prospective Gate scientific cohort"
+}

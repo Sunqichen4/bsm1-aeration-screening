@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "fit-logistic",
+    "--output",
+    "verification/logistic_fits"
+  ],
+  "elapsed_seconds": 0.575278899865225,
+  "new_outputs_only": true,
+  "success": true
+}

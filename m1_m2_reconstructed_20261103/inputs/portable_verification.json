@@ -1,0 +1,554 @@
+{
+  "status": "PASS_COMPLETED_RECORDS",
+  "local_smoke_new_BSM1_integrations": 2,
+  "smoke_scope": "program-validation only; separate from original 132/96/30/244 and new 96+8 Gate scientific evidence; root clean-environment verification may make separate calls and is logged separately",
+  "smokes": [
+    {
+      "kind": "native_67_day_constant_BSM1",
+      "new_integrations": 1,
+      "SNH_max_eval": 2.3238896895571926,
+      "safe": true,
+      "samples": 10080,
+      "warnings": 0,
+      "source_record": "verification_records/constant_reference_smoke/reference/portable_constant_smoke.json",
+      "sha256": "24ce6ffb99a5943fea0ab6f3045e1dcf0c9fc8bde8a23ab165fe97ec486981e1"
+    },
+    {
+      "kind": "native_74_day_cold_dynamic_BSM1_callback",
+      "new_integrations": 1,
+      "reference_called": true,
+      "SNH_max_eval": 24.50206630118434,
+      "safe": false,
+      "samples": 10080,
+      "warnings": 0,
+      "max_temperature_deviation_C": 0.0,
+      "source_record": "verification_records/cold_dynamic_guard_smoke/guarded_decision.json",
+      "sha256": "931dfb0295ecec4b6d3d6c16b493390f03089d7e80328ad8d4671b81a8a2ac14"
+    }
+  ],
+  "completed_reproductions": [
+    {
+      "type": "fresh_surrogate_prediction",
+      "record": "verification_records/M1_fresh_predictions/prediction_check.json",
+      "sha256": "818beb2539b267a957792b346a89013d282eb2c2e12b025424dee43bc0a86692",
+      "result": {
+        "status": "PASS",
+        "version": "M1",
+        "model": "full",
+        "cases": 132,
+        "timestep_min": 1.0,
+        "max_abs_peak_difference_from_frozen": 3.552713678800501e-15,
+        "label_disagreements": 0,
+        "lower_clips": 0,
+        "upper_clips": 0,
+        "scope": "fresh six-state ODE predictions, not new BSM1 labels"
+      }
+    },
+    {
+      "type": "fresh_surrogate_prediction",
+      "record": "verification_records/M2_fresh_predictions/prediction_check.json",
+      "sha256": "57fa5d79cb9e89d343df78a04feb872a77780ccafd87d136233ce943405954d6",
+      "result": {
+        "status": "PASS",
+        "version": "M2",
+        "model": "full",
+        "cases": 244,
+        "timestep_min": 1.0,
+        "max_abs_peak_difference_from_frozen": 7.105427357601002e-15,
+        "label_disagreements": 0,
+        "lower_clips": 0,
+        "upper_clips": 0,
+        "scope": "fresh six-state ODE predictions, not new BSM1 labels"
+      }
+    },
+    {
+      "type": "fresh_surrogate_prediction",
+      "record": "verification_records/M2_ablation_fresh_predictions/prediction_check.json",
+      "sha256": "6356116426e490be3568d2caf2205069d6ea9c1f79f2682533e2ab007160b8bc",
+      "result": {
+        "status": "PASS",
+        "version": "M2",
+        "model": "no_oxygen_demand_feedback",
+        "cases": 244,
+        "timestep_min": 1.0,
+        "max_abs_peak_difference_from_frozen": 3.552713678800501e-15,
+        "label_disagreements": 0,
+        "lower_clips": 0,
+        "upper_clips": 0,
+        "scope": "fresh six-state ODE predictions, not new BSM1 labels"
+      }
+    },
+    {
+      "type": "fresh_surrogate_prediction",
+      "record": "verification_records/M2_full_halfminute_fresh_predictions/prediction_check.json",
+      "sha256": "4d97709684818bbffcef9a39509910a87a8f1ba034b7bf2355d7f282564c95c3",
+      "result": {
+        "status": "PASS",
+        "version": "M2",
+        "model": "full",
+        "cases": 244,
+        "timestep_min": 0.5,
+        "max_abs_peak_difference_from_frozen": 2.214498806552001e-09,
+        "label_disagreements": 0,
+        "lower_clips": 0,
+        "upper_clips": 0,
+        "scope": "fresh six-state ODE predictions, not new BSM1 labels"
+      }
+    },
+    {
+      "type": "frozen_table_reconstruction",
+      "record": "verification_records/table_reproduction_final_core/reproduction_summary.json",
+      "sha256": "c69ee3c0c8638d7e5fdab48a815d325f3c410bd269446a783883b61a57c021db",
+      "result": {
+        "status": "PASS",
+        "evidence_integrity": {
+          "status": "PASS",
+          "checked_files": 73,
+          "failures": [],
+          "scope": "selected frozen evidence plus runnable scientific kernels; not full raw-trajectory archive",
+          "package_files_checked": 155
+        },
+        "tables": {
+          "M1_raw_screening": 6,
+          "M1_gate_policies": 12,
+          "M2_primary_screening": 12,
+          "M2_threshold_reuse": 20,
+          "M2_boundary_energy": 32,
+          "M2_continuous_output": 16,
+          "M1_challenge": 12,
+          "M1_half_flow": 4,
+          "M1_serial_timing": 18
+        },
+        "checks": [
+          {
+            "check": "M2 primary full",
+            "observed": [
+              0,
+              0
+            ],
+            "expected": [
+              0,
+              0
+            ],
+            "pass": true
+          },
+          {
+            "check": "M2 primary no_oxygen_demand_feedback",
+            "observed": [
+              10,
+              1
+            ],
+            "expected": [
+              10,
+              1
+            ],
+            "pass": true
+          },
+          {
+            "check": "M2 primary logistic_basic",
+            "observed": [
+              0,
+              1
+            ],
+            "expected": [
+              0,
+              1
+            ],
+            "pass": true
+          },
+          {
+            "check": "M2 primary logistic_shared_closure",
+            "observed": [
+              6,
+              0
+            ],
+            "expected": [
+              6,
+              0
+            ],
+            "pass": true
+          }
+        ],
+        "new_reference_integrations": 0,
+        "scope": "regenerated selected result tables from preserved frozen evidence; original measurements are not new runs"
+      }
+    },
+    {
+      "type": "fresh_historical_initialization_M1_fit",
+      "record": "verification_records/M1_fresh_fit/parameters.json",
+      "sha256": "80093effa0d1942d166459222c43ec323a53c490852db8d620685ae27b786d96",
+      "result": {
+        "parameters": {
+          "tau_h": 3.106791790976358,
+          "mu_h": 0.75,
+          "mu_a": 2.4999994203894276,
+          "k_s": 30.0,
+          "k_nh": 1.0,
+          "k_oh": 0.35,
+          "k_oa": 6.801847961245039,
+          "hill_n": 2.0,
+          "so_sat": 8.0,
+          "oxygen_gain": 1.499999972982092,
+          "y_no": 3.0,
+          "ss_to_nh": 0.09999999999999999,
+          "nitrification_rate_cap": 2.1487283737944556,
+          "nh4_nitrification_factor": 9.99999999996426,
+          "biomass_tau_h": 120.0,
+          "biomass_tau_a": 120.00439340692897,
+          "xh_reference": 1200.0,
+          "xa_reference": 534.0,
+          "bsm1_xba_asymptote": 152.5,
+          "bsm1_xba_logistic_slope": 0.08,
+          "bsm1_xba_logistic_midpoint": 123.7,
+          "xh_oxygen_response_weight": 0.018,
+          "biomass_load_exponent": 0.5,
+          "biomass_temperature_exponent": 1.0
+        },
+        "selected_start": 0,
+        "all_parameters": [
+          "tau_h",
+          "mu_a",
+          "k_oa",
+          "oxygen_gain",
+          "ss_to_nh",
+          "nitrification_rate_cap",
+          "nh4_nitrification_factor",
+          "biomass_tau_a"
+        ],
+        "optimized_steady_parameters": [
+          "tau_h",
+          "mu_a",
+          "k_oa",
+          "oxygen_gain",
+          "ss_to_nh",
+          "nitrification_rate_cap",
+          "nh4_nitrification_factor"
+        ],
+        "unidentifiable_parameter": "biomass_tau_a",
+        "n_training_cases": 750,
+        "supervision": "binary_labels_only_for_this_refit",
+        "historic_extra_supervision": "Frozen biomass logistic response and baseline parameters derive from old BSM1 concentration/biomass data; pure architecture attribution is not justified.",
+        "training_solver": "Analytic elimination of SS and SNH with 48 SO bisections; exact steady equations apart from original +1e-9 denominators.",
+        "finite_time_equivalence_status": "verified_on_750_development_cases_at_1min_to_0.001mgN_L_and_no_label_change",
+        "probability_temperature_mgN_L": 0.5,
+        "objective": "unweighted mean squared error between feasible probability and binary label; all 750 cases",
+        "fit_seed": 20261013,
+        "fit_runtime_seconds": 11.293717599999582,
+        "final_ode_timestep_min": 1.0,
+        "fit_max_nfev_per_start": 800,
+        "optimizer_settings": {
+          "ftol": 1e-07,
+          "xtol": 1e-08,
+          "gtol": 1e-07,
+          "diff_step": 1e-06
+        },
+        "development_label_sha256": "dace4d64687258fe466840d26de27db777485543531ec14ae23b77ffb17c4b1b",
+        "old_parameter_config_sha256": "ab6342a2edb1886520a19a746e40d7ee0f835b7e86e32344886660b80225cf96",
+        "old_surrogate_source_sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+        "finite_time_audit": {
+          "final_ode_prediction_runtime_seconds": 12.65589799999907,
+          "max_abs_SNH_difference": 7.579564768356306e-05,
+          "mean_abs_SNH_difference": 1.6567131944433748e-05,
+          "n_steady_finite_label_disagreements": 0,
+          "n_ode_label_errors": 2,
+          "total_lower_clips": 0,
+          "total_upper_clips": 0,
+          "SNH_lower_clips": 0,
+          "SO_lower_clips": 0
+        }
+      }
+    },
+    {
+      "type": "fresh_shared_protocol_model_pair_fit",
+      "record": "verification_records/M2_pair_fresh_fit/fit_pair_complete.json",
+      "sha256": "bbef561864f1894199fa480b1fa9d2eb517a6b6b74105f3577f90aba85d71a16",
+      "result": {
+        "design_sha256": "1a49d1dccf61ff2fbaae42cb399d9fdfbb78fe44679d01901d0f55336625c851",
+        "models": {
+          "full": {
+            "eligible_for_new_predictions": true,
+            "fit_runtime_seconds": 10.617548199999874
+          },
+          "no_oxygen_demand_feedback": {
+            "eligible_for_new_predictions": true,
+            "fit_runtime_seconds": 0.7170795000001817
+          }
+        }
+      }
+    },
+    {
+      "type": "fresh_M1_and_ten_M2_Logistic_fits",
+      "record": "verification_records/Logistic_fresh_fits/refit_summary.json",
+      "sha256": "aea0ca3f9f5df202289458f5ba052ef1bb8769d03a86dd935a477c4cabd4a208",
+      "result": {
+        "status": "PASS",
+        "completed_utc": "2026-10-15T03:20:46.881650+00:00",
+        "model_fits": 11,
+        "optimizer_starts": 31,
+        "training_cases_per_fit": 750,
+        "new_BSM1_integrations": 0,
+        "process_ODE_integrations": 0,
+        "known_development_peaks_reused_for_M2_secondary_labels": true,
+        "frozen_weights_used_for_initialization": false,
+        "unchanged_inputs": true,
+        "elapsed_seconds": 3.173839200000657,
+        "max_abs_weight_difference": 0.0,
+        "max_abs_probability_difference": 1.1102230246251565e-15,
+        "total_label_disagreements": 0,
+        "checks": [
+          {
+            "version": "M1",
+            "variant": "logistic",
+            "limit_mgN_L": 4.0,
+            "training_cases": 750,
+            "grid_cases": 132,
+            "frozen_prediction_file_cases": 132,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-15,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_basic",
+            "limit_mgN_L": 2.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 200,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_basic",
+            "limit_mgN_L": 3.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 200,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_basic",
+            "limit_mgN_L": 4.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 244,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_basic",
+            "limit_mgN_L": 5.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 200,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_basic",
+            "limit_mgN_L": 6.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 200,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_shared_closure",
+            "limit_mgN_L": 2.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 200,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_shared_closure",
+            "limit_mgN_L": 3.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 200,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_shared_closure",
+            "limit_mgN_L": 4.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 244,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_shared_closure",
+            "limit_mgN_L": 5.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 200,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          },
+          {
+            "version": "M2",
+            "variant": "logistic_shared_closure",
+            "limit_mgN_L": 6.0,
+            "training_cases": 750,
+            "grid_cases": 244,
+            "frozen_prediction_file_cases": 200,
+            "max_abs_weight_difference": 0.0,
+            "max_abs_training_probability_difference": 0.0,
+            "max_abs_grid_probability_difference": 0.0,
+            "max_abs_frozen_file_probability_difference": 1.1102230246251565e-16,
+            "training_label_disagreements": 0,
+            "grid_label_disagreements": 0,
+            "frozen_file_label_disagreements": 0,
+            "pass": true
+          }
+        ],
+        "scope": "fresh reproduction of historical statistical training, not additional independent validation or model retuning"
+      }
+    },
+    {
+      "type": "fresh_posthoc_sensitivity_reproduction",
+      "record": "verification_records/coefficient_fresh_reproduction/completion.json",
+      "sha256": "8223017f9a914e1fd90ec37bb8a26463377558eadcdd796fc97993e290bf7946",
+      "result": {
+        "completed_utc": "2026-10-15T03:13:12.692463+00:00",
+        "elapsed_seconds": 77.16505750000033,
+        "protocol_sha256": "5b56e07e47cde65dbc4fe7fec97e4fb7e894271c14748b104cb5b9e9bee60910",
+        "post_hoc_existing_reference_analysis": true,
+        "new_bsm1_calls": 0,
+        "fit_calls": 0,
+        "n_references": 244,
+        "variants": 17,
+        "full_surrogate_simulations": 4148,
+        "fine_surrogate_simulations": 16,
+        "fine_label_changes": 0,
+        "max_fine_NH4_peak_difference": 1.2578738051161054e-09,
+        "baseline_equivalence_pass": true,
+        "lower_clips_all_primary": 0,
+        "upper_clips_all_primary": 0,
+        "nonfinite_all_primary": 0
+      }
+    },
+    {
+      "type": "portable_new_frozen_gate_evidence_audit",
+      "record": "verification_records/new_gate_portable_audit/portable_gate_audit_summary.json",
+      "sha256": "3797a4e2b2b9a982c6406e5c6c77751874a2e22f890bb82ec4534ec61106e133",
+      "result": {
+        "status": "PASS",
+        "primary_references": 96,
+        "fine_references": 8,
+        "raw_trajectories_recomputed": 104,
+        "new_BSM1_integrations_during_this_audit": 0,
+        "original_new_Gate_scientific_integrations": 104,
+        "fresh_M1_prediction_max_abs_peak_difference": 0.0,
+        "recomputed_unchanged_routes": true,
+        "fine_label_changes": 0,
+        "fine_max_peak_difference": 0.0006544100346141946,
+        "summary": [
+          {
+            "method": "six_state",
+            "scenario": "all",
+            "cases": 96,
+            "reference_safe": 52,
+            "raw_false_release": 4,
+            "raw_conservative_reject": 2,
+            "captured_raw_false_release": 4,
+            "capture_rate": 1.0,
+            "policy_reference_answer_uses": 80,
+            "final_false_release": 0,
+            "final_conservative_reject": 0,
+            "capture_claim": "observed_only_on_this_frozen_grid"
+          },
+          {
+            "method": "logistic",
+            "scenario": "all",
+            "cases": 96,
+            "reference_safe": 52,
+            "raw_false_release": 0,
+            "raw_conservative_reject": 2,
+            "captured_raw_false_release": 0,
+            "capture_rate": null,
+            "policy_reference_answer_uses": 80,
+            "final_false_release": 0,
+            "final_conservative_reject": 0,
+            "capture_claim": "not_activated"
+          }
+        ],
+        "original_freeze_entries_directly_covered": 40,
+        "original_freeze_entries_not_in_portable_byte_subset": 71,
+        "scope": "independent reuse audit of new pre-frozen Gate evidence; no new scientific candidates or serial speed claims"
+      }
+    }
+  ],
+  "scope": "actual completed local records; selected core release and extensions, not all raw-trajectory archiving or public upload"
+}

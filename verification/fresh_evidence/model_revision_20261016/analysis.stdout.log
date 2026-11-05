@@ -1,0 +1,20 @@
+{
+  "freeze_sha256": "c5a5aa2e6ea73d2c0b143d1d011529d4d1b4b89dec29fba293dcbf0283f43965",
+  "candidate_count": 90,
+  "condition_count": 6,
+  "models": [
+    "full_calibrated",
+    "full_fixed_ratio",
+    "legacy_M2_binary",
+    "no_feedback",
+    "poly_ridge",
+    "rbf_kernel_ridge"
+  ],
+  "output_files": [
+    "evaluation_joined.csv",
+    "metrics_overall.csv",
+    "metrics_by_condition.csv",
+    "boundaries.csv",
+    "analysis_summary.json"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-10-15T04:09:10.419535+00:00",
+  "package_path": "D:\\论文\\1\\program_completion_20261015\\_verification\\迁移 测试\\portable_package",
+  "interpreter": "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+  "isolated_site_packages": true,
+  "pythonpath_removed": true,
+  "manifest_sha256": "bde5fbd3c60cceea3dd77e305c6c3f311aff1fa7612efbfa216625282a1fd78b",
+  "jobs": [
+    {
+      "name": "final_integrity",
+      "returncode": 0,
+      "elapsed_seconds": 12.195117500001288,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "verify",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\final_relocation_runs\\final_integrity"
+      ],
+      "log": "_verification\\final_relocation_runs\\final_integrity.log"
+    },
+    {
+      "name": "final_gate_audit",
+      "returncode": 0,
+      "elapsed_seconds": 56.40892290000011,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "gate-audit",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\final_relocation_runs\\final_gate_audit"
+      ],
+      "log": "_verification\\final_relocation_runs\\final_gate_audit.log"
+    },
+    {
+      "name": "final_M1_fit",
+      "returncode": 0,
+      "elapsed_seconds": 26.016043900001023,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "fit-m1",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\final_relocation_runs\\final_M1_fit"
+      ],
+      "log": "_verification\\final_relocation_runs\\final_M1_fit.log"
+    },
+    {
+      "name": "final_logistic_refit",
+      "returncode": 0,
+      "elapsed_seconds": 2.191891599999508,
+      "command": [
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\clean_env\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reproduce.py",
+        "fit-logistic",
+        "--output",
+        "D:\\论文\\1\\program_completion_20261015\\_verification\\final_relocation_runs\\final_logistic_refit"
+      ],
+      "log": "_verification\\final_relocation_runs\\final_logistic_refit.log"
+    }
+  ],
+  "actual_native_smoke_integrations": 0,
+  "cost_scope": "additional program smoke calls; separate from the prospective Gate scientific cohort"
+}

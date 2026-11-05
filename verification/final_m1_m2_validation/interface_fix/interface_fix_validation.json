@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "tests_passed": 7,
+  "tests_failed": 0,
+  "copied_scientific_sources_and_inputs_checked": 81,
+  "copied_source_failures": [],
+  "implementation_hashes_match": {
+    "reproduce.py": true,
+    "README.md": true,
+    "tests/test_reconstruction.py": true
+  },
+  "final_and_working_package_match": {
+    "reproduce.py": true,
+    "README.md": true,
+    "tests/test_reconstruction.py": true,
+    "implementation_manifest.json": true,
+    "verification_summary.json": true
+  },
+  "M1_prediction_new_combined_check_passed": true,
+  "new_fits": 0,
+  "new_BSM1_integrations": 0,
+  "changes": [
+    "reject M1 ablation request before output creation",
+    "include Logistic comparisons in M1 prediction pass criterion"
+  ],
+  "frozen_evidence_modified": false
+}

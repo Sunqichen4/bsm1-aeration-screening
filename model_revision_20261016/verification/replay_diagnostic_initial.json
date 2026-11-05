@@ -1,0 +1,81 @@
+{
+  "cwd": "D:\\论文\\1\\model_revision_20261016\\.runtime_cache\\relocation smoke\\复制程序",
+  "phase": "original_portable_import_order_and_default_parser",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "model_errors": [
+    {
+      "model": "full_calibrated",
+      "cases": 90,
+      "maximum_error": 1.5987211554602254e-14,
+      "candidate_id": "m3_0063",
+      "replay": 15.53185101227218,
+      "frozen": 15.531851012272195
+    },
+    {
+      "model": "full_fixed_ratio",
+      "cases": 90,
+      "maximum_error": 7.105427357601002e-15,
+      "candidate_id": "m3_0062",
+      "replay": 42.86139511899659,
+      "frozen": 42.8613951189966
+    },
+    {
+      "model": "legacy_M2_binary",
+      "cases": 90,
+      "maximum_error": 1.4210854715202004e-14,
+      "candidate_id": "m3_0062",
+      "replay": 51.13778319175253,
+      "frozen": 51.13778319175255
+    },
+    {
+      "model": "no_feedback",
+      "cases": 90,
+      "maximum_error": 7.105427357601002e-15,
+      "candidate_id": "m3_0001",
+      "replay": 40.582696750228294,
+      "frozen": 40.58269675022829
+    },
+    {
+      "model": "poly_ridge",
+      "cases": 90,
+      "maximum_error": 7.105427357601002e-15,
+      "candidate_id": "m3_0031",
+      "replay": 43.009927454956184,
+      "frozen": 43.00992745495618
+    },
+    {
+      "model": "rbf_kernel_ridge",
+      "cases": 90,
+      "maximum_error": 1.0244548320770264e-08,
+      "candidate_id": "m3_0064",
+      "replay": 8.066491104997928,
+      "frozen": 8.06649109475338
+    }
+  ],
+  "input_parser_comparison": [
+    {
+      "field": "load_coordinate",
+      "max_parser_difference": 0.0,
+      "n_different": 0
+    },
+    {
+      "field": "oxygen_transfer_factor",
+      "max_parser_difference": 1.1102230246251565e-16,
+      "n_different": 15
+    },
+    {
+      "field": "kla",
+      "max_parser_difference": 0.0,
+      "n_different": 0
+    },
+    {
+      "field": "effective_kla",
+      "max_parser_difference": 5.684341886080802e-14,
+      "n_different": 18
+    }
+  ]
+}

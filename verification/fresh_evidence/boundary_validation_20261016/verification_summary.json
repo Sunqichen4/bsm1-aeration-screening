@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "scope": "relocation, frozen hashes, raw saved reference audit, finite prediction and gate replay, metrics, lightweight tests; no new native reference integration or scientific refit",
+  "study": "boundary_validation_20261016",
+  "executable": "E:\\conda\\envs\\torch25\\python.exe",
+  "results": [
+    {
+      "stage": "main_audit",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "boundary_study.py",
+        "audit"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 23.276646400103346
+    },
+    {
+      "stage": "half_audit",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "fresh_reference.py",
+        ".",
+        "--audit-half-step"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.791922600008547
+    },
+    {
+      "stage": "prediction_replay",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "boundary_study.py",
+        "replay"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 85.28409029985778
+    },
+    {
+      "stage": "independent_metrics",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "verification/independent_review.py",
+        "--skip-external-protection"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.350291999988258
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "E:\\conda\\envs\\torch25\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=D:\\论文\\1\\_m3_delivery_verification_20261103\\fresh_evidence\\boundary_validation_20261016\\tests.xml"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.398382500046864
+    }
+  ],
+  "regenerated_preserved_outside_original_package": [
+    "independent_review.json",
+    "independent_review.md",
+    "reference_audit.json",
+    "numerical/half_step_audit.json"
+  ],
+  "copied_package_restored": true,
+  "original_copy_identical": true,
+  "native_ODE_executed": false,
+  "models_refit": false
+}

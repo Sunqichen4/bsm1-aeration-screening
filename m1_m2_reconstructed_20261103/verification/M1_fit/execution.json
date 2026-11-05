@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "fit-m1",
+    "--output",
+    "verification/M1_fit"
+  ],
+  "elapsed_seconds": 34.80086650000885,
+  "new_outputs_only": true,
+  "success": true
+}

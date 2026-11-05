@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-10-16T13:00:27.480904+00:00",
+  "protocol_sha256": "119ffddf7ceaeea404d5bc7b2b027bb9521fec9cc684fd18eb5de4b014d0dd25",
+  "data_sha256": "262c6b0c896bea9879b994b77850a58f37ec2bf3bae161e88527f88d8f92d0ee",
+  "scientific_source_hashes": {
+    "process_model.py": "e68341a4bf1f1ae8cae2ac6b07b94ee450dcebb0fe1070916d292b1bef0591af",
+    "statistical_models.py": "0f757c558e9ae5f9658ebb5c9978ebf74f97cc4e30c5584f1af568d7e11a5232",
+    "run_study.py": "68878b4854c9ed1b1f828cee0dfa9bca43dad818de592aa19577c6b2514ae317",
+    "design.json": "8997877fac5c22c69f4ec204a6dd1c5d1e99aee9a456fce88f59fdc267fdd76f",
+    "protocol.json": "119ffddf7ceaeea404d5bc7b2b027bb9521fec9cc684fd18eb5de4b014d0dd25",
+    "data/development_750.csv": "262c6b0c896bea9879b994b77850a58f37ec2bf3bae161e88527f88d8f92d0ee",
+    "legacy/controlled_models.py": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+    "legacy/M2_full_parameters.json": "6e0b7d2c2b8037e0b93a121fc1e416bc9254b85e131adb5c0f4c57f099567b24"
+  },
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "E:\\conda\\envs\\torch25\\python.exe",
+  "packages": {
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "numba": "0.65.1",
+    "bsm2-python": "0.0.16"
+  },
+  "scope": "Development only. No old 244/96 cases or new reference labels are read."
+}

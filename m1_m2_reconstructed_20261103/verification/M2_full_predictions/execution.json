@@ -1,0 +1,16 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "predict",
+    "--version",
+    "M2",
+    "--model",
+    "full",
+    "--all-cases",
+    "--output",
+    "verification/M2_full_predictions"
+  ],
+  "elapsed_seconds": 5.823694700142369,
+  "new_outputs_only": true,
+  "success": true
+}

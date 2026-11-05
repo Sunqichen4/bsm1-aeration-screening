@@ -1,0 +1,26 @@
+{
+  "freeze_sha256": "c5a5aa2e6ea73d2c0b143d1d011529d4d1b4b89dec29fba293dcbf0283f43965",
+  "sessions": [
+    {
+      "started_at_utc": "2026-10-16T13:05:10.527243+00:00",
+      "finished_at_utc": "2026-10-16T13:18:37.423679+00:00",
+      "workers": 4,
+      "wall_seconds": 806.8963101999998,
+      "new_attempts": 90,
+      "resumed_records": 0,
+      "exceptions": []
+    }
+  ],
+  "expected_count": 90,
+  "successful_count": 90,
+  "failed_count": 0,
+  "missing_count": 0,
+  "successful_kernel_work_seconds": 3025.573454899997,
+  "successful_total_work_seconds": 3082.422853300006,
+  "reported_failure_work_seconds": 0,
+  "timing_scope": "reference_generation_cost_parallel_wall_and_summed_work_no_serial_speedup_claim",
+  "worker_thread_limit": 1,
+  "old_label_imports": false,
+  "timestep_min": 1.0,
+  "candidate_filename": "new_candidates.csv"
+}

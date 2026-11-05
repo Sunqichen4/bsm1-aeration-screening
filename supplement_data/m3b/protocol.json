@@ -1,0 +1,100 @@
+{
+  "version": "M3B_boundary_supplement_20261016",
+  "created_at_utc": "2026-10-16T14:03:37.156926+00:00",
+  "purpose": "Validate already frozen M3 models on a fixed effective-KLa grid near the actual reference threshold; no refitting.",
+  "old_evidence_used": "M3 90 reference results informed the z range. They are design information, not unseen confirmation for M3B.",
+  "model_policy": "Byte-identical M3 models, gates and prediction sources; six models evaluated on every frozen candidate.",
+  "target": "Native BSM1 effluent NH4 maximum on 60 <= t < 67 d, mg N/L; peak <= 4 is compliant.",
+  "temperature_C": 15.0,
+  "tempmodel": false,
+  "main_dt_min": 1.0,
+  "half_dt_min": 0.5,
+  "warmup_days": 60.0,
+  "evaluation_days": 7.0,
+  "main_workers": 4,
+  "half_workers": 2,
+  "conditions": [
+    {
+      "load": 0.13,
+      "q": 0.27
+    },
+    {
+      "load": 0.31,
+      "q": 0.63
+    },
+    {
+      "load": 0.43,
+      "q": 0.38
+    },
+    {
+      "load": 0.61,
+      "q": 0.77
+    },
+    {
+      "load": 0.73,
+      "q": 0.34
+    },
+    {
+      "load": 0.91,
+      "q": 0.68
+    }
+  ],
+  "alpha_formula": ".7+.3*L+q*(1-(.7+.3*L))",
+  "fixed_effective_kla": [
+    112.0,
+    136.0,
+    140.0,
+    144.0,
+    148.0,
+    152.0,
+    156.0,
+    160.0,
+    164.0,
+    168.0,
+    172.0,
+    176.0,
+    180.0,
+    184.0,
+    188.0,
+    192.0,
+    196.0,
+    220.0
+  ],
+  "primary_stratum": "108 fixed grid points (coarse); primary comparison independent of enrichment-model selection.",
+  "secondary_stratum": "Up to 12 legacy M2 steady crossing c +/- 1 effective-KLa points, separately reported as prediction_enriched.",
+  "crossing_rule": "brentq on [112,220], xtol=1e-10 rtol=1e-12 iff finite endpoint signs differ; endpoint zero accepted; no monotonicity/unique/minimal crossing claim.",
+  "enrichment_bounds": "Clip c +/- 1 to [112,220]; deduplicate z within 1e-9 per condition. Coincident point retains coarse identity, noted in reason and half-step flag.",
+  "no_crossing_rule": "Skip enrichment, preserve condition and endpoint predictions; no reference-guided extension.",
+  "half_selection": "All unique c +/- 1 points selected before any new native labels; if no crossing, select each available predicted side nearest 4 on fixed grid, tie lower z.",
+  "half_role": "Fresh integration at .5 min of frozen subset; report concentration differences and label flips, keep 1-min main labels.",
+  "stopping": "Do not add cases, fit models, change parameters, buffers, threshold, or domains after observing M3B references, regardless of winner or missing sides.",
+  "metrics": [
+    "RMSE",
+    "MAE",
+    "bias",
+    "raw false releases/rejections",
+    "Gate selected/corrected/missed errors",
+    "final false releases/rejections",
+    "per-condition actual dual-side coverage",
+    "nearest compliant/noncompliant margins",
+    "counts within 0.25,0.5,1.0 of 4",
+    "local observed sign changes"
+  ],
+  "strata": [
+    "coarse",
+    "prediction_enriched",
+    "all"
+  ],
+  "threshold_equality": "<=4 compliant; Gate strict < and > unchanged.",
+  "inference_limits": [
+    "Six designed conditions are not independent identically distributed plant samples.",
+    "L and q are not factorial; no isolated load/alpha effects.",
+    "Do not pool M3 and M3B as an unbiased aggregate.",
+    "Legacy enrichment is model-informed; no general ranking based solely on this stratum.",
+    "Full_fixed_ratio vs no_feedback is matched five-parameter pair; full_calibrated has six.",
+    "Process historical biomass prior differs from pure-regressor features.",
+    "No new temperature, dynamics, physical identification, or measured energy validation."
+  ],
+  "input_precision": "All new scientific CSV reads use pandas float_precision=round_trip.",
+  "provenance": "Actual candidates, all six finite predictions, routes, half-step identities and scientific sources frozen before new native integration."
+}

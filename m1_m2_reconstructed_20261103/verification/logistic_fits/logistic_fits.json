@@ -1,0 +1,269 @@
+{
+  "scope": "M1 documented objective; reconstructed M2 starts (zero plus two uniform [-1,1], seed 20261014) because original logistic source is unavailable; all fits use only 750 development cases, frozen weights never used as starts",
+  "models": [
+    {
+      "model": "M1_logistic",
+      "weights": [
+        -45.17792385435948,
+        70.2237050116226,
+        -9.664629806825348
+      ],
+      "success": true,
+      "objective": 14.972800106719372,
+      "max_abs_probability_difference_from_frozen": 6.632105842285796e-08,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_basic",
+      "limit_mgN_L": 2.0,
+      "weights": [
+        22.017810877668467,
+        -4.697873712244834,
+        39.99999999999605
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265
+      ],
+      "success": true,
+      "loss": 0.0030059350135664214,
+      "checked_frozen_cases": 200,
+      "max_abs_probability_difference_from_frozen": 1.27677808425819e-06,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_basic",
+      "limit_mgN_L": 3.0,
+      "weights": [
+        24.739310691535106,
+        -4.569192586773506,
+        39.99999999999999
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265
+      ],
+      "success": true,
+      "loss": 0.0030288046967239576,
+      "checked_frozen_cases": 200,
+      "max_abs_probability_difference_from_frozen": 2.5229967417494947e-06,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_basic",
+      "limit_mgN_L": 4.0,
+      "weights": [
+        26.082693045085467,
+        -4.697871619695855,
+        39.99999999999999
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265
+      ],
+      "success": true,
+      "loss": 0.0030059350134005965,
+      "checked_frozen_cases": 244,
+      "max_abs_probability_difference_from_frozen": 1.1171207852100906e-06,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_basic",
+      "limit_mgN_L": 5.0,
+      "weights": [
+        27.46040550209414,
+        -4.44021733591239,
+        39.99999999991439
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265
+      ],
+      "success": true,
+      "loss": 0.0030133715762596315,
+      "checked_frozen_cases": 200,
+      "max_abs_probability_difference_from_frozen": 3.545977785290866e-07,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_basic",
+      "limit_mgN_L": 6.0,
+      "weights": [
+        28.291777406854113,
+        -4.617470893474971,
+        39.99999999999963
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265
+      ],
+      "success": true,
+      "loss": 0.0030030737918313706,
+      "checked_frozen_cases": 200,
+      "max_abs_probability_difference_from_frozen": 2.8041980528747956e-06,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_shared_closure",
+      "limit_mgN_L": 2.0,
+      "weights": [
+        0.04454701559053165,
+        -39.999999997146276,
+        39.99999997176756,
+        24.36445838587629,
+        39.999999956192305
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0,
+        1234.4334908935073,
+        477.69067498162536
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265,
+        55.14207083640868,
+        231.3859681761794
+      ],
+      "success": true,
+      "loss": 0.0019818770855664827,
+      "checked_frozen_cases": 200,
+      "max_abs_probability_difference_from_frozen": 6.345008045749445e-06,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_shared_closure",
+      "limit_mgN_L": 3.0,
+      "weights": [
+        4.893358018306922,
+        -39.99999999990078,
+        39.99999999960281,
+        23.262245184815203,
+        39.999999999998195
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0,
+        1234.4334908935073,
+        477.69067498162536
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265,
+        55.14207083640868,
+        231.3859681761794
+      ],
+      "success": true,
+      "loss": 0.0016262158155097106,
+      "checked_frozen_cases": 200,
+      "max_abs_probability_difference_from_frozen": 1.4911934151928818e-06,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_shared_closure",
+      "limit_mgN_L": 4.0,
+      "weights": [
+        8.06852745405746,
+        -39.999999999998714,
+        39.999999998939586,
+        22.03939310454665,
+        39.99999999999807
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0,
+        1234.4334908935073,
+        477.69067498162536
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265,
+        55.14207083640868,
+        231.3859681761794
+      ],
+      "success": true,
+      "loss": 0.001360333911361471,
+      "checked_frozen_cases": 244,
+      "max_abs_probability_difference_from_frozen": 7.567027181520913e-07,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_shared_closure",
+      "limit_mgN_L": 5.0,
+      "weights": [
+        11.523143639693444,
+        -39.99999999549631,
+        39.99999999618519,
+        21.189856916907864,
+        39.999999999980744
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0,
+        1234.4334908935073,
+        477.69067498162536
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265,
+        55.14207083640868,
+        231.3859681761794
+      ],
+      "success": true,
+      "loss": 0.0011938091452918962,
+      "checked_frozen_cases": 200,
+      "max_abs_probability_difference_from_frozen": 9.019181844427404e-06,
+      "label_disagreements_from_frozen": 0
+    },
+    {
+      "model": "logistic_shared_closure",
+      "limit_mgN_L": 6.0,
+      "weights": [
+        14.368716151007895,
+        -39.999999999987956,
+        39.99999999853871,
+        19.7897548875889,
+        39.9999999997101
+      ],
+      "means": [
+        0.3333333333333333,
+        252.0,
+        1234.4334908935073,
+        477.69067498162536
+      ],
+      "standard_deviations": [
+        0.4714045207910317,
+        132.78554138158265,
+        55.14207083640868,
+        231.3859681761794
+      ],
+      "success": true,
+      "loss": 0.001038896529493533,
+      "checked_frozen_cases": 200,
+      "max_abs_probability_difference_from_frozen": 1.4601218867316135e-07,
+      "label_disagreements_from_frozen": 0
+    }
+  ],
+  "new_BSM1_integrations": 0,
+  "all_classifications_match_frozen": true
+}

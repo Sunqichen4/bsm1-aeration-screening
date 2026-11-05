@@ -1,0 +1,15 @@
+test_all_21_state_columns_detect_changes (test_input_guard.InputGuardTests.test_all_21_state_columns_detect_changes) ... ok
+test_cold_dynamic_is_routed_without_label (test_input_guard.InputGuardTests.test_cold_dynamic_is_routed_without_label) ... ok
+test_column_count_order_and_units_stop (test_input_guard.InputGuardTests.test_column_count_order_and_units_stop) ... ok
+test_in_scope_is_not_acceptance (test_input_guard.InputGuardTests.test_in_scope_is_not_acceptance) ... ok
+test_invalid_numeric_and_flow_values_stop (test_input_guard.InputGuardTests.test_invalid_numeric_and_flow_values_stop) ... ok
+test_joint_and_feature_domain_boundaries (test_input_guard.InputGuardTests.test_joint_and_feature_domain_boundaries) ... ok
+test_no_label_leakage (test_input_guard.InputGuardTests.test_no_label_leakage) ... ok
+test_physical_metadata_stops (test_input_guard.InputGuardTests.test_physical_metadata_stops) ... ok
+test_temperature_state_on_routes (test_input_guard.InputGuardTests.test_temperature_state_on_routes) ... ok
+test_time_invalid_stops (test_input_guard.InputGuardTests.test_time_invalid_stops) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.017s
+
+OK

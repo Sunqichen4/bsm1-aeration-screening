@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "gate-audit",
+    "--output",
+    "verification/gate_audit"
+  ],
+  "elapsed_seconds": 4.938029400072992,
+  "new_outputs_only": true,
+  "success": true
+}

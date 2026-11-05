@@ -1,0 +1,20 @@
+{
+  "scope": "retained original M2 kernel and prespecified 3-start fitting protocol; new execution against frozen parameters",
+  "comparisons": [
+    {
+      "model": "full",
+      "eligible_for_new_predictions": true,
+      "max_abs_parameter_difference": 0.0,
+      "development_classification_differences": 0,
+      "max_abs_development_peak_difference": 0.0
+    },
+    {
+      "model": "no_oxygen_demand_feedback",
+      "eligible_for_new_predictions": true,
+      "max_abs_parameter_difference": 0.0,
+      "development_classification_differences": 0,
+      "max_abs_development_peak_difference": 0.0
+    }
+  ],
+  "pass": true
+}

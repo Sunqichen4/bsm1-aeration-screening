@@ -1,0 +1,50 @@
+{
+  "study_id": "new_in_domain_gate_20261015_v1",
+  "base_project": "D:\\论文\\1\\aeration_benchmark_revision_bsm1_energy_fixed_complete\\aeration_benchmark_revision\\JWPE_article_clean_package",
+  "loads": [
+    0.15,
+    0.4,
+    0.6,
+    0.85
+  ],
+  "alpha_quantiles": [
+    0.25,
+    0.75
+  ],
+  "alpha_definition": "(.7+.3*L)+q*(1-(.7+.3*L))",
+  "prediction_probe_kla": {
+    "start": 40,
+    "stop": 520,
+    "step": 0.25
+  },
+  "offsets_from_each_model_predicted_first_safe_kla": [
+    -6,
+    -2,
+    0,
+    2,
+    6
+  ],
+  "fixed_far_candidates": [
+    40,
+    520
+  ],
+  "candidate_selection": "union of two model boundaries; round KLa to 8 decimals before deduplication; no reference outcomes",
+  "minimum_compliant_tail_points": 3,
+  "extra_effective_kla_guard": 20.0,
+  "warmup_days": 60.0,
+  "eval_days": 7.0,
+  "nh4_limit": 4.0,
+  "bsm1_timestep_min": 1.0,
+  "surrogate_timestep_min": 1.0,
+  "tempmodel_policy": "off",
+  "reference_order_seed": 20261015,
+  "fine_reference_selection": "one existing candidate per condition minimizing distance to arithmetic mean of the two frozen predicted boundaries, lower KLa breaks ties; chosen before reference",
+  "fine_reference_timestep_min": 0.5,
+  "unchanged_model_version": "M1 fair_fit_refined deployed 20261013; not the M2 structure fit",
+  "gate_version": "original screening_decisions with individual pre-calibrated buffers; no model/threshold/buffer tuning",
+  "domain": "constant original 15C influent family; joint load-alpha hull and effective-KLa hull",
+  "claim_scope": "descriptive prospectively frozen candidate audit; no independent-draw statistical guarantee",
+  "scientific_cost": "all candidates pay fresh native BSM1; selected policy calls and independent audit calls are separately reported; parallel case durations are not serial wall time",
+  "failure_policy": "record actual failure and stop; never substitute raw prediction or overwrite a failed reference",
+  "post_truth_changes": "none allowed to candidate set, models, Gate, buffers or predicted decisions"
+}

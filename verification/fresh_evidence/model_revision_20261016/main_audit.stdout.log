@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "freeze_sha256": "c5a5aa2e6ea73d2c0b143d1d011529d4d1b4b89dec29fba293dcbf0283f43965",
+  "audited_at_utc": "2026-11-03T05:15:39.068477+00:00",
+  "expected_count": 90,
+  "successful_count": 90,
+  "failed_count": 0,
+  "errors": [],
+  "old_label_imports": false,
+  "timestep_min": 1.0,
+  "expected_evaluation_samples_per_case": 10080,
+  "checks": [
+    "frozen_model_prediction_route_design_protocol_hashes",
+    "candidate_and_freeze_identity",
+    "native_source_hashes",
+    "raw_trajectory_hashes",
+    "full_candidate_coverage",
+    "raw_SNH_peak_mean_and_zero_violation",
+    "strict_endpoint_reporting_60_le_t_lt_67",
+    "native_influent_reconstruction_and_hash",
+    "all_saved_evaluation_metrics",
+    "summary_consistency"
+  ]
+}

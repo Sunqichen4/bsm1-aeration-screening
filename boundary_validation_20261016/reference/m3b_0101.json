@@ -1,0 +1,381 @@
+{
+  "SNH_mean_eval": 47.83586782550985,
+  "SNH_max_eval": 47.89301006099693,
+  "SNH_min_eval": 47.770333719460815,
+  "SNH_p95_eval": 47.88799682510817,
+  "SNH_zero_violation": false,
+  "SNH_violation_ratio_gt_limit": 1.0,
+  "SNH_violation_ratio": 1.0,
+  "SNH_violation_hours_gt_limit": 168.0,
+  "SNH_violation_days_gt_limit": 7.0,
+  "COD_mean_eval": 50.20978959154001,
+  "COD_max_eval": 50.21870303213939,
+  "TN_mean_eval": 49.90728178761978,
+  "TN_max_eval": 49.96318279267535,
+  "DO_mean_eval": 0.3961911262041231,
+  "DO_min_eval": 0.39208353861375106,
+  "DO_tank5_mean_eval": 0.3961911262041231,
+  "DO_tank5_p05_eval": 0.39253905412854884,
+  "effluent_Q_mean_eval": 18061.0,
+  "evaluation_samples": 10080,
+  "minimum_effluent_component": 0.0,
+  "minimum_evaluation_concentration": 0.004866014138427009,
+  "negative_evaluation_concentration_count": 0,
+  "pumping_kWh_per_d": 388.17000000000013,
+  "aeration_kWh_per_d": 1990.6133333333332,
+  "mixing_kWh_per_d": 240.0,
+  "total_model_energy_kWh_per_d": 2618.783333333333,
+  "eff_SO_mean_eval": 0.39602488793018015,
+  "eff_SO_min_eval": 0.3918868575293477,
+  "eff_SO_max_eval": 0.3997109372487926,
+  "eff_SNO_mean_eval": 0.006461664308040995,
+  "eff_SNO_min_eval": 0.00531002374339857,
+  "eff_SNO_max_eval": 0.007769642567992113,
+  "eff_SS_mean_eval": 2.8575026051739796,
+  "eff_SS_min_eval": 2.8489203583308575,
+  "eff_SS_max_eval": 2.8672462756741375,
+  "eff_SNH_mean_eval": 47.83586782550985,
+  "eff_SNH_min_eval": 47.770333719460815,
+  "eff_SNH_max_eval": 47.89301006099693,
+  "eff_XBH_mean_eval": 10.500380541644876,
+  "eff_XBH_min_eval": 10.498419991486225,
+  "eff_XBH_max_eval": 10.5021177364812,
+  "eff_XBA_mean_eval": 0.005983583510569767,
+  "eff_XBA_min_eval": 0.004866014138427009,
+  "eff_XBA_max_eval": 0.007269840297180997,
+  "eff_SND_mean_eval": 1.0622197319309519,
+  "eff_SND_min_eval": 1.0621890909934584,
+  "eff_SND_max_eval": 1.062256286427632,
+  "eff_XND_mean_eval": 0.05240484289925528,
+  "eff_XND_min_eval": 0.05220365457676001,
+  "eff_XND_max_eval": 0.052633460370209245,
+  "tank5_SO_mean_eval": 0.3961911262041231,
+  "tank5_SO_min_eval": 0.39208353861375106,
+  "tank5_SO_max_eval": 0.3998498891558496,
+  "tank5_SNO_mean_eval": 0.00640942011223367,
+  "tank5_SNO_min_eval": 0.005267126755146606,
+  "tank5_SNO_max_eval": 0.007706769040199762,
+  "tank5_SS_mean_eval": 2.8571133453971607,
+  "tank5_SS_min_eval": 2.8486003918698986,
+  "tank5_SS_max_eval": 2.8667778584728882,
+  "tank5_SNH_mean_eval": 47.83847292217373,
+  "tank5_SNH_min_eval": 47.77351438258351,
+  "tank5_SNH_max_eval": 47.89511776175439,
+  "tank5_XBH_mean_eval": 2879.7186590775723,
+  "tank5_XBH_min_eval": 2879.030328336394,
+  "tank5_XBH_max_eval": 2880.2842002945335,
+  "tank5_XBA_mean_eval": 1.640987163488724,
+  "tank5_XBA_min_eval": 1.3345407081693137,
+  "tank5_XBA_max_eval": 1.993641968479026,
+  "tank5_SND_mean_eval": 1.0622183064230022,
+  "tank5_SND_min_eval": 1.062188008135413,
+  "tank5_SND_max_eval": 1.0622544463760482,
+  "tank5_XND_mean_eval": 14.371973900930469,
+  "tank5_XND_min_eval": 14.31724203136336,
+  "tank5_XND_max_eval": 14.433917562262822,
+  "candidate_id": "m3b_0101",
+  "scenario": "m3b_n06_l0.91_q0.68",
+  "load_coordinate": 0.91,
+  "oxygen_transfer_factor": 0.99136,
+  "kla": 112.97611362169141,
+  "effective_kla": 112.0,
+  "kla_hex": "0x1.c3e78a5449610p+6",
+  "load_hex": "0x1.d1eb851eb851fp-1",
+  "alpha_hex": "0x1.fb9389b52007ep-1",
+  "cod_scale": 1.182,
+  "nh4_scale": 1.3185,
+  "flow_scale": 1.0,
+  "surrogate_mu_a_scale": 1.0455,
+  "operating_point_definition": "steady_load_transfer_v1",
+  "warmup_days": 60.0,
+  "eval_days": 7.0,
+  "total_days": 67.0,
+  "nh4_limit": 4.0,
+  "timestep_min": 1.0,
+  "tempmodel": false,
+  "temperature_C": 15.0,
+  "reference_definition": "constant_native_initial_states_endpoint_output_mask_60_le_t_lt_67_v1",
+  "within_marginal_ranges": true,
+  "within_joint_condition_hull": true,
+  "within_model_feature_hull": true,
+  "grid_kind": "coarse",
+  "selection_reason": "fixed_effective_kla_grid",
+  "case_sha256": "dfcabc74bbf553c213d91caafc005582e03701a8708a9b2265447ead5cb44358",
+  "freeze_sha256": "4783d6f09a906dbba788eb2d888d49ec25f2c8363b47d71e245751bda27042b5",
+  "reference_runner_source_sha256": "ada1bb3dc26cd37cb436ea06148e51660868c5f6c1322c7e5786fd3e04c74f47",
+  "fresh_reference": true,
+  "reference_result_origin": "new_native_bsm1_integration_no_result_cache",
+  "computed_at_utc": "2026-10-16T14:19:08.515040+00:00",
+  "reference_started_utc": "2026-10-16T14:18:29.962403+00:00",
+  "pid": 25168,
+  "input_sha256": "6d18d5a74a058963f11ec71f87208be4ac589eb2906583989f2a73ea1a130088",
+  "input_shape": [
+    2,
+    22
+  ],
+  "native_initialization": "original_native_defaults_no_explicit_temperature_or_state_changes",
+  "tempmodel_semantics": "False_uses_15C_influent_for_native_kinetics_and_oxygen_transfer",
+  "load_application": "only_influent_SS_XS_times_1_plus_0.2L_and_SNH_times_1_plus_0.35L;_native_kinetics_and_flow_unchanged",
+  "alpha_application": "effective_KLa=alpha_times_commanded_KLa_once_in_reactors_3_4_5",
+  "simulation_steps": 96481,
+  "evaluation_alignment": "output_endpoint_60_le_t_lt_67_matching_frozen_run_revision",
+  "first_eval_interval_start_day": 59.99930555555556,
+  "first_eval_output_end_day": 60.0,
+  "last_eval_output_end_day": 66.99930555555557,
+  "kernel_seconds": 38.52768839999953,
+  "elapsed_seconds": 38.553068499999426,
+  "energy_basis": "native_effective_kla_model_metric_not_measured_electricity",
+  "commanded_aeration_index": 0.47073380675704757,
+  "units": {
+    "time": "d",
+    "kla": "d^-1",
+    "SNH_SNO_SND_XND_TN": "g N/m3 = mg N/L",
+    "SO": "g O2/m3 = mg O2/L",
+    "SS_XBH_XBA_COD": "g COD/m3 = mg COD/L",
+    "flow": "m3/d",
+    "temperature": "degC"
+  },
+  "solver_warnings": [],
+  "solver_warning_count": 0,
+  "native_internal_clipping": "native_intermediate_clipping_is_unchanged_and_not_instrumented",
+  "timing_scope": "audit_cost;_parallel_elapsed_seconds_are_not_serial_performance",
+  "complete": true,
+  "raw_file": "D:\\论文\\1\\boundary_validation_20261016\\reference_trajectories\\m3b_0101_evaluation.npz",
+  "raw_file_sha256": "7f9d89e08a0daa5a77e78411360d3f4bd5ac4d2ae251ee981efd1f2f5e7eae2b",
+  "output_write_seconds": 0.473995799999102,
+  "total_with_output_seconds": 39.027070499998445,
+  "native_initial_state_isolation": "owned_ndarray_copies_of_native_reactor_settler_performance_defaults_values_unchanged_v1",
+  "native_initial_arrays": {
+    "array_count": 16,
+    "before": {
+      "performance.pp_par": {
+        "shape": [
+          17
+        ],
+        "dtype": "<f8",
+        "sha256": "97cbd6ac85ddb2cbd76ae3401501b98d4ec03cc21b52ac850df7a3202e2814ae"
+      },
+      "reactor1.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor1.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "reactor2.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor2.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "reactor3.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor3.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "reactor4.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor4.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "reactor5.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor5.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "settler.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "settler.dim": {
+        "shape": [
+          2
+        ],
+        "dtype": "<i8",
+        "sha256": "33ff0b27146f695e87e873589817b8bd8dee9c9a0c80eba0ee7fdb094cdfd2f7"
+      },
+      "settler.layer": {
+        "shape": [
+          2
+        ],
+        "dtype": "<i8",
+        "sha256": "dfc663b0902b58543aec8e6f4d647503c497b8bd7f938da222ea2df3ffe3fc25"
+      },
+      "settler.sedpar": {
+        "shape": [
+          7
+        ],
+        "dtype": "<f8",
+        "sha256": "63556da2873807306f262785e3d3637f67d6b24e999cfb69323cbc0be626c920"
+      },
+      "settler.ys0": {
+        "shape": [
+          120
+        ],
+        "dtype": "<f8",
+        "sha256": "8d4b0a15f1c5c259e5b19c9196c95b562a0650e3ec1784ba26dc5c16bf7a7724"
+      }
+    },
+    "after": {
+      "performance.pp_par": {
+        "shape": [
+          17
+        ],
+        "dtype": "<f8",
+        "sha256": "97cbd6ac85ddb2cbd76ae3401501b98d4ec03cc21b52ac850df7a3202e2814ae"
+      },
+      "reactor1.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor1.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "reactor2.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor2.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "reactor3.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor3.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "reactor4.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor4.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "reactor5.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "reactor5.y0": {
+        "shape": [
+          21
+        ],
+        "dtype": "<f8",
+        "sha256": "67cbce110549975b3b5a9b58aa9e01159a01e9db02e6a8fa2c4225d4a5763ea8"
+      },
+      "settler.asm1par": {
+        "shape": [
+          24
+        ],
+        "dtype": "<f8",
+        "sha256": "be4397bd12409a40ea089bd6e5ef80037a03498f0f5ca644579de6f58234da6c"
+      },
+      "settler.dim": {
+        "shape": [
+          2
+        ],
+        "dtype": "<i8",
+        "sha256": "33ff0b27146f695e87e873589817b8bd8dee9c9a0c80eba0ee7fdb094cdfd2f7"
+      },
+      "settler.layer": {
+        "shape": [
+          2
+        ],
+        "dtype": "<i8",
+        "sha256": "dfc663b0902b58543aec8e6f4d647503c497b8bd7f938da222ea2df3ffe3fc25"
+      },
+      "settler.sedpar": {
+        "shape": [
+          7
+        ],
+        "dtype": "<f8",
+        "sha256": "63556da2873807306f262785e3d3637f67d6b24e999cfb69323cbc0be626c920"
+      },
+      "settler.ys0": {
+        "shape": [
+          120
+        ],
+        "dtype": "<f8",
+        "sha256": "8d4b0a15f1c5c259e5b19c9196c95b562a0650e3ec1784ba26dc5c16bf7a7724"
+      }
+    },
+    "values_preserved": true,
+    "shares_memory_after_copy": false
+  }
+}

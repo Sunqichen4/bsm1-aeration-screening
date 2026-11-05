@@ -1,0 +1,15 @@
+{
+  "weights": [
+    -45.17792531605095,
+    70.22370687540767,
+    -9.664630060610676
+  ],
+  "l2_penalty": 0.001,
+  "features": [
+    "effective_kla / 240",
+    "load_coordinate"
+  ],
+  "objective": "sum_cross_entropy_plus_l2_slopes",
+  "cutoff": 0.5,
+  "training_cases": 750
+}

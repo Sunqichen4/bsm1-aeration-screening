@@ -1,0 +1,11 @@
+{
+  "implementation": "reconstructed-20261103-v1",
+  "command": [
+    "verify",
+    "--output",
+    "verification/integrity"
+  ],
+  "elapsed_seconds": 1.330800199881196,
+  "new_outputs_only": true,
+  "success": true
+}

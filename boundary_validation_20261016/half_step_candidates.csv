@@ -1,0 +1,13 @@
+scenario,load_coordinate,oxygen_transfer_factor,kla,effective_kla,grid_kind,selection_reason,half_step_selected,candidate_id
+m3b_n01_l0.13_q0.27,0.13,0.80947,193.37141828453,156.5283619587785,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0019
+m3b_n01_l0.13_q0.27,0.13,0.80947,195.84217075219402,158.5283619587785,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0020
+m3b_n02_l0.31_q0.63,0.31,0.92341,175.82026474952036,162.35419067235458,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0039
+m3b_n02_l0.31_q0.63,0.31,0.92341,177.9861498926312,164.35419067235458,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0040
+m3b_n03_l0.43_q0.38,0.43,0.89398,186.21697057973776,166.47424735887395,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0059
+m3b_n03_l0.43_q0.38,0.43,0.89398,188.45415709397744,168.47424735887395,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0060
+m3b_n04_l0.61_q0.77,0.61,0.97309,177.71553262557705,172.9332076426228,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0079
+m3b_n04_l0.61_q0.77,0.61,0.97309,179.77084097321193,174.9332076426228,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0080
+m3b_n05_l0.73_q0.34,0.73,0.9465399999999999,187.3980391694563,177.37973999545716,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0099
+m3b_n05_l0.73_q0.34,0.73,0.9465399999999999,189.51099794563058,179.37973999545716,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0100
+m3b_n06_l0.91_q0.68,0.91,0.99136,185.79665636594058,184.19137325493887,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0119
+m3b_n06_l0.91_q0.68,0.91,0.99136,187.81408696632795,186.19137325493887,prediction_enriched,legacy_steady_crossing_plus_minus_1,True,m3b_0120

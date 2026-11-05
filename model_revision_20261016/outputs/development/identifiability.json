@@ -1,0 +1,308 @@
+{
+  "full_calibrated": [
+    {
+      "normalized_step": 0.0001,
+      "singular_values": [
+        6042.090950979799,
+        745.2349267902932,
+        111.07324342080993,
+        67.23482505457768,
+        18.702038465700358,
+        1.3121108920812439
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 6,
+      "dimension": 6,
+      "column_norms": {
+        "tau_h": 728.7338169987714,
+        "ammonia_activity": 417.55124738276237,
+        "k_oa": 235.15993256427092,
+        "oxygen_gain": 4221.292336849151,
+        "ss_to_nh": 191.68906965507003,
+        "oxygen_per_ammonia": 4296.823422520796
+      },
+      "weakest_direction": {
+        "tau_h": 0.024782906314637608,
+        "ammonia_activity": 0.4191919007796525,
+        "k_oa": 0.9062409387992828,
+        "oxygen_gain": 0.009275024562900192,
+        "ss_to_nh": 0.047919249117916264,
+        "oxygen_per_ammonia": 0.003006360402422803
+      },
+      "condition_number": 4604.863039735884,
+      "active_bounds": [
+        "k_oa",
+        "oxygen_per_ammonia"
+      ]
+    },
+    {
+      "normalized_step": 1e-05,
+      "singular_values": [
+        6042.286185462616,
+        743.7742246653814,
+        110.96013390277896,
+        67.13097052364388,
+        18.676721387688133,
+        1.3083236981061277
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 6,
+      "dimension": 6,
+      "column_norms": {
+        "tau_h": 728.7338258894259,
+        "ammonia_activity": 417.5512223744506,
+        "k_oa": 235.15988859501272,
+        "oxygen_gain": 4221.293413997495,
+        "ss_to_nh": 191.6890696839238,
+        "oxygen_per_ammonia": 4296.839154827656
+      },
+      "weakest_direction": {
+        "tau_h": 0.02480788736847437,
+        "ammonia_activity": 0.41906105563602924,
+        "k_oa": 0.9062952697515149,
+        "oxygen_gain": 0.009296353124029655,
+        "ss_to_nh": 0.048018588416091836,
+        "oxygen_per_ammonia": 0.0030128698407862475
+      },
+      "condition_number": 4618.341924257098,
+      "active_bounds": [
+        "k_oa",
+        "oxygen_per_ammonia"
+      ]
+    },
+    {
+      "normalized_step": 1e-06,
+      "singular_values": [
+        6042.30517724991,
+        743.6293722329837,
+        110.94907740465827,
+        67.12021890663367,
+        18.674186307505227,
+        1.3079438732296107
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 6,
+      "dimension": 6,
+      "column_norms": {
+        "tau_h": 728.7338258046502,
+        "ammonia_activity": 417.5512222522413,
+        "k_oa": 235.15988467069644,
+        "oxygen_gain": 4221.293424852385,
+        "ss_to_nh": 191.68906968019286,
+        "oxygen_per_ammonia": 4296.840315186475
+      },
+      "weakest_direction": {
+        "tau_h": 0.024810416725896876,
+        "ammonia_activity": 0.41904773593955913,
+        "k_oa": 0.9063008010949049,
+        "oxygen_gain": 0.009298524415035592,
+        "ss_to_nh": 0.0480286604813407,
+        "oxygen_per_ammonia": 0.0030135322500222106
+      },
+      "condition_number": 4619.697603942351,
+      "active_bounds": [
+        "k_oa",
+        "oxygen_per_ammonia"
+      ]
+    }
+  ],
+  "full_fixed_ratio": [
+    {
+      "normalized_step": 0.0001,
+      "singular_values": [
+        1752.525641294235,
+        203.10172186102963,
+        148.60631199486542,
+        4.908259525809196,
+        3.4086529415779045
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 5,
+      "dimension": 5,
+      "column_norms": {
+        "tau_h": 871.7559061965113,
+        "ammonia_activity": 1330.9403469198521,
+        "k_oa": 260.23080043313126,
+        "oxygen_gain": 712.0020688759402,
+        "ss_to_nh": 169.37649211896417
+      },
+      "weakest_direction": {
+        "tau_h": 0.048283801536142194,
+        "ammonia_activity": -0.16490175509514993,
+        "k_oa": -0.9774364317535615,
+        "oxygen_gain": -0.0944450801886537,
+        "ss_to_nh": 0.07857629658352264
+      },
+      "condition_number": 514.1402399514956,
+      "active_bounds": [
+        "k_oa",
+        "ss_to_nh"
+      ]
+    },
+    {
+      "normalized_step": 1e-05,
+      "singular_values": [
+        1752.5260664441305,
+        203.1018978994633,
+        148.6062171115127,
+        4.906350797443766,
+        3.4054450495280255
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 5,
+      "dimension": 5,
+      "column_norms": {
+        "tau_h": 871.7559053342723,
+        "ammonia_activity": 1330.9395287083182,
+        "k_oa": 260.237120308651,
+        "oxygen_gain": 712.0020466180548,
+        "ss_to_nh": 169.37771652874977
+      },
+      "weakest_direction": {
+        "tau_h": 0.04666374694417765,
+        "ammonia_activity": -0.1646863081890151,
+        "k_oa": -0.9778595721250428,
+        "oxygen_gain": -0.09358142133044042,
+        "ss_to_nh": 0.07572377038555642
+      },
+      "condition_number": 514.6246792873725,
+      "active_bounds": [
+        "k_oa",
+        "ss_to_nh"
+      ]
+    },
+    {
+      "normalized_step": 1e-06,
+      "singular_values": [
+        1752.5261620124988,
+        203.10193997877488,
+        148.60621764354104,
+        4.90615968249911,
+        3.4051301952296527
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 5,
+      "dimension": 5,
+      "column_norms": {
+        "tau_h": 871.7559053105698,
+        "ammonia_activity": 1330.939520467087,
+        "k_oa": 260.23775250440195,
+        "oxygen_gain": 712.0020464002515,
+        "ss_to_nh": 169.37783888838405
+      },
+      "weakest_direction": {
+        "tau_h": 0.046502471927787614,
+        "ammonia_activity": -0.1646647394831577,
+        "k_oa": -0.9779010603923411,
+        "oxygen_gain": -0.09349542590278573,
+        "ss_to_nh": 0.07543981107042008
+      },
+      "condition_number": 514.6722919633629,
+      "active_bounds": [
+        "k_oa",
+        "ss_to_nh"
+      ]
+    }
+  ],
+  "no_feedback": [
+    {
+      "normalized_step": 0.0001,
+      "singular_values": [
+        4810.195512042908,
+        272.9035044503618,
+        33.4586828331961,
+        1.7060071538117783,
+        0.6211399578617427
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 5,
+      "dimension": 5,
+      "column_norms": {
+        "tau_h": 2776.0128450883076,
+        "ammonia_activity": 232.8138636506575,
+        "k_oa": 429.4554267452111,
+        "oxygen_gain": 3892.7865669712796,
+        "ss_to_nh": 338.98545071288135
+      },
+      "weakest_direction": {
+        "tau_h": -0.008155425950707862,
+        "ammonia_activity": 0.7310730450193369,
+        "k_oa": 0.6812323014985867,
+        "oxygen_gain": 0.03725905262982254,
+        "ss_to_nh": 7.915670288727306e-05
+      },
+      "condition_number": 7744.141157174745,
+      "active_bounds": [
+        "ammonia_activity",
+        "k_oa",
+        "oxygen_gain"
+      ]
+    },
+    {
+      "normalized_step": 1e-05,
+      "singular_values": [
+        4814.493943495884,
+        273.11081230151484,
+        31.71968978872716,
+        1.685284347716844,
+        0.6917565267625259
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 5,
+      "dimension": 5,
+      "column_norms": {
+        "tau_h": 2776.012853782502,
+        "ammonia_activity": 232.79332344912774,
+        "k_oa": 429.471343471932,
+        "oxygen_gain": 3898.0962069546467,
+        "ss_to_nh": 338.98545077823906
+      },
+      "weakest_direction": {
+        "tau_h": -0.0003378134141807297,
+        "ammonia_activity": -0.7050321305507772,
+        "k_oa": -0.7082587619490233,
+        "oxygen_gain": -0.035880451427308335,
+        "ss_to_nh": -0.003420541030192903
+      },
+      "condition_number": 6959.809929120711,
+      "active_bounds": [
+        "ammonia_activity",
+        "k_oa",
+        "oxygen_gain"
+      ]
+    },
+    {
+      "normalized_step": 1e-06,
+      "singular_values": [
+        4814.924356361165,
+        273.131755943983,
+        31.552781292166465,
+        1.6849521487257222,
+        0.6990370628499925
+      ],
+      "relative_rank_tolerance": 1e-06,
+      "relative_rank": 5,
+      "dimension": 5,
+      "column_norms": {
+        "tau_h": 2776.012853889957,
+        "ammonia_activity": 232.7912696147591,
+        "k_oa": 429.47293504464955,
+        "oxygen_gain": 3898.627853663375,
+        "ss_to_nh": 338.9854507821356
+      },
+      "weakest_direction": {
+        "tau_h": -0.0016034361310011,
+        "ammonia_activity": -0.7013364625067764,
+        "k_oa": -0.7119269568774375,
+        "oxygen_gain": -0.03562671989383248,
+        "ss_to_nh": -0.003916663362230455
+      },
+      "condition_number": 6887.938583299993,
+      "active_bounds": [
+        "ammonia_activity",
+        "k_oa",
+        "oxygen_gain"
+      ]
+    }
+  ]
+}

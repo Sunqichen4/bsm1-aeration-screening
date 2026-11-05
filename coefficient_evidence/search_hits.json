@@ -1,0 +1,156 @@
+[
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/JECE_submission_ready/Manuscript.docx",
+    "sha256": "4010de356951b16f0195b713832c7b10dc1754acfd8b938f6b39c9ab831b0a88",
+    "position_1based": 45,
+    "position_type": "paragraph",
+    "excerpt": "aps it to oxidized-nitrogen production. The 2 mg N L⁻¹ and 0.4 mg O₂ L⁻¹ constants are reference levels in the hydraulic exchange terms for  and . Coefficients 18, 0.25, 0.40, and 2.50 map normalized proxy rates to state balances. They are fixed empirical surrogate coefficients, not direct ASM1 or BSM1 stoichiometric coefficients. All derivatives use hours as the internal time unit."
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/manuscript/Manuscript.docx",
+    "sha256": "fc73ba22a1e5d15704c1e4d68f10e9c074d8b7eb50c5a552e9546476b949ba48",
+    "position_1based": 49,
+    "position_type": "paragraph",
+    "excerpt": "aps it to oxidized-nitrogen production. The 2 mg N L⁻¹ and 0.4 mg O₂ L⁻¹ constants are reference levels in the hydraulic exchange terms for  and . Coefficients 18, 0.25, 0.40, and 2.50 map normalized proxy rates to state balances. They are fixed empirical surrogate coefficients, not direct ASM1 or BSM1 stoichiometric coefficients. All derivatives use hours as the internal time unit."
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/outputs/manuscript_2_2_rebuild/Manuscript_ETI_CN_revised.docx",
+    "sha256": "e216112c4a2a9edf6975ad9cb9b1960c1a9a43d275a175bcd6bae654c2271d95",
+    "position_1based": 83,
+    "position_type": "paragraph",
+    "excerpt": "目标松弛的时间常数（h）；f_SNH为可溶性基质向氨氮代理的经验转换系数（mg N per mg COD proxy）；c_NH4为硝化代理速率到氨氮去除项的经验映射系数；Y_NO为硝化代理速率到氧化态氮生成项的经验映射系数。常数2 mg N L⁻¹和0.4 mg O₂ L⁻¹分别是S_NO与S_O稀释项中的参考水平。系数18、0.25、0.40和2.50用于把归一化代理速率映射到相应状态收支，均为低阶模型中的固定经验系数，不解释为ASM1/BSM1的直接化学计量系数。所有导数均以h为内部时间单位。"
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/outputs/manuscript_number_alignment/Manuscript_ETI_CN_revised.docx",
+    "sha256": "81fdd35926adc3af8d8c20500308260acf6ff22ecfeeb4a83622942c679c56d4",
+    "position_1based": 83,
+    "position_type": "paragraph",
+    "excerpt": "目标松弛的时间常数（h）；f_SNH为可溶性基质向氨氮代理的经验转换系数（mg N per mg COD proxy）；c_NH4为硝化代理速率到氨氮去除项的经验映射系数；Y_NO为硝化代理速率到氧化态氮生成项的经验映射系数。常数2 mg N L⁻¹和0.4 mg O₂ L⁻¹分别是S_NO与S_O稀释项中的参考水平。系数18、0.25、0.40和2.50用于把归一化代理速率映射到相应状态收支，均为低阶模型中的固定经验系数，不解释为ASM1/BSM1的直接化学计量系数。所有导数均以h为内部时间单位。"
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/outputs/wej_english_revision_20260908/Manuscript_source.json",
+    "sha256": "14a6a1ca2f54bc5401de03b494a6ed83e54aab6a1284ef43b904750006623ced",
+    "position_1based": 349,
+    "position_type": "line",
+    "excerpt": "aps it to oxidized-nitrogen production. The 2 mg N L⁻¹ and 0.4 mg O₂ L⁻¹ constants are reference levels in the hydraulic exchange terms for  and . Coefficients 18, 0.25, 0.40, and 2.50 map normalized proxy rates to state balances. They are fixed empirical surrogate coefficients, not direct ASM1 or BSM1 stoichiometric coefficients. All derivatives use hours as the internal time unit.\","
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/outputs/wej_english_revision_20260908/Manuscript_source.txt",
+    "sha256": "0b1f2149242d5aa37009c2e1e2aa5e43be54c584c97fb90fe73e162727b1d32f",
+    "position_1based": 50,
+    "position_type": "line",
+    "excerpt": "aps it to oxidized-nitrogen production. The 2 mg N L⁻¹ and 0.4 mg O₂ L⁻¹ constants are reference levels in the hydraulic exchange terms for  and . Coefficients 18, 0.25, 0.40, and 2.50 map normalized proxy rates to state balances. They are fixed empirical surrogate coefficients, not direct ASM1 or BSM1 stoichiometric coefficients. All derivatives use hours as the internal time unit."
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/outputs/wej_english_revision_20260908/Manuscript_WEJ_revised_revised_text.txt",
+    "sha256": "39484fcde63f7f07b05827b325bfee8b9cbd353d4e47c8bc41f2a69382d7c572",
+    "position_1based": 47,
+    "position_type": "line",
+    "excerpt": "aps it to oxidized-nitrogen production. The 2 mg N L⁻¹ and 0.4 mg O₂ L⁻¹ constants are reference levels in the hydraulic exchange terms for  and . Coefficients 18, 0.25, 0.40, and 2.50 map normalized proxy rates to state balances. They are fixed empirical surrogate coefficients, not direct ASM1 or BSM1 stoichiometric coefficients. All derivatives use hours as the internal time unit."
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/results_wej_heldout/source_snapshot/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "position_1based": 207,
+    "position_type": "line",
+    "excerpt": "        dSS = (influent.cod - SS) / tau - 18.0 * r_h"
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/results_wej_heldout/source_snapshot/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "position_1based": 214,
+    "position_type": "line",
+    "excerpt": "        dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a"
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/scripts/build_eti_revised_manuscript.py",
+    "sha256": "eef98b1b5c8087bb1e7ae69ee562ac03d897e9ecdbca1049570c8c746c6af2d8",
+    "position_1based": 660,
+    "position_type": "line",
+    "excerpt": "目标松弛的时间常数（h）；f_SNH为可溶性基质向氨氮代理的经验转换系数（mg N per mg COD proxy）；c_NH4为硝化代理速率到氨氮去除项的经验映射系数；Y_NO为硝化代理速率到氧化态氮生成项的经验映射系数。常数2 mg N L⁻¹和0.4 mg O₂ L⁻¹分别是S_NO与S_O稀释项中的参考水平。系数18、0.25、0.40和2.50用于把归一化代理速率映射到相应状态收支，均为低阶模型中的固定经验系数，不解释为ASM1/BSM1的直接化学计量系数。所有导数均以h为内部时间单位。\")"
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/scripts/translate_manuscript_to_english.py",
+    "sha256": "aace68ba150b32b9101cb035a2930e83faa02e506a4c6533ca606780becaa4c9",
+    "position_1based": 99,
+    "position_type": "line",
+    "excerpt": "        \"Coefficients 18, 0.25, 0.40, and 2.50 map normalized proxy rates to state balances. They are fixed empirical surrogate coefficients, not direct ASM1 or BSM1 stoichiometric coefficients. All derivatives use hours as the internal time unit.\""
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "position_1based": 207,
+    "position_type": "line",
+    "excerpt": "        dSS = (influent.cod - SS) / tau - 18.0 * r_h"
+  },
+  {
+    "path": "aeration_benchmark_revision_bsm1_energy_fixed_complete/aeration_benchmark_revision/JWPE_article_clean_package/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "position_1based": 214,
+    "position_type": "line",
+    "excerpt": "        dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a"
+  },
+  {
+    "path": "model_revision_20261016/legacy/controlled_models.py",
+    "sha256": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+    "position_1based": 4,
+    "position_type": "line",
+    "excerpt": "``no_oxygen_demand_feedback`` is deletion of -0.4*r_h -2.5*r_a from dSO/dt."
+  },
+  {
+    "path": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "position_1based": 207,
+    "position_type": "line",
+    "excerpt": "        dSS = (influent.cod - SS) / tau - 18.0 * r_h"
+  },
+  {
+    "path": "model_revision_20261016/legacy/vendor/original_project/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "position_1based": 214,
+    "position_type": "line",
+    "excerpt": "        dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a"
+  },
+  {
+    "path": "boundary_validation_20261016/legacy/controlled_models.py",
+    "sha256": "1fc41c11de19f4451d45b8991dcd025e914e8d5501adf624469b39c4edc70382",
+    "position_1based": 4,
+    "position_type": "line",
+    "excerpt": "``no_oxygen_demand_feedback`` is deletion of -0.4*r_h -2.5*r_a from dSO/dt."
+  },
+  {
+    "path": "boundary_validation_20261016/legacy/vendor/original_project/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "position_1based": 207,
+    "position_type": "line",
+    "excerpt": "        dSS = (influent.cod - SS) / tau - 18.0 * r_h"
+  },
+  {
+    "path": "boundary_validation_20261016/legacy/vendor/original_project/src/aerbench/surrogate.py",
+    "sha256": "c39e11abd592bf99f6dfbf1df506a585b6bffd8497cd8f604f7fc6a07555e54d",
+    "position_1based": 214,
+    "position_type": "line",
+    "excerpt": "        dSO = (0.4 - SO) / tau + r_o2 - 0.40 * r_h - 2.50 * r_a"
+  },
+  {
+    "path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_protocol.json",
+    "sha256": "5b56e07e47cde65dbc4fe7fec97e4fb7e894271c14748b104cb5b9e9bee60910",
+    "position_1based": 9,
+    "position_type": "line",
+    "excerpt": "    \"substrate_h_consumption\": 18.0,"
+  },
+  {
+    "path": "chinese_manuscript_integrated_20261017/supplement_data/coefficient_protocol.json",
+    "sha256": "5b56e07e47cde65dbc4fe7fec97e4fb7e894271c14748b104cb5b9e9bee60910",
+    "position_1based": 12,
+    "position_type": "line",
+    "excerpt": "    \"oxygen_a_demand\": 2.5"
+  },
+  {
+    "path": "chinese_manuscript_integrated_20261017/supplement_data/M2_protocol.json",
+    "sha256": "cd7d1c527649b0c7d6d5bd658df95edf53a9727ab6217a35960b2983ae479a72",
+    "position_1based": 173,
+    "position_type": "line",
+    "excerpt": "  \"primary_control\": \"delete only -0.4*r_h -2.5*r_a from the SO balance; retain all other rates, states, shared closures and assumptions\","
+  }
+]

@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "verification_date": "2026-11-04",
+  "platform": "Windows x86-64",
+  "environment": {
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "new_venv_created": true,
+    "include_system_site_packages": false,
+    "dependency_source": "m1_m2_reconstructed_20261103/requirements-lock.txt",
+    "dependency_lock_sha256": "a1f4e60d34098669e1ae8c8694efb25aaa75d85fc6aadd7c27eba0a83c88e135",
+    "pinned_install_succeeded": true,
+    "pip_check": "No broken requirements found."
+  },
+  "checks": [
+    {
+      "check": "release_integrity",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.6166
+    },
+    {
+      "check": "m1_m2_integrity",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 13.0441
+    },
+    {
+      "check": "m1_m2_tables",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 1.3721
+    },
+    {
+      "check": "m1_m2_tests",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 7.6387
+    },
+    {
+      "check": "m3_m3b_replay",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 65.4724
+    },
+    {
+      "check": "input_guard_tests",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.1993
+    },
+    {
+      "check": "m1_prediction",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 3.8873
+    },
+    {
+      "check": "m2_full_prediction",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 4.725
+    },
+    {
+      "check": "m2_ablated_prediction",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 4.1028
+    },
+    {
+      "check": "m1_gate_replay",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 4.4106
+    },
+    {
+      "check": "native_reference_example",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 42.4204
+    }
+  ],
+  "m1_prediction": {
+    "version": "M1",
+    "model": "full",
+    "scientific_integrations": 132,
+    "new_BSM1_integrations": 0,
+    "cases": 132,
+    "max_absolute_differences": {
+      "SNH_mean_eval": 1.4210854715202004e-14,
+      "SNH_max_eval": 1.0658141036401503e-14,
+      "SNO_mean_eval": 3.552713678800501e-15,
+      "DO_mean_eval": 1.7763568394002505e-15
+    },
+    "label_disagreements": 0,
+    "tolerance": 1e-09,
+    "pass": true,
+    "logistic_probability_max_abs_difference": 1.1102230246251565e-15,
+    "logistic_label_disagreements": 0,
+    "logistic_probability_tolerance": 1e-12
+  },
+  "m2_full_prediction": {
+    "version": "M2",
+    "model": "full",
+    "scientific_integrations": 244,
+    "new_BSM1_integrations": 0,
+    "cases": 244,
+    "max_absolute_differences": {
+      "SNH_mean_eval": 0.0,
+      "SNH_max_eval": 0.0,
+      "SNO_mean_eval": 0.0,
+      "DO_mean_eval": 0.0
+    },
+    "label_disagreements": 0,
+    "tolerance": 1e-09,
+    "pass": true
+  },
+  "m2_ablated_prediction": {
+    "version": "M2",
+    "model": "no_oxygen_demand_feedback",
+    "scientific_integrations": 244,
+    "new_BSM1_integrations": 0,
+    "cases": 244,
+    "max_absolute_differences": {
+      "SNH_mean_eval": 0.0,
+      "SNH_max_eval": 0.0,
+      "SNO_mean_eval": 0.0,
+      "DO_mean_eval": 0.0
+    },
+    "label_disagreements": 0,
+    "tolerance": 1e-09,
+    "pass": true
+  },
+  "m3_m3b_replay": {
+    "passed": true,
+    "scope": "saved-reference audit and frozen prediction/metric replay; no new native BSM1 runs or scientific refit",
+    "results": [
+      {
+        "study": "model_revision_20261016",
+        "exit_code": 0,
+        "elapsed_seconds": 34.24835970000095
+      },
+      {
+        "study": "boundary_validation_20261016",
+        "exit_code": 0,
+        "elapsed_seconds": 31.096356600000945
+      }
+    ]
+  },
+  "native_reference_example": {
+    "candidate_id": "s_l10_a80_K0040",
+    "new_BSM1_integrations": 1,
+    "SNH_peak_abs_difference": 0.0,
+    "SNH_mean_abs_difference": 0.0,
+    "classification_matches": true,
+    "scope": "one constant-condition native integration; not all historical raw trajectories"
+  },
+  "software_tests": {
+    "m1_m2": 7,
+    "new_input_guard": 10,
+    "failed": 0
+  },
+  "reports_relative_path": "verification/release_20261104/",
+  "scientific_refit_executed_in_this_check": false,
+  "historical_dynamic_sensitivity_timing_batches_rerun": false,
+  "cold_dynamic_fallback_automated_by_new_router": false,
+  "scope": "Checks of the relocated publication package in a newly installed isolated environment. Frozen-parameter process integrations, saved-reference audits, table and Gate replay, software tests, and one fresh constant-condition native BSM1 example. Published candidate sets, parameters and labels were preserved."
+}

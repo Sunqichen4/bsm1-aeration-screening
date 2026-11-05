@@ -1,0 +1,29 @@
+parameter,original_class_default,historical_active_config_value,historical_config_source_label,historical_25_point_optimized,M2_value,M2_status,M2_lower_bound,M2_upper_bound,M2_near_upper_bound,unit,traceable_rationale,unresolved_basis
+tau_h,8.0,7.997061387107477,calibrated to baseline BSM1,True,3.1068956070130334,optimized_on_750_binary_labels,2.0,24.0,False,h,历史8个拟合变量之一；决定溶质交换时间尺度，本轮继续优化。,沿用历史工程搜索区间；未证明是生理置信区间或最优变量选择。
+mu_h,0.75,0.75,mechanistic assumption,False,0.75,fixed_original_default,,,False,h^-1 proxy scale,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+mu_a,1.05,1.0500639775055787,calibrated to baseline BSM1,True,2.4999999990900332,optimized_on_750_binary_labels,0.2,2.5,True,h^-1 proxy scale,历史8个拟合变量之一；影响自养代理活性强度，本轮继续优化。,沿用历史工程搜索区间；未证明是生理置信区间或最优变量选择。
+k_s,30.0,30.0,mechanistic assumption,False,30.0,fixed_original_default,,,False,mg COD L^-1,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+k_nh,1.0,1.0,mechanistic assumption,False,1.0,fixed_original_default,,,False,mg N L^-1,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+k_oh,0.35,0.35,mechanistic assumption,False,0.35,fixed_original_default,,,False,mg O2 L^-1,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+k_oa,3.0,2.999491694862348,calibrated to baseline BSM1,True,6.802314761759237,optimized_on_750_binary_labels,0.2,8.0,False,mg O2 L^-1,历史8个拟合变量之一；影响氧限制曲线，本轮继续优化。,沿用历史工程搜索区间；未证明是生理置信区间或最优变量选择。
+hill_n,2.0,2.0,mechanistic assumption,False,2.0,fixed_original_default,,,False,dimensionless,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+so_sat,8.0,8.0,inherited from BSM1 convention,False,8.0,fixed_original_default,,,False,mg O2 L^-1,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+oxygen_gain,0.55,0.5494770513642353,calibrated to baseline BSM1,True,1.4999999787944531,optimized_on_750_binary_labels,0.1,1.5,True,h^-1 at reference command,历史8个拟合变量之一；影响代理供氧强度，本轮继续优化。,沿用历史工程搜索区间；未证明是生理置信区间或最优变量选择。
+y_no,3.0,3.0,mechanistic assumption,False,3.0,fixed_original_default,,,False,proxy conversion,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+ss_to_nh,0.03,0.030335001048485282,calibrated to baseline BSM1,True,0.09999999999999999,optimized_on_750_binary_labels,0.0,0.1,True,mg N per mg COD proxy,历史8个拟合变量之一；影响底物到氨氮的经验映射，本轮继续优化。,沿用历史工程搜索区间；未证明是生理置信区间或最优变量选择。
+nitrification_rate_cap,1.6,1.6005351926764924,calibrated to baseline BSM1,True,2.1501373977467453,optimized_on_750_binary_labels,0.2,4.0,False,proxy rate h^-1,历史8个拟合变量之一；限制代理自养反应强度，本轮继续优化；局部可能不活跃。,沿用历史工程搜索区间；未证明是生理置信区间或最优变量选择。
+nh4_nitrification_factor,4.8,4.7979477718826145,calibrated to baseline BSM1,True,9.999999999999998,optimized_on_750_binary_labels,1.0,10.0,True,proxy conversion,历史8个拟合变量之一；影响氨氮去除的经验映射，本轮继续优化。,沿用历史工程搜索区间；未证明是生理置信区间或最优变量选择。
+biomass_tau_h,120.0,120.0,calibrated to baseline BSM1,False,120.0,fixed_original_default,,,False,h,原默认120 h；稳态不依赖该松弛时间，本轮固定。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+biomass_tau_a,120.0,120.00439340692897,calibrated to baseline BSM1,True,120.0,fixed_original_default,,,False,h,历史优化变量；在当前稳态二元目标下不可辨识，本轮固定回原默认120 h。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+xh_reference,1200.0,1200.0,calibrated to baseline BSM1,False,1200.0,fixed_original_default,,,False,proxy state,原代码明确为代理生物量尺度，不能解释成原生BSM1实测生物量。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+xa_reference,534.0,534.0,calibrated to baseline BSM1,False,534.0,fixed_original_default,,,False,proxy state,原代码明确为代理生物量尺度，不能解释成原生BSM1实测生物量。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+bsm1_xba_asymptote,152.5,152.5,calibrated to baseline BSM1,False,152.5,fixed_original_default,,,False,mg COD L^-1,历史生物量响应经验曲线；规范化比值中渐近幅值抵消，不提供独立可辨识信息。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+bsm1_xba_logistic_slope,0.08,0.08,calibrated to baseline BSM1,False,0.08,fixed_original_default,,,False,d,历史BSM1导出生物量响应经验曲线；原代码注释给近似响应点，未发现逐点曲线估计的完整审计记录。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+bsm1_xba_logistic_midpoint,123.7,123.7,calibrated to baseline BSM1,False,123.7,fixed_original_default,,,False,d^-1,历史BSM1导出生物量响应经验曲线；原代码注释给近似响应点，未发现逐点曲线估计的完整审计记录。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+xh_oxygen_response_weight,0.018,0.018,calibrated to baseline BSM1,False,0.018,fixed_original_default,,,False,dimensionless,历史固定生物量闭合经验权重；旧元数据称calibrated，但实际8变量优化名单未包含它。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+biomass_load_exponent,0.5,0.5,mechanistic assumption,False,0.5,fixed_original_default,,,False,dimensionless,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+biomass_temperature_exponent,1.0,1.0,mechanistic assumption,False,1.0,fixed_original_default,,,False,dimensionless,原SurrogateParams固定默认值；本轮没有重新估计。,本地代码和配置证明其历史使用，不构成文献/实验推导；未提供可追溯生理学依据。
+substrate_h_consumption,18.0,,hardcoded literal in equation,False,18.0,fixed_equation_coefficient,,,False,mg COD L^-1 per normalized activity,original_surrogate.py:207; dSS/dt; 本轮只做固定参数单因素扰动。,找到历史硬编码，未找到文献出处、推导或独立估计记录；不是已验证ASM1化学计量系数。
+sno_h_sink,0.25,,hardcoded literal in equation,False,0.25,fixed_equation_coefficient,,,False,mg N L^-1 per normalized activity,original_surrogate.py:213; dSNO/dt; 本轮只做固定参数单因素扰动。,找到历史硬编码，未找到文献出处、推导或独立估计记录；不是已验证ASM1化学计量系数。
+oxygen_h_demand,0.4,,hardcoded literal in equation,False,0.4,fixed_equation_coefficient,,,False,mg O2 L^-1 per normalized activity,original_surrogate.py:214; dSO/dt; 本轮只做固定参数单因素扰动。,找到历史硬编码，未找到文献出处、推导或独立估计记录；不是已验证ASM1化学计量系数。
+oxygen_a_demand,2.5,,hardcoded literal in equation,False,2.5,fixed_equation_coefficient,,,False,mg O2 L^-1 per normalized activity,original_surrogate.py:214; dSO/dt; 本轮只做固定参数单因素扰动。,找到历史硬编码，未找到文献出处、推导或独立估计记录；不是已验证ASM1化学计量系数。

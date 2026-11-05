@@ -1,0 +1,3 @@
+# Preserve exact scientific source/data bytes and SHA-256 evidence across platforms.
+# Do not enable automatic CRLF/LF conversion for this research release.
+* -text
