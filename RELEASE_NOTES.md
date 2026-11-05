@@ -2,6 +2,8 @@
 
 This 2026-11-04 local staging directory was copied from the 2026-11-03 delivery. It is not an additional scientific experiment or a new model version.
 
+The package was made publicly available on 2026-11-05 at https://github.com/Sunqichen4/bsm1-aeration-screening. This publication update changes availability documentation only.
+
 ## Changes for publication
 
 - Added a repository-level English README, Chinese usage guide, executable-scope table, citation metadata, license-status notice, byte-preserving Git attributes and cache/run exclusions.
@@ -14,6 +16,6 @@ This 2026-11-04 local staging directory was copied from the 2026-11-03 delivery.
 
 ## Identity and scope
 
-M1/M2 retains version `reconstructed-20261103-v1`. M3 and M3B retain their existing scientific identities. No measured results, frozen model parameters, candidate sets, Gate rules or reference labels were changed. No new DOI, public repository URL or author-code license is asserted.
+M1/M2 retains version `reconstructed-20261103-v1`. M3 and M3B retain their existing scientific identities. No measured results, frozen model parameters, candidate sets, Gate rules or reference labels were changed. The public repository URL is recorded in the root documentation. No DOI, formal release tag or author-code license has been assigned.
 
 `tools/build_release_manifest.py` regenerates the publication manifest and directory inventory after an intentional packaging change. It does not modify internal scientific freeze or source manifests. New runs belong in ignored `runs/` and should not be added to the supplied-file manifest.

@@ -1,5 +1,7 @@
 cff-version: 1.2.0
-message: "Please cite the associated author manuscript and the specific repository release used. The public release URL and DOI are not yet assigned."
+message: "Please cite the associated author manuscript and identify the repository commit used."
+repository-code: "https://github.com/Sunqichen4/bsm1-aeration-screening"
+url: "https://github.com/Sunqichen4/bsm1-aeration-screening"
 type: software
 title: "Research code and data for decision-oriented aeration screening in activated sludge systems"
 version: "2026.11.04-staging"

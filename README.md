@@ -2,9 +2,9 @@
 
 Research materials accompanying **Decision-oriented aeration screening in activated sludge systems: comparing mechanism-inspired and statistical models with targeted BSM1 verification**.
 
-This release candidate provides 106 supplementary CSV/JSON files, a versioned reconstructed M1/M2 executable core, and the complete retained M3/M3B scientific packages. See [RUN_STATUS.md](RUN_STATUS.md) for the exact distinction between executable workflows, checks completed in this release, and historical results.
+This repository provides 106 supplementary CSV/JSON files, a versioned reconstructed M1/M2 executable core, and the complete retained M3/M3B scientific packages. See [RUN_STATUS.md](RUN_STATUS.md) for the exact distinction between executable workflows, checks completed in this release, and historical results.
 
-This directory is prepared locally for publication. A public repository URL and an archived release DOI have not yet been assigned. Author manuscript drafts and reviewer correspondence are not included in this software/data repository.
+Code and data are publicly available at https://github.com/Sunqichen4/bsm1-aeration-screening. No archived DOI or formal release tag has been assigned. Author manuscript drafts and reviewer correspondence are not included in this software/data repository.
 
 ## Contents
 
@@ -65,4 +65,4 @@ Git line-ending conversion is disabled for tracked files because changing line e
 
 ## Citation and permissions
 
-Use the associated manuscript as the scientific citation; `CITATION.cff` records its current title and author names. Add the real repository/release URL only after publication. No DOI is claimed here. Author-code licensing remains to be selected by the authors; see `LICENSE_STATUS.md`. Third-party license/authorship files under each package's `legacy/` directory are retained and continue to apply.
+Use the associated manuscript as the scientific citation; `CITATION.cff` records its current title, author names and repository URL. Please identify the Git commit used. No DOI is claimed here. Author-code licensing remains to be selected by the authors; see `LICENSE_STATUS.md`. Third-party license/authorship files under each package's `legacy/` directory are retained and continue to apply.

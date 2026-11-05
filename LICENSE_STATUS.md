@@ -1,6 +1,6 @@
 # License status
 
-An author-code license has not yet been selected for this release candidate. No MIT, BSD, Apache, Creative Commons or other author-code/data license is granted by this notice. Public visibility by itself is not an open-source license. Before publishing the repository, the authors should choose a license for material they own and confirm that it is compatible with the retained third-party material. Update this notice and `CITATION.cff` after that decision.
+An author-code license has not yet been selected for this release candidate. No MIT, BSD, Apache, Creative Commons or other author-code/data license is granted by this notice. Public visibility by itself is not an open-source license. The authors should choose a license for material they own and confirm that it is compatible with the retained third-party material. Update this notice and `CITATION.cff` after that decision.
 
 Third-party source copies, license and authorship records are preserved at:
 

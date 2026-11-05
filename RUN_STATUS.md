@@ -30,4 +30,4 @@ M1/M2 finite predictions covered 132 + 244 + 244 model–candidate evaluations; 
 
 ## Public release status
 
-This is a locally staged publication package. Repository creation, upload, public URL validation, final release version/tag and author-code license selection are separate release steps. No public URL or DOI is invented in this package. Final manuscript and response-letter availability statements must be updated after an actual public release.
+The code and data are publicly available at https://github.com/Sunqichen4/bsm1-aeration-screening. Anonymous public access and the complete file tree were verified on 2026-11-05. No formal release tag or archived DOI has been assigned. Author-code license selection remains pending. Identify the exact Git commit used when citing this package.
